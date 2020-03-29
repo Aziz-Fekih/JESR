@@ -11,7 +11,7 @@
       <base-input :label="!ar ? 'Affiliation' :'الانتماء'" >
         <select class="form-control" v-model="model.type_action" :dir="ar ? 'rtl' : ''">
             <option v-for="(action, index) in actions"
-                        :value="action.fr" 
+                        :value="action.fr"
                         :key="index"
                         >{{!ar ? action .fr: action.ar}}</option>
         </select>
@@ -42,7 +42,7 @@
       <base-input :label="!ar ? 'Gouvernorat' : 'الولاية'">
         <select class="form-control" v-model="model.gouvernorat" :dir="ar ? 'rtl' : ''">
             <option v-for="(gouvernorat, index) in gouvernorats"
-                        :value="gouvernorat.fr" 
+                        :value="gouvernorat.fr"
                         :key="index"
                         >{{!ar ? gouvernorat.fr : gouvernorat.ar}}</option>
         </select>
@@ -62,8 +62,8 @@
       <base-input :label="!ar ? 'Type du don' : 'نوع التبرع'">
         <select class="form-control" v-model="model.type_don" :dir="ar ? 'rtl' : ''">
             <option v-for="(type_don, index) in type_dons"
-                        :value="type_don.fr" 
-                        :key="index" 
+                        :value="type_don.fr"
+                        :key="index"
                         >{{!ar ? type_don.fr : type_don.ar}}</option>
         </select>
       </base-input>
@@ -72,10 +72,10 @@
     <div class="row">
       <div class="col-md-12 " :class="!ar ? 'text-left': 'text-right'">
         <base-input>
-          <label>{{ !ar ? 'Déscription de votre don' :  'وصف التبرع'}}</label>
+          <label>{{ !ar ? 'Description de votre don' :  'وصف التبرع'}}</label>
           <textarea rows="4" cols="80"
                     class="form-control"
-                    :placeholder=" !ar ? 'Déscription de votre don' :  'وصف التبرع'"
+                    :placeholder=" !ar ? 'Description de votre don' :  'وصف التبرع'"
                     v-model="model.description" :dir="ar ? 'rtl' : ''">
               </textarea>
         </base-input>
@@ -85,20 +85,20 @@
       <div class="col-md-12 " :class="!ar ? 'text-left': 'text-right'" >
             <base-checkbox class="mb-3" v-model="model.motorise" :dir="ar ? 'rtl' : ''">
                {{!ar ? 'Etês-vous motorisé ?' : 'مجهز بعربة'}}
-             
+
             </base-checkbox>
-         
+
             <base-checkbox class="mb-3" v-model="model.accord_utss" :dir="ar ? 'rtl' : ''">
                 {{!ar ? "Est-ce que vous acceptez que votre don soit pris en charge par l'UTSS (Union Tunisienne de Solidarité Sociale)?  " : 'هل تقبل أن تبرعك تتكفل به UTSS (الاتحاد التونسي للتضامن الاجتماعي)؟'}}
-               
+
             </base-checkbox>
-          
+
       </div>
     </div>
       <base-button :class="!ar ? 'float-left' : 'float-right'" type="success" fill nativeType="submit">{{!ar ?'Faire un don' : 'التبرع'}}</base-button>
   </form>
 
-  
+
   </card>
   	<modal :show.sync="modals.userModal">
 		<template slot="header">
@@ -109,9 +109,9 @@
                <strong> {{acteur.telephone}}</strong> va prendre en charge votre Don!
             </p>
             <p class="text-right" v-else > سيتكفل بتبرعك <strong> {{acteur.telephone}} </strong>  رقم الهاتف <strong> {{acteur.lastname}} {{acteur.name}}</strong>  شكرا لك على تبرعك السخي
-              
+
             </p>
-			 
+
         </template>
 		<template slot="footer">
 			<base-button type="secondary" @click="modals.userModal = false;"
@@ -136,7 +136,7 @@
 		</template>
 	</modal>
  </div>
- 
+
 </template>
 <script>
 import {
@@ -170,14 +170,14 @@ export default{
         },
 
       type_dons: [      {fr :'Argent', ar: 'مال'},
-                        {fr :'Nourriture', ar: 'طعام'}, 
+                        {fr :'Nourriture', ar: 'طعام'},
                         {fr :'Ressources Humaines', ar: 'مموارد بشرية'},
                         {fr :'Ressources Materiels', ar: 'أجهزة'},
                         {fr :'Autres', ar: 'اخر'}],
       actions: [{fr:'Particulier', ar:'خاص'},{fr: 'Association', ar:'جمعية'}],
       model: {
         nom: '',
-        
+
         type_action: 'Particulier',
         adresse: '',
         gouvernorat: 'Ariana',
@@ -230,7 +230,7 @@ export default{
               this.model.nom == "" ||
               this.model.description == "" ||
               this.model.telephone == "" ||
-              this.model.adresse == "" 
+              this.model.adresse == ""
             ) {
               this.$notify({
                 type: "danger",

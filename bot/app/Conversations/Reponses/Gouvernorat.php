@@ -201,21 +201,26 @@ class Gouvernorat extends Conversation
     }
     public function valider(){
         $body = new \stdClass();
+        $application_url = ''; // Lien de l'application Jesr une fois hébergée
+        if($this->bot->userStorage()->get('accord_utss') == "1"){
+            $body->accord_utss = true;
+        }else{
+            $body->accord_utss = false;
+        }
         $body->nom = $this->bot->userStorage()->get('nom');
         $body->type_action = $this->bot->userStorage()->get('type_action');
         $body->telephone = $this->bot->userStorage()->get('telephone');
         $body->adresse = $this->bot->userStorage()->get('adresse');
         $body->gouvernorat = $this->bot->userStorage()->get('gouvernorat');
         $body->motorise = $this->bot->userStorage()->get('motorise');
-        $body->accord_utss = $this->bot->userStorage()->get('accord_utss');
         $body->type_don = $this->bot->userStorage()->get('type_don');
         $body->description = $this->bot->userStorage()->get('description');
-        $response = Curl::to('/api/don')
+        $response = Curl::to($application_url.'/api/don')
         ->withHeader('Content-Type: application/json')
         ->withData($body)
         ->asJson()
         ->post();   
-        if($body->accord_utss == "1"){
+        if($body->accord_utss && $response){
             $this->say("شكرا على ثيقتك فينا و على مساهمتك بش نمنعوا بلادنا
             تونس مسؤوليتنا الكل و مع بعضنا والله ما نغلبوه");
             $this->say("هذي المنظمة الي بش تتكفل بالبرع متاعك");
@@ -224,8 +229,7 @@ class Gouvernorat extends Conversation
             $this->say('Union Nationale de la Femme Tunisienne: +216 71 378 447 الاتحاد الوطني للمرأة التونسية');
             $this->say('Croissant Rouge: +216 71 378 447 الهلال الاحمر التونسي');
             $this->say('Le Scoutisme: +216 71 378 447 الكشافة التونسية');
-        }   
-
+        }
         $question = Question::create("")
         ->fallback('Unable to ask question')
         ->callbackId('ask_end')

@@ -24501,7 +24501,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "/* --------------------------------\n\nNucleo Outline Web Font - nucleoapp.com/\nLicense - nucleoapp.com/license/\nCreated using IcoMoon - icomoon.io\n\n-------------------------------- */\n\n@font-face {\n  font-family: 'Nucleo';\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ");\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ") format('embedded-opentype'),\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff2 */ "./resources/js/assets/fonts/nucleo.woff2")) + ") format('woff2'),\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff */ "./resources/js/assets/fonts/nucleo.woff")) + ") format('woff'),\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.ttf */ "./resources/js/assets/fonts/nucleo.ttf")) + ") format('truetype');\n  font-weight: normal;\n  font-style: normal;\n}\n\n/*------------------------\n\tbase class definition\n-------------------------*/\n\n.tim-icons {\n  display: inline-block;\n  font: normal normal normal 1em/1 'Nucleo';\n  vertical-align: middle;\n  speak: none;\n  text-transform: none;\n  /* Better Font Rendering */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.font-icon-detail{\n  text-align: center;\n  padding: 45px 0 30px;\n  border: 1px solid #e44cc4;\n  border-radius: .1875rem;\n  margin: 15px 0;\n  min-height: 168px;\n}\n.font-icon-detail i{\n    color: $black;\n    font-size: 1.5em;\n  }\n\n.font-icon-detail p{\n    color: #e44cc4 !important;\n    margin-top: 30px;\n    padding: 0 10px;\n    font-size: .7142em;\n}\n\n/*------------------------\n  change icon size\n-------------------------*/\n\n.tim-icons-sm {\n  font-size: 0.8em;\n}\n.tim-icons-lg {\n  font-size: 1.2em;\n}\n/* absolute units */\n.tim-icons-16 {\n  font-size: 16px;\n}\n.tim-icons-32 {\n  font-size: 32px;\n}\n\n/*----------------------------------\n  add a square/circle background\n-----------------------------------*/\n\n.tim-icons-bg-square,\n.tim-icons-bg-circle {\n  padding: 0.35em;\n}\n\n.tim-icons-bg-circle {\n  border-radius: 50%;\n}\n/*------------------------\n  list icons\n-------------------------*/\n\n\n\n/*------------------------\n  spinning icons\n-------------------------*/\n\n.tim-icons-is-spinning {\n  -webkit-animation: tim-icons-spin 2s infinite linear;\n  animation: tim-icons-spin 2s infinite linear;\n}\n\n@-webkit-keyframes tim-icons-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n  }\n}\n@keyframes tim-icons-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n/*------------------------\n  rotated/flipped icons\n-------------------------*/\n/*------------------------\n\ticons\n-------------------------*/\n\n.icon-alert-circle-exc::before {\n  content: \"\\EA02\";\n}\n\n.icon-align-center::before {\n  content: \"\\EA03\";\n}\n\n.icon-align-left-2::before {\n  content: \"\\EA04\";\n}\n\n.icon-app::before {\n  content: \"\\EA05\";\n}\n\n.icon-atom::before {\n  content: \"\\EA06\";\n}\n\n.icon-attach-87::before {\n  content: \"\\EA07\";\n}\n\n.icon-badge::before {\n  content: \"\\EA08\";\n}\n\n.icon-bag-16::before {\n  content: \"\\EA09\";\n}\n\n.icon-bank::before {\n  content: \"\\EA0A\";\n}\n\n.icon-basket-simple::before {\n  content: \"\\EA0B\";\n}\n\n.icon-bell-55::before {\n  content: \"\\EA0C\";\n}\n\n.icon-bold::before {\n  content: \"\\EA0D\";\n}\n\n.icon-book-bookmark::before {\n  content: \"\\EA0E\";\n}\n\n.icon-bulb-63::before {\n  content: \"\\EA0F\";\n}\n\n.icon-bullet-list-67::before {\n  content: \"\\EA10\";\n}\n\n.icon-bus-front-12::before {\n  content: \"\\EA11\";\n}\n\n.icon-button-pause::before {\n  content: \"\\EA12\";\n}\n\n.icon-button-power::before {\n  content: \"\\EA13\";\n}\n\n.icon-calendar-60::before {\n  content: \"\\EA14\";\n}\n\n.icon-camera-18::before {\n  content: \"\\EA15\";\n}\n\n.icon-caps-small::before {\n  content: \"\\EA16\";\n}\n\n.icon-cart::before {\n  content: \"\\EA17\";\n}\n\n.icon-chart-bar-32::before {\n  content: \"\\EA18\";\n}\n\n.icon-chart-pie-36::before {\n  content: \"\\EA19\";\n}\n\n.icon-chat-33::before {\n  content: \"\\EA1A\";\n}\n\n.icon-check-2::before {\n  content: \"\\EA1B\";\n}\n\n.icon-cloud-download-93::before {\n  content: \"\\EA1C\";\n}\n\n.icon-cloud-upload-94::before {\n  content: \"\\EA1D\";\n}\n\n.icon-coins::before {\n  content: \"\\EA1E\";\n}\n\n.icon-compass-05::before {\n  content: \"\\EA1F\";\n}\n\n.icon-controller::before {\n  content: \"\\EA20\";\n}\n\n.icon-credit-card::before {\n  content: \"\\EA21\";\n}\n\n.icon-delivery-fast::before {\n  content: \"\\EA22\";\n}\n\n.icon-double-left::before {\n  content: \"\\EA23\";\n}\n\n.icon-double-right::before {\n  content: \"\\EA24\";\n}\n\n.icon-email-85::before {\n  content: \"\\EA25\";\n}\n\n.icon-gift-2::before {\n  content: \"\\EA26\";\n}\n\n.icon-globe-2::before {\n  content: \"\\EA27\";\n}\n\n.icon-headphones::before {\n  content: \"\\EA28\";\n}\n\n.icon-heart-2::before {\n  content: \"\\EA29\";\n}\n\n.icon-html5::before {\n  content: \"\\EA2A\";\n}\n\n.icon-image-02::before {\n  content: \"\\EA2B\";\n}\n\n.icon-istanbul::before {\n  content: \"\\EA2C\";\n}\n\n.icon-key-25::before {\n  content: \"\\EA2D\";\n}\n\n.icon-laptop::before {\n  content: \"\\EA2E\";\n}\n\n.icon-light-3::before {\n  content: \"\\EA2F\";\n}\n\n.icon-link-72::before {\n  content: \"\\EA30\";\n}\n\n.icon-lock-circle::before {\n  content: \"\\EA31\";\n}\n\n.icon-map-big::before {\n  content: \"\\EA32\";\n}\n\n.icon-minimal-down::before {\n  content: \"\\EA33\";\n}\n\n.icon-minimal-left::before {\n  content: \"\\EA34\";\n}\n\n.icon-minimal-right::before {\n  content: \"\\EA35\";\n}\n\n.icon-minimal-up::before {\n  content: \"\\EA36\";\n}\n\n.icon-mobile::before {\n  content: \"\\EA37\";\n}\n\n.icon-molecule-40::before {\n  content: \"\\EA38\";\n}\n\n.icon-money-coins::before {\n  content: \"\\EA39\";\n}\n\n.icon-notes::before {\n  content: \"\\EA3A\";\n}\n\n.icon-palette::before {\n  content: \"\\EA3B\";\n}\n\n.icon-paper::before {\n  content: \"\\EA3C\";\n}\n\n.icon-pencil::before {\n  content: \"\\EA3D\";\n}\n\n.icon-pin::before {\n  content: \"\\EA3E\";\n}\n\n.icon-planet::before {\n  content: \"\\EA3F\";\n}\n\n.icon-puzzle-10::before {\n  content: \"\\EA40\";\n}\n\n.icon-satisfied::before {\n  content: \"\\EA41\";\n}\n\n.icon-scissors::before {\n  content: \"\\EA42\";\n}\n\n.icon-send::before {\n  content: \"\\EA43\";\n}\n\n.icon-settings-gear-63::before {\n  content: \"\\EA44\";\n}\n\n.icon-settings::before {\n  content: \"\\EA45\";\n}\n\n.icon-simple-add::before {\n  content: \"\\EA46\";\n}\n\n.icon-simple-delete::before {\n  content: \"\\EA47\";\n}\n\n.icon-simple-remove::before {\n  content: \"\\EA48\";\n}\n\n.icon-single-02::before {\n  content: \"\\EA49\";\n}\n\n.icon-single-copy-04::before {\n  content: \"\\EA4A\";\n}\n\n.icon-sound-wave::before {\n  content: \"\\EA4B\";\n}\n\n.icon-spaceship::before {\n  content: \"\\EA4C\";\n}\n\n.icon-square-pin::before {\n  content: \"\\EA4D\";\n}\n\n.icon-support-17::before {\n  content: \"\\EA4E\";\n}\n\n.icon-tablet-2::before {\n  content: \"\\EA4F\";\n}\n\n.icon-tag::before {\n  content: \"\\EA50\";\n}\n\n.icon-tap-02::before {\n  content: \"\\EA51\";\n}\n\n.icon-tie-bow::before {\n  content: \"\\EA52\";\n}\n\n.icon-time-alarm::before {\n  content: \"\\EA53\";\n}\n\n.icon-trash-simple::before {\n  content: \"\\EA54\";\n}\n\n.icon-triangle-right-17::before {\n  content: \"\\EA55\";\n}\n\n.icon-trophy::before {\n  content: \"\\EA56\";\n}\n\n.icon-tv-2::before {\n  content: \"\\EA57\";\n}\n\n.icon-upload::before {\n  content: \"\\EA58\";\n}\n\n.icon-user-run::before {\n  content: \"\\EA59\";\n}\n\n.icon-vector::before {\n  content: \"\\EA5A\";\n}\n\n.icon-video-66::before {\n  content: \"\\EA5B\";\n}\n\n.icon-volume-98::before {\n  content: \"\\EA5C\";\n}\n\n.icon-wallet-43::before {\n  content: \"\\EA5D\";\n}\n\n.icon-watch-time::before {\n  content: \"\\EA5E\";\n}\n\n.icon-wifi::before {\n  content: \"\\EA5F\";\n}\n\n.icon-world::before {\n  content: \"\\EA60\";\n}\n\n.icon-zoom-split::before {\n  content: \"\\EA61\";\n}\n\n.icon-refresh-01::before {\n  content: \"\\EA62\";\n}\n\n.icon-refresh-02::before {\n  content: \"\\EA63\";\n}\n\n.icon-shape-star::before {\n  content: \"\\EA64\";\n}\n\n.icon-components::before {\n  content: \"\\EA65\";\n}\n", ""]);
+exports.push([module.i, "/* --------------------------------\r\n\r\nNucleo Outline Web Font - nucleoapp.com/\r\nLicense - nucleoapp.com/license/\r\nCreated using IcoMoon - icomoon.io\r\n\r\n-------------------------------- */\r\n\r\n@font-face {\r\n  font-family: 'Nucleo';\r\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ");\r\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ") format('embedded-opentype'),\r\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff2 */ "./resources/js/assets/fonts/nucleo.woff2")) + ") format('woff2'),\r\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff */ "./resources/js/assets/fonts/nucleo.woff")) + ") format('woff'),\r\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.ttf */ "./resources/js/assets/fonts/nucleo.ttf")) + ") format('truetype');\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n\r\n/*------------------------\r\n\tbase class definition\r\n-------------------------*/\r\n\r\n.tim-icons {\r\n  display: inline-block;\r\n  font: normal normal normal 1em/1 'Nucleo';\r\n  vertical-align: middle;\r\n  speak: none;\r\n  text-transform: none;\r\n  /* Better Font Rendering */\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n.font-icon-detail{\r\n  text-align: center;\r\n  padding: 45px 0 30px;\r\n  border: 1px solid #e44cc4;\r\n  border-radius: .1875rem;\r\n  margin: 15px 0;\r\n  min-height: 168px;\r\n}\r\n.font-icon-detail i{\r\n    color: $black;\r\n    font-size: 1.5em;\r\n  }\r\n\r\n.font-icon-detail p{\r\n    color: #e44cc4 !important;\r\n    margin-top: 30px;\r\n    padding: 0 10px;\r\n    font-size: .7142em;\r\n}\r\n\r\n/*------------------------\r\n  change icon size\r\n-------------------------*/\r\n\r\n.tim-icons-sm {\r\n  font-size: 0.8em;\r\n}\r\n.tim-icons-lg {\r\n  font-size: 1.2em;\r\n}\r\n/* absolute units */\r\n.tim-icons-16 {\r\n  font-size: 16px;\r\n}\r\n.tim-icons-32 {\r\n  font-size: 32px;\r\n}\r\n\r\n/*----------------------------------\r\n  add a square/circle background\r\n-----------------------------------*/\r\n\r\n.tim-icons-bg-square,\r\n.tim-icons-bg-circle {\r\n  padding: 0.35em;\r\n}\r\n\r\n.tim-icons-bg-circle {\r\n  border-radius: 50%;\r\n}\r\n/*------------------------\r\n  list icons\r\n-------------------------*/\r\n\r\n\r\n\r\n/*------------------------\r\n  spinning icons\r\n-------------------------*/\r\n\r\n.tim-icons-is-spinning {\r\n  -webkit-animation: tim-icons-spin 2s infinite linear;\r\n  animation: tim-icons-spin 2s infinite linear;\r\n}\r\n\r\n@-webkit-keyframes tim-icons-spin {\r\n  0% {\r\n    -webkit-transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    -webkit-transform: rotate(360deg);\r\n  }\r\n}\r\n@keyframes tim-icons-spin {\r\n  0% {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n/*------------------------\r\n  rotated/flipped icons\r\n-------------------------*/\r\n/*------------------------\r\n\ticons\r\n-------------------------*/\r\n\r\n.icon-alert-circle-exc::before {\r\n  content: \"\\EA02\";\r\n}\r\n\r\n.icon-align-center::before {\r\n  content: \"\\EA03\";\r\n}\r\n\r\n.icon-align-left-2::before {\r\n  content: \"\\EA04\";\r\n}\r\n\r\n.icon-app::before {\r\n  content: \"\\EA05\";\r\n}\r\n\r\n.icon-atom::before {\r\n  content: \"\\EA06\";\r\n}\r\n\r\n.icon-attach-87::before {\r\n  content: \"\\EA07\";\r\n}\r\n\r\n.icon-badge::before {\r\n  content: \"\\EA08\";\r\n}\r\n\r\n.icon-bag-16::before {\r\n  content: \"\\EA09\";\r\n}\r\n\r\n.icon-bank::before {\r\n  content: \"\\EA0A\";\r\n}\r\n\r\n.icon-basket-simple::before {\r\n  content: \"\\EA0B\";\r\n}\r\n\r\n.icon-bell-55::before {\r\n  content: \"\\EA0C\";\r\n}\r\n\r\n.icon-bold::before {\r\n  content: \"\\EA0D\";\r\n}\r\n\r\n.icon-book-bookmark::before {\r\n  content: \"\\EA0E\";\r\n}\r\n\r\n.icon-bulb-63::before {\r\n  content: \"\\EA0F\";\r\n}\r\n\r\n.icon-bullet-list-67::before {\r\n  content: \"\\EA10\";\r\n}\r\n\r\n.icon-bus-front-12::before {\r\n  content: \"\\EA11\";\r\n}\r\n\r\n.icon-button-pause::before {\r\n  content: \"\\EA12\";\r\n}\r\n\r\n.icon-button-power::before {\r\n  content: \"\\EA13\";\r\n}\r\n\r\n.icon-calendar-60::before {\r\n  content: \"\\EA14\";\r\n}\r\n\r\n.icon-camera-18::before {\r\n  content: \"\\EA15\";\r\n}\r\n\r\n.icon-caps-small::before {\r\n  content: \"\\EA16\";\r\n}\r\n\r\n.icon-cart::before {\r\n  content: \"\\EA17\";\r\n}\r\n\r\n.icon-chart-bar-32::before {\r\n  content: \"\\EA18\";\r\n}\r\n\r\n.icon-chart-pie-36::before {\r\n  content: \"\\EA19\";\r\n}\r\n\r\n.icon-chat-33::before {\r\n  content: \"\\EA1A\";\r\n}\r\n\r\n.icon-check-2::before {\r\n  content: \"\\EA1B\";\r\n}\r\n\r\n.icon-cloud-download-93::before {\r\n  content: \"\\EA1C\";\r\n}\r\n\r\n.icon-cloud-upload-94::before {\r\n  content: \"\\EA1D\";\r\n}\r\n\r\n.icon-coins::before {\r\n  content: \"\\EA1E\";\r\n}\r\n\r\n.icon-compass-05::before {\r\n  content: \"\\EA1F\";\r\n}\r\n\r\n.icon-controller::before {\r\n  content: \"\\EA20\";\r\n}\r\n\r\n.icon-credit-card::before {\r\n  content: \"\\EA21\";\r\n}\r\n\r\n.icon-delivery-fast::before {\r\n  content: \"\\EA22\";\r\n}\r\n\r\n.icon-double-left::before {\r\n  content: \"\\EA23\";\r\n}\r\n\r\n.icon-double-right::before {\r\n  content: \"\\EA24\";\r\n}\r\n\r\n.icon-email-85::before {\r\n  content: \"\\EA25\";\r\n}\r\n\r\n.icon-gift-2::before {\r\n  content: \"\\EA26\";\r\n}\r\n\r\n.icon-globe-2::before {\r\n  content: \"\\EA27\";\r\n}\r\n\r\n.icon-headphones::before {\r\n  content: \"\\EA28\";\r\n}\r\n\r\n.icon-heart-2::before {\r\n  content: \"\\EA29\";\r\n}\r\n\r\n.icon-html5::before {\r\n  content: \"\\EA2A\";\r\n}\r\n\r\n.icon-image-02::before {\r\n  content: \"\\EA2B\";\r\n}\r\n\r\n.icon-istanbul::before {\r\n  content: \"\\EA2C\";\r\n}\r\n\r\n.icon-key-25::before {\r\n  content: \"\\EA2D\";\r\n}\r\n\r\n.icon-laptop::before {\r\n  content: \"\\EA2E\";\r\n}\r\n\r\n.icon-light-3::before {\r\n  content: \"\\EA2F\";\r\n}\r\n\r\n.icon-link-72::before {\r\n  content: \"\\EA30\";\r\n}\r\n\r\n.icon-lock-circle::before {\r\n  content: \"\\EA31\";\r\n}\r\n\r\n.icon-map-big::before {\r\n  content: \"\\EA32\";\r\n}\r\n\r\n.icon-minimal-down::before {\r\n  content: \"\\EA33\";\r\n}\r\n\r\n.icon-minimal-left::before {\r\n  content: \"\\EA34\";\r\n}\r\n\r\n.icon-minimal-right::before {\r\n  content: \"\\EA35\";\r\n}\r\n\r\n.icon-minimal-up::before {\r\n  content: \"\\EA36\";\r\n}\r\n\r\n.icon-mobile::before {\r\n  content: \"\\EA37\";\r\n}\r\n\r\n.icon-molecule-40::before {\r\n  content: \"\\EA38\";\r\n}\r\n\r\n.icon-money-coins::before {\r\n  content: \"\\EA39\";\r\n}\r\n\r\n.icon-notes::before {\r\n  content: \"\\EA3A\";\r\n}\r\n\r\n.icon-palette::before {\r\n  content: \"\\EA3B\";\r\n}\r\n\r\n.icon-paper::before {\r\n  content: \"\\EA3C\";\r\n}\r\n\r\n.icon-pencil::before {\r\n  content: \"\\EA3D\";\r\n}\r\n\r\n.icon-pin::before {\r\n  content: \"\\EA3E\";\r\n}\r\n\r\n.icon-planet::before {\r\n  content: \"\\EA3F\";\r\n}\r\n\r\n.icon-puzzle-10::before {\r\n  content: \"\\EA40\";\r\n}\r\n\r\n.icon-satisfied::before {\r\n  content: \"\\EA41\";\r\n}\r\n\r\n.icon-scissors::before {\r\n  content: \"\\EA42\";\r\n}\r\n\r\n.icon-send::before {\r\n  content: \"\\EA43\";\r\n}\r\n\r\n.icon-settings-gear-63::before {\r\n  content: \"\\EA44\";\r\n}\r\n\r\n.icon-settings::before {\r\n  content: \"\\EA45\";\r\n}\r\n\r\n.icon-simple-add::before {\r\n  content: \"\\EA46\";\r\n}\r\n\r\n.icon-simple-delete::before {\r\n  content: \"\\EA47\";\r\n}\r\n\r\n.icon-simple-remove::before {\r\n  content: \"\\EA48\";\r\n}\r\n\r\n.icon-single-02::before {\r\n  content: \"\\EA49\";\r\n}\r\n\r\n.icon-single-copy-04::before {\r\n  content: \"\\EA4A\";\r\n}\r\n\r\n.icon-sound-wave::before {\r\n  content: \"\\EA4B\";\r\n}\r\n\r\n.icon-spaceship::before {\r\n  content: \"\\EA4C\";\r\n}\r\n\r\n.icon-square-pin::before {\r\n  content: \"\\EA4D\";\r\n}\r\n\r\n.icon-support-17::before {\r\n  content: \"\\EA4E\";\r\n}\r\n\r\n.icon-tablet-2::before {\r\n  content: \"\\EA4F\";\r\n}\r\n\r\n.icon-tag::before {\r\n  content: \"\\EA50\";\r\n}\r\n\r\n.icon-tap-02::before {\r\n  content: \"\\EA51\";\r\n}\r\n\r\n.icon-tie-bow::before {\r\n  content: \"\\EA52\";\r\n}\r\n\r\n.icon-time-alarm::before {\r\n  content: \"\\EA53\";\r\n}\r\n\r\n.icon-trash-simple::before {\r\n  content: \"\\EA54\";\r\n}\r\n\r\n.icon-triangle-right-17::before {\r\n  content: \"\\EA55\";\r\n}\r\n\r\n.icon-trophy::before {\r\n  content: \"\\EA56\";\r\n}\r\n\r\n.icon-tv-2::before {\r\n  content: \"\\EA57\";\r\n}\r\n\r\n.icon-upload::before {\r\n  content: \"\\EA58\";\r\n}\r\n\r\n.icon-user-run::before {\r\n  content: \"\\EA59\";\r\n}\r\n\r\n.icon-vector::before {\r\n  content: \"\\EA5A\";\r\n}\r\n\r\n.icon-video-66::before {\r\n  content: \"\\EA5B\";\r\n}\r\n\r\n.icon-volume-98::before {\r\n  content: \"\\EA5C\";\r\n}\r\n\r\n.icon-wallet-43::before {\r\n  content: \"\\EA5D\";\r\n}\r\n\r\n.icon-watch-time::before {\r\n  content: \"\\EA5E\";\r\n}\r\n\r\n.icon-wifi::before {\r\n  content: \"\\EA5F\";\r\n}\r\n\r\n.icon-world::before {\r\n  content: \"\\EA60\";\r\n}\r\n\r\n.icon-zoom-split::before {\r\n  content: \"\\EA61\";\r\n}\r\n\r\n.icon-refresh-01::before {\r\n  content: \"\\EA62\";\r\n}\r\n\r\n.icon-refresh-02::before {\r\n  content: \"\\EA63\";\r\n}\r\n\r\n.icon-shape-star::before {\r\n  content: \"\\EA64\";\r\n}\r\n\r\n.icon-components::before {\r\n  content: \"\\EA65\";\r\n}\r\n", ""]);
 
 // exports
 
@@ -24520,7 +24520,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".tim-row {\n  margin-bottom: 20px;\n}\n\n.tim-white-buttons {\n  background-color: #777777;\n}\n\n.typography-line {\n  padding-left: 25%;\n  margin-bottom: 35px;\n  position: relative;\n  display: block;\n  width: 100%;\n}\n\n.typography-line span {\n  bottom: 10px;\n  color: #c0c1c2;\n  display: block;\n  font-weight: 400;\n  font-size: 13px;\n  line-height: 13px;\n  left: 0;\n  position: absolute;\n  width: 260px;\n  text-transform: none;\n}\n\n.tim-row {\n  padding-top: 60px;\n}\n\n.tim-row h3 {\n  margin-top: 0;\n}\n\n.offline-doc .page-header {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.offline-doc .footer {\n  position: absolute;\n  width: 100%;\n  background: transparent;\n  bottom: 0;\n  color: #fff;\n  z-index: 1;\n}\n\n@media all and (min-width: 992px) {\n  .sidebar .nav>li.active-pro {\n    position: absolute;\n    width: 100%;\n    bottom: 10px;\n  }\n}\n\n.card.card-upgrade .card-category {\n  max-width: 530px;\n  margin: 0 auto;\n}", ""]);
+exports.push([module.i, ".tim-row {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.tim-white-buttons {\r\n  background-color: #777777;\r\n}\r\n\r\n.typography-line {\r\n  padding-left: 25%;\r\n  margin-bottom: 35px;\r\n  position: relative;\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.typography-line span {\r\n  bottom: 10px;\r\n  color: #c0c1c2;\r\n  display: block;\r\n  font-weight: 400;\r\n  font-size: 13px;\r\n  line-height: 13px;\r\n  left: 0;\r\n  position: absolute;\r\n  width: 260px;\r\n  text-transform: none;\r\n}\r\n\r\n.tim-row {\r\n  padding-top: 60px;\r\n}\r\n\r\n.tim-row h3 {\r\n  margin-top: 0;\r\n}\r\n\r\n.offline-doc .page-header {\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.offline-doc .footer {\r\n  position: absolute;\r\n  width: 100%;\r\n  background: transparent;\r\n  bottom: 0;\r\n  color: #fff;\r\n  z-index: 1;\r\n}\r\n\r\n@media all and (min-width: 992px) {\r\n  .sidebar .nav>li.active-pro {\r\n    position: absolute;\r\n    width: 100%;\r\n    bottom: 10px;\r\n  }\r\n}\r\n\r\n.card.card-upgrade .card-category {\r\n  max-width: 530px;\r\n  margin: 0 auto;\r\n}", ""]);
 
 // exports
 
@@ -24881,7 +24881,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.content[data-v-8e93bf24]{\r\n    padding : 82px;\n}\n.tim-icons .icon-single-02[data-v-8e93bf24] {\r\n    color:black !important;\n}\n.input-group-append[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n.content[data-v-8e93bf24]{\n    padding : 82px;\n}\n.tim-icons .icon-single-02[data-v-8e93bf24] {\n    color:black !important;\n}\n.input-group-append[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -48362,7 +48362,6 @@ var Dropdown = function (_EventEmitter) {
       style.display = "none";
       style.position = "absolute";
       style.zIndex = "10000";
-      el.className = "form-control"
       if (parent) {
         parent.appendChild(el);
       } else {
@@ -48856,8 +48855,6 @@ var DropdownItem = function () {
       var li = document.createElement("li");
       li.className = this.active ? this.activeClassName : this.className;
       var a = document.createElement("a");
-      a.style.padding = "6px";
-      li.style.cursor = "pointer";
       a.innerHTML = this.searchResult.render();
       li.appendChild(a);
       this._el = li;
@@ -63528,7 +63525,7 @@ var render = function() {
                       _c("label", [
                         _vm._v(
                           _vm._s(
-                            !_vm.ar ? "Déscription de votre don" : "وصف التبرع"
+                            !_vm.ar ? "Description de votre don" : "وصف التبرع"
                           )
                         )
                       ]),
@@ -63547,7 +63544,7 @@ var render = function() {
                           rows: "4",
                           cols: "80",
                           placeholder: !_vm.ar
-                            ? "Déscription de votre don"
+                            ? "Description de votre don"
                             : "وصف التبرع",
                           dir: _vm.ar ? "rtl" : ""
                         },
@@ -63594,11 +63591,11 @@ var render = function() {
                       },
                       [
                         _vm._v(
-                          "\r\n               " +
+                          "\n               " +
                             _vm._s(
                               !_vm.ar ? "Etês-vous motorisé ?" : "مجهز بعربة"
                             ) +
-                            "\r\n             \r\n            "
+                            "\n\n            "
                         )
                       ]
                     ),
@@ -63618,13 +63615,13 @@ var render = function() {
                       },
                       [
                         _vm._v(
-                          "\r\n                " +
+                          "\n                " +
                             _vm._s(
                               !_vm.ar
                                 ? "Est-ce que vous acceptez que votre don soit pris en charge par l'UTSS (Union Tunisienne de Solidarité Sociale)?  "
                                 : "هل تقبل أن تبرعك تتكفل به UTSS (الاتحاد التونسي للتضامن الاجتماعي)؟"
                             ) +
-                            "\r\n               \r\n            "
+                            "\n\n            "
                         )
                       ]
                     )
@@ -63661,9 +63658,9 @@ var render = function() {
         [
           _c("template", { slot: "header" }, [
             _vm._v(
-              "\r\n\t\t\t" +
+              "\n\t\t\t" +
                 _vm._s(!_vm.ar ? "Merci pour votre Don" : "شكرا") +
-                "\r\n\t\t"
+                "\n\t\t"
             )
           ]),
           _vm._v(" "),
@@ -63679,9 +63676,9 @@ var render = function() {
                         _vm._s(_vm.acteur.lastname)
                     )
                   ]),
-                  _vm._v(" ayant le numéro de téléphone:\r\n               "),
+                  _vm._v(" ayant le numéro de téléphone:\n               "),
                   _c("strong", [_vm._v(" " + _vm._s(_vm.acteur.telephone))]),
-                  _vm._v(" va prendre en charge votre Don!\r\n            ")
+                  _vm._v(" va prendre en charge votre Don!\n            ")
                 ])
               : _c("p", { staticClass: "text-right" }, [
                   _vm._v(" سيتكفل بتبرعك "),
@@ -63697,9 +63694,7 @@ var render = function() {
                         _vm._s(_vm.acteur.name)
                     )
                   ]),
-                  _vm._v(
-                    "  شكرا لك على تبرعك السخي\r\n              \r\n            "
-                  )
+                  _vm._v("  شكرا لك على تبرعك السخي\n\n            ")
                 ])
           ],
           _vm._v(" "),
@@ -63739,9 +63734,9 @@ var render = function() {
         [
           _c("template", { slot: "header" }, [
             _vm._v(
-              "\r\n\t\t\t\t" +
+              "\n\t\t\t\t" +
                 _vm._s(!_vm.ar ? "Merci pour votre Don" : "شكرا") +
-                "\r\n\t\t"
+                "\n\t\t"
             )
           ]),
           _vm._v(" "),
@@ -67309,7 +67304,7 @@ var defaultOptions = {
       authorizationEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
       redirectUri: window.location.origin + '/',
       requiredUrlParams: ['display', 'scope'],
-      scope: ["manage_pages", "email"],
+      scope: ['email'],
       scopeDelimiter: ',',
       display: 'popup',
       oauthType: '2.0',
@@ -91307,8 +91302,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Achraff\Pjet\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Achraff\Pjet\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\projects\corona\jesr\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\projects\corona\jesr\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

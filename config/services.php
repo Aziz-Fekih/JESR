@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
+
 return [
 
     /*
@@ -34,9 +36,13 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
     'passport' => [
-        'login_endpoint' => env('PASSPORT_LOGIN_ENDPOINT'), 
+        'login_endpoint' => env('PASSPORT_LOGIN_ENDPOINT'),
         'client_id' => env('PASSPORT_CLIENT_ID'),
-        'client_secret' => env('PASSPORT_CLIENT_SECRET'),
+        'client_secret' => function(){
+            return DB::table('oauth_clients')
+                ->where('id', config('services.passport.client_id'))
+                ->first()->secret;
+        }
     ],
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
