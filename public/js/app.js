@@ -4944,6 +4944,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -24748,7 +24769,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.listDemande[data-v-b33c76ac]{\r\n    list-style-type: none;\n}\n.big[data-v-b33c76ac]{\r\n    font-size: 20px;\r\n    color: #344675 !important;\n}\n@media screen and (min-width: 768px){\n.content[data-v-b33c76ac]{\r\n    padding : 120px;\n}\n}\n.title[data-v-b33c76ac]{\r\ncolor: #ff8d72!important;\n}\n.head[data-v-b33c76ac]{\r\nmargin-top: 220px;\r\nmargin-bottom: 150px;\n}\n.card[data-v-b33c76ac]{\r\n    background-color: #f5f6fa;\n}\n.description[data-v-b33c76ac]{\r\n    color: black !important;\n}\n.tim-icons .icon-single-02[data-v-b33c76ac] {\r\n    color:black !important;\n}\n.input-group-append[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n#particles-js[data-v-b33c76ac] { position: absolute; background-size: contain; top: 0; bottom: 0; left: 0; right: 0; overflow-y: hidden; z-index: -0;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.listDemande[data-v-b33c76ac]{\n    list-style-type: none;\n}\n.big[data-v-b33c76ac]{\n    font-size: 20px;\n    color: #344675 !important;\n}\n@media screen and (min-width: 768px){\n.content[data-v-b33c76ac]{\n    padding : 120px;\n}\n}\n.title[data-v-b33c76ac]{\ncolor: #ff8d72!important;\n}\n.head[data-v-b33c76ac]{\nmargin-top: 220px;\nmargin-bottom: 150px;\n}\n.card[data-v-b33c76ac]{\n    background-color: #f5f6fa;\n}\n.description[data-v-b33c76ac]{\n    color: black !important;\n}\n.tim-icons .icon-single-02[data-v-b33c76ac] {\n    color:black !important;\n}\n.input-group-append[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n#particles-js[data-v-b33c76ac] { position: absolute; background-size: contain; top: 0; bottom: 0; left: 0; right: 0; overflow-y: hidden; z-index: -0;\n}\n\n", ""]);
 
 // exports
 
@@ -58633,31 +58654,64 @@ var render = function() {
         [
           _c("template", { slot: "header" }, [
             _vm._v(
-              "\n\t\t\tCe projet est réalisé en colloboration avec les Junior Entreprises suivantes :\n\t\t"
+              "\n            Ce projet est réalisé en colloboration avec les Junior Entreprises suivantes :\n        "
             )
           ]),
           _vm._v(" "),
           [
             _c("div", { staticClass: "row align-items-center" }, [
               _c("div", { staticClass: "col-md-4" }, [
-                _c("img", {
-                  staticStyle: { width: "140px" },
-                  attrs: { src: "/images/optima.png" }
-                })
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://www.facebook.com/optimajuniorentreprise/",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticStyle: { width: "140px" },
+                      attrs: { src: "/images/optima.png" }
+                    })
+                  ]
+                )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-4" }, [
-                _c("img", {
-                  staticStyle: { width: "120px" },
-                  attrs: { src: "/images/insat.png" }
-                })
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://www.facebook.com/junior.entreprise.insat/",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticStyle: { width: "120px" },
+                      attrs: { src: "/images/insat.png" }
+                    })
+                  ]
+                )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-4" }, [
-                _c("img", {
-                  staticStyle: { width: "90px" },
-                  attrs: { src: "/images/ensi.png" }
-                })
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://www.facebook.com/ENSI.Junior.Entreprise/",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticStyle: { width: "90px" },
+                      attrs: { src: "/images/ensi.png" }
+                    })
+                  ]
+                )
               ])
             ]),
             _vm._v(" "),
@@ -58669,18 +58723,41 @@ var render = function() {
                   staticStyle: { "padding-top": "10px" }
                 },
                 [
-                  _c("img", {
-                    staticStyle: { width: "100px" },
-                    attrs: { src: "/images/sma.png" }
-                  })
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href:
+                          "https://www.facebook.com/SMA.Juniorentreprise/?ref=br_rs",
+                        target: "_blank"
+                      }
+                    },
+                    [
+                      _c("img", {
+                        staticStyle: { width: "100px" },
+                        attrs: { src: "/images/sma.png" }
+                      })
+                    ]
+                  )
                 ]
               ),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6" }, [
-                _c("img", {
-                  staticStyle: { width: "120px" },
-                  attrs: { src: "/images/orenda.png" }
-                })
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://www.facebook.com/OrendaJE/",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticStyle: { width: "120px" },
+                      attrs: { src: "/images/orenda.png" }
+                    })
+                  ]
+                )
               ])
             ])
           ],
@@ -58699,7 +58776,7 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("Fermer")]
+                [_vm._v("Fermer\n            ")]
               )
             ],
             1
@@ -58714,6 +58791,7 @@ var render = function() {
             "a",
             {
               staticClass: "nav-link",
+              staticStyle: { color: "#ba54f5" },
               attrs: { href: "#" },
               on: {
                 click: function($event) {
@@ -58724,7 +58802,7 @@ var render = function() {
             },
             [
               _vm._v(
-                "\n            Les juniors Entreprises participantes\n          "
+                "\n                Les juniors Entreprises participantes\n            "
               )
             ]
           )
@@ -58740,18 +58818,18 @@ var render = function() {
           },
           [
             _vm._v(
-              "\n        ©\n        " +
+              "\n            ©\n            " +
                 _vm._s(new Date().getFullYear()) +
                 " made with "
             ),
             _c("i", { staticClass: "tim-icons icon-heart-2" }),
-            _vm._v(" by\n        "),
+            _vm._v(" by\n            "),
             _c(
               "a",
               { attrs: { href: "javascript:void(0)", target: "_blank" } },
               [_vm._v("Junior Entreprises Of Tunisia")]
             ),
-            _vm._v(".\n      ")
+            _vm._v(".\n        ")
           ]
         )
       ])
@@ -60653,12 +60731,12 @@ var render = function() {
               !_vm.ar
                 ? _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\r\n                    Est une plateforme pour la coordination des collectes de don, elle permet d’associer chaque association voulant participer dans la lutte contre le virus, à un intervenant de l’état le plus proche, que ce soit les UTSS (union tunisienne de la solidarité sociale) ou bien le CRCC .\r\n                    Elle permet entre autre de diriger les particuliers aux associations qui lui sont le plus proche."
+                      "\n                    Est une plateforme pour la coordination des collectes de don, elle permet d’associer chaque association voulant participer dans la lutte contre le virus, à un intervenant de l’état le plus proche, que ce soit les UTSS (union tunisienne de la solidarité sociale) ou bien le CRCC .\n                    Elle permet entre autre de diriger les particuliers aux associations qui lui sont le plus proche."
                     )
                   ])
                 : _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\r\n                    هو تطبيق لتنسيق جمع التبرعات ، تسمح بربط كل جمعية ترغب في المشاركة في مكافحة الفيروس ، بأصحاب المصلحة من أقرب دولة ؛ سواء كان الاتحاد التونسي للتضامن الاجتماعي أو اللجنة الجهوية لمجابهة الكوارث.\r\n. يسمح التطبيق كذلك بتوجيه الأفراد إلى الجمعيات الأقرب إليهم\r\n                "
+                      "\n                    هو تطبيق لتنسيق جمع التبرعات ، تسمح بربط كل جمعية ترغب في المشاركة في مكافحة الفيروس ، بأصحاب المصلحة من أقرب دولة ؛ سواء كان الاتحاد التونسي للتضامن الاجتماعي أو اللجنة الجهوية لمجابهة الكوارث.\n. يسمح التطبيق كذلك بتوجيه الأفراد إلى الجمعيات الأقرب إليهم\n                "
                     )
                   ]),
               _vm._v(" "),
@@ -60778,7 +60856,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", { staticClass: "card-text" }, [
                     _vm._v(
-                      "اتصل الرقم الذي يعرضه التطبيق للسماح لنا بالاستفادة من تبرعك\r\n"
+                      "اتصل الرقم الذي يعرضه التطبيق للسماح لنا بالاستفادة من تبرعك\n"
                     )
                   ])
                 ])
@@ -60864,12 +60942,12 @@ var render = function() {
               !_vm.ar
                 ? _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\r\n  Nous avons besoin de vous , et sommes certains que vous seriez toujours là pour votre patrie ,  si vous pourriez nous aider prière  de consulter cette liste pour mieux orienter votre don.\r\n                "
+                      "\n  Nous avons besoin de vous , et sommes certains que vous seriez toujours là pour votre patrie ,  si vous pourriez nous aider prière  de consulter cette liste pour mieux orienter votre don.\n                "
                     )
                   ])
                 : _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\r\n                 بلادك في حاجة ليك و نحنا متأكدين الي بش تاقف معاها ، كان تحب تعاون هاو اكثر حاجات مستحقينهم ا دخل و عمر الإستمارة و كون متاكد الي حاجتك بش تمشي في بلاصتها\r\n                "
+                      "\n                 بلادك في حاجة ليك و نحنا متأكدين الي بش تاقف معاها ، كان تحب تعاون هاو اكثر حاجات مستحقينهم ا دخل و عمر الإستمارة و كون متاكد الي حاجتك بش تمشي في بلاصتها\n                "
                     )
                   ]),
               _vm._v(" "),
@@ -60913,12 +60991,12 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tMerci pour votre Don\r\n\t\t")
+            _vm._v("\n\t\t\tMerci pour votre Don\n\t\t")
           ]),
           _vm._v(" "),
           [
             _c("p", [
-              _vm._v("On vous remerci pour votre généreux Don! L'acteur "),
+              _vm._v("On vous remercie pour votre généreux Don! L'acteur "),
               _c("strong", [
                 _vm._v(
                   " " +
@@ -60927,11 +61005,11 @@ var render = function() {
                     _vm._s(_vm.acteur.lastname)
                 )
               ]),
-              _vm._v(" \r\n            affilié à la Gouvernorat "),
+              _vm._v("\n            affilié à la Gouvernorat "),
               _c("strong", [
                 _vm._v(" " + _vm._s(_vm.acteur.adresse.gouvernorat))
               ]),
-              _vm._v(" va prendre en charge votre Don \r\n            ")
+              _vm._v(" va prendre en charge votre Don\n            ")
             ])
           ],
           _vm._v(" "),
@@ -63598,32 +63676,6 @@ var render = function() {
                             "\n\n            "
                         )
                       ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "base-checkbox",
-                      {
-                        staticClass: "mb-3",
-                        attrs: { dir: _vm.ar ? "rtl" : "" },
-                        model: {
-                          value: _vm.model.accord_utss,
-                          callback: function($$v) {
-                            _vm.$set(_vm.model, "accord_utss", $$v)
-                          },
-                          expression: "model.accord_utss"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                " +
-                            _vm._s(
-                              !_vm.ar
-                                ? "Est-ce que vous acceptez que votre don soit pris en charge par l'UTSS (Union Tunisienne de Solidarité Sociale)?  "
-                                : "هل تقبل أن تبرعك تتكفل به UTSS (الاتحاد التونسي للتضامن الاجتماعي)؟"
-                            ) +
-                            "\n\n            "
-                        )
-                      ]
                     )
                   ],
                   1
@@ -63667,7 +63719,7 @@ var render = function() {
           [
             !_vm.ar
               ? _c("p", { staticClass: "text-left" }, [
-                  _vm._v("On vous remerci pour votre généreux Don!"),
+                  _vm._v("On vous remercie pour votre généreux Don!"),
                   _c("strong", [
                     _vm._v(
                       " " +

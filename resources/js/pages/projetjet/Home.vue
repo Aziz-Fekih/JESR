@@ -17,7 +17,7 @@
                     هو تطبيق لتنسيق جمع التبرعات ، تسمح بربط كل جمعية ترغب في المشاركة في مكافحة الفيروس ، بأصحاب المصلحة من أقرب دولة ؛ سواء كان الاتحاد التونسي للتضامن الاجتماعي أو اللجنة الجهوية لمجابهة الكوارث.
 . يسمح التطبيق كذلك بتوجيه الأفراد إلى الجمعيات الأقرب إليهم
                 </p>
-               
+
                 <router-link :to="'/don?ar='+ar">
                    <base-button type="warning" fill >{{!ar ?'Faire un don' : 'التبرع'}}</base-button>
                  </router-link>
@@ -85,7 +85,7 @@
                 <p class="description" v-else>
                  بلادك في حاجة ليك و نحنا متأكدين الي بش تاقف معاها ، كان تحب تعاون هاو اكثر حاجات مستحقينهم ا دخل و عمر الإستمارة و كون متاكد الي حاجتك بش تمشي في بلاصتها
                 </p>
-                
+
                 <router-link :to="'/consulter/demandes?ar='+ar">
                    <base-button type="secondary" fill >{{!ar ?'Voir la liste des demandes' : 'قائمة الطلبات'}}</base-button>
                  </router-link>
@@ -102,10 +102,10 @@
 			Merci pour votre Don
 		</template>
         <template>
-            <p>On vous remerci pour votre généreux Don! L'acteur <strong> {{acteur.name}} {{acteur.lastname}}</strong> 
-            affilié à la Gouvernorat <strong> {{acteur.adresse.gouvernorat}}</strong> va prendre en charge votre Don 
+            <p>On vous remercie pour votre généreux Don! L'acteur <strong> {{acteur.name}} {{acteur.lastname}}</strong>
+            affilié à la Gouvernorat <strong> {{acteur.adresse.gouvernorat}}</strong> va prendre en charge votre Don
             </p>
-			 
+
         </template>
 		<template slot="footer">
 			<base-button type="secondary" @click="modals.userModal = false;"
@@ -115,7 +115,7 @@
 		</template>
 	</modal>
  </div>
- 
+
 </template>
 <script>
 import {
@@ -173,7 +173,7 @@ export default{
                         "Tunis",
                         "Zaghouan"],
       type_dons: [     'Argent',
-                        'Nourriture', 
+                        'Nourriture',
                         'Ressources Humaines',
                         'Ressources Materiels',
                         'Autres'],
@@ -181,7 +181,7 @@ export default{
       rtl: false,
       model: {
         nom: 'Creative Code Inc.',
-        
+
         type_action: 'Particulier',
         adresse: '',
         gouvernorat: 'Ariana',
@@ -204,7 +204,7 @@ export default{
             //    this.acteur = response;
                this.modals.userModal = true;
            })
-             
+
          }
      },
   computed:{
@@ -221,7 +221,7 @@ export default{
       this.i18n.locale = 'ar';
       this.$rtl.enableRTL();
     }
-    
+
   },
 }
 </script>

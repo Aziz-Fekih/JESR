@@ -88,10 +88,10 @@
 
             </base-checkbox>
 
-            <base-checkbox class="mb-3" v-model="model.accord_utss" :dir="ar ? 'rtl' : ''">
-                {{!ar ? "Est-ce que vous acceptez que votre don soit pris en charge par l'UTSS (Union Tunisienne de Solidarité Sociale)?  " : 'هل تقبل أن تبرعك تتكفل به UTSS (الاتحاد التونسي للتضامن الاجتماعي)؟'}}
+<!--            <base-checkbox class="mb-3" v-model="model.accord_utss" :dir="ar ? 'rtl' : ''">-->
+<!--                {{!ar ? "Est-ce que vous acceptez que votre don soit pris en charge par l'UTSS (Union Tunisienne de Solidarité Sociale)?  " : 'هل تقبل أن تبرعك تتكفل به UTSS (الاتحاد التونسي للتضامن الاجتماعي)؟'}}-->
 
-            </base-checkbox>
+<!--            </base-checkbox>-->
 
       </div>
     </div>
@@ -105,7 +105,7 @@
 			{{!ar ? 'Merci pour votre Don' : 'شكرا'}}
 		</template>
         <template>
-            <p class="text-left" v-if="!ar">On vous remerci pour votre généreux Don!<strong> {{acteur.name}} {{acteur.lastname}}</strong> ayant le numéro de téléphone:
+            <p class="text-left" v-if="!ar">On vous remercie pour votre généreux Don!<strong> {{acteur.name}} {{acteur.lastname}}</strong> ayant le numéro de téléphone:
                <strong> {{acteur.telephone}}</strong> va prendre en charge votre Don!
             </p>
             <p class="text-right" v-else > سيتكفل بتبرعك <strong> {{acteur.telephone}} </strong>  رقم الهاتف <strong> {{acteur.lastname}} {{acteur.name}}</strong>  شكرا لك على تبرعك السخي
