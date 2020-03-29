@@ -34,7 +34,7 @@ Route::middleware('auth:api')->group(function () {
 
 
 
-    Route::post('/don', 'DonController@createDon');
+
     Route::put('/don/{don}', 'DonController@updateDon');
     Route::delete('/don/{don}', 'DonController@deleteDon');
 
@@ -51,6 +51,7 @@ Route::post('/login', 'AuthController@login');
 
 
 //Crud Dons
+Route::post('/don', 'DonController@createDon');
 Route::get('/don/{don}', 'DonController@getDon');
 Route::get('/don', 'DonController@getDons');
 
