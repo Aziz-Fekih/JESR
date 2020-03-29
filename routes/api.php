@@ -27,11 +27,11 @@ Route::middleware('auth:api')->group(function () {
     Route::put('/association/{association}', 'AssociationController@updateAssociation');
     Route::delete('/association/{association}', 'AssociationController@deleteAssociation');
 
-
+    Route::put('/updatePassword/{user}', 'UserController@updatePassword');
     Route::post('/register', 'AuthController@register');
     Route::put('/users/{user}', 'UserController@updateUser');
     Route::delete('/users/{user}', 'UserController@deleteUser');
-
+    
 
 
 

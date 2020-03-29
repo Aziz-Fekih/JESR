@@ -1,20 +1,20 @@
 import DashboardLayout from "./pages/Layout/DashboardLayout.vue";
-
 import Dashboard from "./pages/Dashboard.vue";
-import Icons from "./pages/Icons.vue";
-import Maps from "./pages/Maps.vue";
-import Notifications from "./pages/Notifications.vue";
-import UserProfile from "./pages/UserProfile.vue";
-import TableList from "./pages/TableList.vue";
-import Typography from "./pages/Typography.vue";
-import UpgradeToPRO from "./pages/UpgradeToPRO.vue";
-import Test from "./pages/Test.vue";
+// import Icons from "./pages/Icons.vue";
+// import Maps from "./pages/Maps.vue";
+// import Notifications from "./pages/Notifications.vue";
+// import UserProfile from "./pages/UserProfile.vue";
+// import TableList from "./pages/TableList.vue";
+// import Typography from "./pages/Typography.vue";
+// import UpgradeToPRO from "./pages/UpgradeToPRO.vue";
+// import Test from "./pages/Test.vue";
+// import Bots from "./pages/Bots.vue";
+// import FAQ from "./pages/QuestionsReponse.vue";
+// import Deploy from "./pages/Deploy.vue";
+// import Register from "./pages/Register.vue";
+
 import Login from "./pages/Login.vue";
-import Register from "./pages/Register.vue";
 import Logout from "./pages/Logout.vue";
-import Bots from "./pages/Bots.vue";
-import FAQ from "./pages/QuestionsReponse.vue";
-import Deploy from "./pages/Deploy.vue";
 import newDon from "./pages/projetjet/newDon.vue";
 import consulterDon from "./pages/projetjet/consulterDon.vue";
 import Home from "./pages/projetjet/Home.vue";
@@ -25,6 +25,7 @@ import frontActeur from "./pages/projetjet/front/Acteur.vue";
 import Teleoperateur from "./pages/projetjet/front/Teleoperateur.vue";
 import Article from "./pages/projetjet/Article.vue";
 import frontArticle from "./pages/projetjet/front/Article.vue";
+import Profil from "./pages/projetjet/Profile.vue";
 const routes = [{
   path: "/",
   component: DashboardLayout,
@@ -42,14 +43,6 @@ const routes = [{
       path: '/login',
       name: 'Login',
       component: Login,
-      meta:{
-        requiresVisitor: true
-      }
-    },
-    {
-      path: '/register',
-      name: 'Register',
-      component: Register,
       meta:{
         requiresVisitor: true
       }
@@ -109,7 +102,7 @@ const routes = [{
     },
     {
       path: "/consulter/associations",
-      name: "Consulter les associations",
+      name: "Consulter les associations", 
       component: frontAssociation,
       meta:{
         requiresAuth: false
@@ -141,15 +134,12 @@ const routes = [{
     }, 
     
     {
-      path: "icons",
-      name: "Icons",
-      component: Icons
-    },
-   
-    {
-      path: "user",
-      name: "User Profile",
-      component: UserProfile
+      path: "profil",
+      name: "Mon profil",
+      component: Profil,
+      meta:{
+        requiresAuth: true
+      }
     },
 
   ]

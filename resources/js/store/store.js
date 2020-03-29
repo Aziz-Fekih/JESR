@@ -589,7 +589,7 @@ export default {
             })
         },
         getTeleoperateurs(context){
-            if(!context.state.refresh || localStorage.getItem("users") === null)
+            if(!context.state.refresh || localStorage.getItem("teles") === null)
             return new Promise((resolve, reject) => {
                 Axios.defaults.headers.common['Authorization'] = 'Bearer '+ context.state.token;
                 Axios.get(context.state.apiurl+"/api/users?role='0'")
@@ -691,6 +691,19 @@ export default {
                 })
             })
         },
-
+        updatePassword(context, data){
+            return new Promise((resolve, reject) => {
+                Axios.defaults.headers.common['Authorization'] = 'Bearer '+ context.state.token;
+                Axios.put(context.state.apiurl+'/api/updatePassword/'+data.userId, {
+                    password: data.password
+                })
+                .then(response => {
+                    resolve(response.data);
+                })
+                .catch(error => {
+                    reject(error);
+                })
+            })
+        },         
     }
 };

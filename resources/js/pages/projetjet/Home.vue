@@ -11,7 +11,7 @@
                 <h1 class="title" v-if="!ar">Jesr</h1>
                 <h1 class="title" v-if="ar">جسر</h1>
                 <p class="description" v-if="!ar">
-                    Est une plateforme pour la coordination des collectes de don, elle permet d’associer chaque association voulant participer dans la lutte contre le virus, à un intervenant de l’état le plus proche, que ce soit les UTSS (union tunisienne de la solidarité sociale) ou bien le CRRC .
+                    Est une plateforme pour la coordination des collectes de don, elle permet d’associer chaque association voulant participer dans la lutte contre le virus, à un intervenant de l’état le plus proche, que ce soit les UTSS (union tunisienne de la solidarité sociale) ou bien le CRCC .
                     Elle permet entre autre de diriger les particuliers aux associations qui lui sont le plus proche.</p>
                 <p class="description" v-else>
                     هو تطبيق لتنسيق جمع التبرعات ، تسمح بربط كل جمعية ترغب في المشاركة في مكافحة الفيروس ، بأصحاب المصلحة من أقرب دولة ؛ سواء كان الاتحاد التونسي للتضامن الاجتماعي أو اللجنة الجهوية لمجابهة الكوارث.

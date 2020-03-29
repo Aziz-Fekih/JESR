@@ -121,7 +121,7 @@
 			<base-button type="secondary" @click="modals.newAssociation = false;"
 				>Annuler</base-button
 			>
-			<base-button type="primary" @click="actionAssociation"
+			<base-button type="primary" @click="actionAssociation()"
 				>{{this.action == 'create'? 'Ajouter' : 'Update'}}</base-button
 			>
      

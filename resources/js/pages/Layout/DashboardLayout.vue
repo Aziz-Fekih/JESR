@@ -2,7 +2,12 @@
   <div class="wrapper">
     <!-- <div class="wrapper" :class="{'nav-open': $sidebar.showSidebar}"> -->
 
-    <side-bar :background-color="backgroundColor" v-show="loggedIn && $route.name!='Home' && $route.name!='Enregister un don'">
+    <side-bar :background-color="backgroundColor" v-show="loggedIn && $route.name!='Home' 
+    && $route.name!='Enregister un don'
+    && $route.name!='Consulter les associations'
+    && $route.name!='Consulter les Téléopérateurs' 
+    && $route.name!='Consulter les demandes'"
+    >    
       <!-- <mobile-menu slot="content"></mobile-menu> -->
    
       <sidebar-link to="/consulter/don" >

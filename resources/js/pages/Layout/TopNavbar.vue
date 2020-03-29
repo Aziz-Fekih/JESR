@@ -77,7 +77,7 @@
                 
                 <ul class="dropdown-menu dropdown-navbar">
                   <li class="nav-link"><router-link to="/consulter/don"><a href="javascript:void(0)" class="nav-item dropdown-item">Dashboard</a></router-link></li>
-                  <li class="nav-link"><router-link to="/settings"><a href="javascript:void(0)" class="nav-item dropdown-item">Settings</a></router-link></li>
+                  <li class="nav-link"><router-link to="/profil"><a href="javascript:void(0)" class="nav-item dropdown-item">Changer mot de passe</a></router-link></li>
                   <li class="dropdown-divider"></li>
                   <li class="nav-link"><router-link to="/logout"><a href="javascript:void(0)" class="nav-item dropdown-item">Log out</a></router-link></li>
                 </ul>
