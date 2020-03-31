@@ -29,7 +29,7 @@
                     <thead class="text-primary">
                     <tr>
                         <slot nom="columns">
-                            <th>{{!ar ? 'Nom' : 'الاسم'}}</th>
+                            <th>{{!ar ? 'Listes des demandes' : 'قائمة&nbsp;الطلبات'}}</th>
                             <th>{{!ar ? 'Description' : 'تفاصيل'}}</th>
                             <th>{{!ar ? 'Gouvernorat' : 'الولاية'}}</th>
                             <th>{{!ar ? 'Téléphone' : 'الهاتف'}}</th>
