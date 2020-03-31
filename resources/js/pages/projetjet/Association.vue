@@ -4,7 +4,7 @@
     <template slot="header">
       <h5 class="title">Consulter les associations</h5>
       <div class="row filtre">
-        <div class="col-md-2">
+        <div class="col-sm-4">
           <base-input  label="Filtrer par gouvernorat">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
@@ -15,10 +15,10 @@
             </select>
           </base-input>
         </div>
-         <div class="col-md-2">
+         <div class="col-sm-2">
               <base-button style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">Voir tous</base-button>
         </div>
-         <div class="col-md-8">
+         <div class="col-sm-6">
               <base-button  v-if="parseInt(user.role) == 3" class="addBtnClass" style="   margin-top: 23px;" type="success" fill v-on:click="actionNewAssociation()">Ajouter une nouvelle association</base-button>
         </div>
       </div>

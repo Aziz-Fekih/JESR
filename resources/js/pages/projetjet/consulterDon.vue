@@ -2,9 +2,9 @@
 <div class="content">
   <card>
     <template slot="header">
-      <h5 class="title">Consulter les dons</h5>
+     <h5 class="title">{{parseInt(this.user.role) == 1 ? 'Dons affectés à '+this.user.name+' '+this.user.lastname : 'Consulter les dons'}}</h5>
       <div class="row filtre">
-        <div class="col-md-2">
+        <div class="col-sm-4">
           <base-input  label="Filtrer par gouvernorat">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
@@ -15,7 +15,7 @@
             </select>
           </base-input>
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-3">
           <base-input  label="Filtrer par etat">
             <select class="form-control " @change="onEtatFiltre($event)"
             >
@@ -25,8 +25,8 @@
             </select>
           </base-input>
         </div>
-         <div class="col-md-2">
-              <base-button class="addBtnClass" style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">Voir tous</base-button>
+         <div class="col-sm-2">
+              <base-button style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">Voir tous</base-button>
         </div>
       </div>
     </template>
@@ -62,7 +62,8 @@
                 <!-- <td>{{don.adresse.adresse}}</td> -->
                 <td>{{don.gouvernorat}}</td>
                 <!-- <td>{{don.created_at}}</td> -->
-                <td><base-button simple type="primary" v-on:click="selectActeur(don.user)">Affecté à</base-button></td>
+                <td v-if="don.user"><base-button simple type="primary" v-on:click="selectActeur(don.user)">Affecté à</base-button></td>
+                <td v-else>Non affecté</td>
                 <td><base-button simple type="primary" v-on:click="selectDon(don)">Plus d'informations</base-button></td>
                 <td style="min-width: 180px;">      
                    <base-input>

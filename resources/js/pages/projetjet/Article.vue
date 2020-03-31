@@ -4,7 +4,7 @@
     <template slot="header">
       <h5 class="title">Consulter les demandes</h5>
       <div class="row filtre">
-        <div class="col-md-2">
+        <div class="col-xl-4">
           <base-input  label="Filtrer par gouvernorat">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
@@ -15,14 +15,14 @@
             </select>
           </base-input>
         </div>
-         <div class="col-md-2">
+         <div class="col-xl-3">
               <base-button style="    margin-top: 23px;" type="secondary" fill v-on:click="onFiltreSelf()">Mes demandes</base-button>
         </div>
-         <div class="col-md-2">
+         <div class="col-xl-2">
               <base-button style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">Voir tous</base-button>
         </div>
-         <div class="col-md-6">
-              <base-button  v-if="parseInt(user.role) == 1 || parseInt(user.role) == 2" class="addBtnClass" style="   margin-top: 23px;" type="success" fill v-on:click="actionNewArticle()">Ajouter un nouveau article</base-button>
+         <div class="col-xl-3">
+              <base-button  v-if="parseInt(user.role) == 1 || parseInt(user.role) == 2"  style="   margin-top: 23px;" type="success" fill v-on:click="actionNewArticle()">Ajouter un nouveau article</base-button>
         </div>
       </div>
     </template>

@@ -24,7 +24,7 @@ class UserController extends Controller
     }
     public function getActeurs(Request $request){
             $users = null;
-            $users = User::where('role', 1)->orWhere('role', 2)->get()->load('adresse');
+            $users = User::where('role', 1)->get()->load('adresse');
 
         return response()->json($users, 200);
     }

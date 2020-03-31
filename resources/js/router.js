@@ -1,5 +1,5 @@
 import DashboardLayout from "./pages/Layout/DashboardLayout.vue";
-import Dashboard from "./pages/Dashboard.vue";
+// import Dashboard from "./pages/Dashboard.vue";
 // import Icons from "./pages/Icons.vue";
 // import Maps from "./pages/Maps.vue";
 // import Notifications from "./pages/Notifications.vue";
@@ -32,14 +32,14 @@ const routes = [{
     component: DashboardLayout,
     redirect: "Home",
     children: [
-        {
-            path: "dashboard",
-            name: "Dashboard",
-            component: Dashboard,
-            meta: {
-                requiresAuth: true
-            }
-        },
+        // {
+        //     path: "dashboard",
+        //     name: "Dashboard",
+        //     component: Dashboard,
+        //     meta: {
+        //         requiresAuth: true
+        //     }
+        // },
         {
             path: '/login',
             name: 'Login',

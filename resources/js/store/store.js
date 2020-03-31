@@ -555,6 +555,20 @@ export default {
                 })
             })
         },
+        setActeur(context, data){
+            return new Promise((resolve, reject) => {
+                Axios.defaults.headers.common['Authorization'] = 'Bearer '+ context.state.token;
+                Axios.put(context.state.apiurl+'/api/affecterActeur/'+data.donId,{
+                    acteurId: data.acteurId
+                })
+                .then(response => {
+                    resolve(response.data);
+                })
+                .catch(error => {
+                    reject(error);
+                })
+            })
+        },
         getUsers(context){
             if(!context.state.refresh || localStorage.getItem("users") === null)
             return new Promise((resolve, reject) => {

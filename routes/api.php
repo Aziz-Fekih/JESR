@@ -55,9 +55,9 @@ Route::post('/don', 'DonController@createDon');
 Route::get('/don/{don}', 'DonController@getDon');
 Route::get('/don', 'DonController@getDons');
 
-Route::post('/affecterActeur/{don}', 'DonController@setActeur');
+Route::put('/affecterActeur/{don}', 'DonController@setActeur');
 Route::get('/getLastWeekDons', 'DonController@getLastWeekDons');
-// Route::get('/deleteAll', 'DonController@deleteAll');
+
 
 
 

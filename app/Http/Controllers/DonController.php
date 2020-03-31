@@ -67,7 +67,7 @@ class DonController extends Controller
             $don->description = $request->description;
             $don->type_action = $request->type_action; // Si partenaire ou Association
             $don->motorise = $request->motorise; // Boolean True / False
-            $don->accord_utss = $request->accord_utss; //  Boolean True / False
+            $don->accord_utss = true; //  Boolean True / False
             $don->adresse_id = $adresse->id;
             $don->gouvernorat = $request->gouvernorat;
             $don->telephone = $request->telephone;
@@ -76,27 +76,25 @@ class DonController extends Controller
             $don->etat = "Non traite";
             //Fetch de l'acteur acteur adequat
             $roleActeur = 1;
-            if ($request->type_don != "Nourriture")
-            {
-                $roleActeur = 2;
-            }
-            $acteur = User::where('role', $roleActeur)->where('gouvernorat', $request->gouvernorat)->first();
-            $acteurRetour = null;
-            if($acteur && $request->accord_utss){
-                $don->user_id = $acteur->id;
-                $acteurRetour = $acteur->load('adresse');
-            }else{
-                $don->user_id = 1;
-            }
-
-            
+            // if ($request->type_don != "Nourriture")
+            // {
+            //     $roleActeur = 2;
+            // }
+            $acteurs = User::where('role', $roleActeur)->where('gouvernorat', $request->gouvernorat)->get()->load('adresse');
+            // $acteurRetour = null;
+            // if($acteur && $request->accord_utss){
+            //     $don->user_id = $acteur->id;
+            //     $acteurRetour = $acteur->load('adresse');
+            // }else{
+            //     $don->user_id = 1;
+            // }
 
             $don->save();
-            if($request->accord_utss == true)
+            // if($request->accord_utss == true)
                 return response()
-                ->json($acteurRetour, 200);
-            return response()
-            ->json('Don enregistre', 200);
+                ->json(["acteurs" => $acteurs, "don" => $don->id], 200);
+            // return response()
+            // ->json('Don enregistre', 200);
         }
         catch(Exception $e)
         {
@@ -158,4 +156,3 @@ class DonController extends Controller
 //     accord_utss (Boolean)
 //     municipalite (id de la municipalite)
 // }
-

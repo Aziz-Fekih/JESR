@@ -36,8 +36,11 @@ class Gouvernorat extends Conversation
         });
     }
     public function askFirstname()
-    {   
-        $this->ask(" 😀تنجّم تعطيني لسمك و لقبّك ؟", function(Answer $answer) {
+    {   $message = " 😀تنجّم تعطيني لسمك و لقبّك ؟";
+        if($this->bot->userStorage()->get('type_action') == 'Association') {
+            $message = " 😀تنجم تعطيني اسم الجمعية ؟ ";
+        }
+        $this->ask($message, function(Answer $answer) {
             // Save result
             $nom = $answer->getText();
             $this->bot->userStorage()->save([
@@ -201,12 +204,12 @@ class Gouvernorat extends Conversation
     }
     public function valider(){
         $body = new \stdClass();
-        $application_url = ''; // Lien de l'application Jesr une fois hébergée
-        if($this->bot->userStorage()->get('accord_utss') == "1"){
-            $body->accord_utss = true;
-        }else{
-            $body->accord_utss = false;
-        }
+        $application_url = 'https://jesr.tn'; // Lien de l'application Jesr une fois hébergée
+        // if($this->bot->userStorage()->get('accord_utss') == "1"){
+        //     $body->accord_utss = true;
+        // }else{
+        //     $body->accord_utss = false;
+        // }
         $body->nom = $this->bot->userStorage()->get('nom');
         $body->type_action = $this->bot->userStorage()->get('type_action');
         $body->telephone = $this->bot->userStorage()->get('telephone');
@@ -220,15 +223,21 @@ class Gouvernorat extends Conversation
         ->withData($body)
         ->asJson()
         ->post();   
-        if($body->accord_utss && $response){
+        if($response){
+            $lastname = "";
+            if($response->lastname){
+                $lastname = $response->lastname;
+            }
             $this->say("شكرا على ثيقتك فينا و على مساهمتك بش نمنعوا بلادنا
             تونس مسؤوليتنا الكل و مع بعضنا والله ما نغلبوه");
             $this->say("هذي المنظمة الي بش تتكفل بالبرع متاعك");
-            $this->say($response->telephone.' :الهاتف '.$response->lastname.' '.$response->name);
+            $this->say($response->telephone.' :الهاتف '.$lastname.' '.$response->name);
         }else{
-            $this->say('Union Nationale de la Femme Tunisienne: +216 71 378 447 الاتحاد الوطني للمرأة التونسية');
-            $this->say('Croissant Rouge: +216 71 378 447 الهلال الاحمر التونسي');
-            $this->say('Le Scoutisme: +216 71 378 447 الكشافة التونسية');
+            $this->say("شكرا على ثيقتك فينا و على مساهمتك بش نمنعوا بلادنا
+            تونس مسؤوليتنا الكل و مع بعضنا والله ما نغلبوه");
+            // $this->say('Union Nationale de la Femme Tunisienne: +216 71 378 447 الاتحاد الوطني للمرأة التونسية');
+            // $this->say('Croissant Rouge: +216 71 378 447 الهلال الاحمر التونسي');
+            // $this->say('Le Scoutisme: +216 71 378 447 الكشافة التونسية');
         }
         $question = Question::create("")
         ->fallback('Unable to ask question')

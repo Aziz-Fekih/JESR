@@ -4,7 +4,7 @@
     <template slot="header">
       <h5 class="title">Consulter les acteurs</h5>
       <div class="row filtre">
-        <div class="col-md-2">
+        <div class="col-xl-4">
           <base-input  label="Filtrer par gouvernorat">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
@@ -15,7 +15,7 @@
             </select>
           </base-input>
         </div>
-        <div class="col-md-2">
+        <div class="col-xl-3">
           <base-input  label="Filtrer par role">
             <select class="form-control " @change="onEtatChange($event)"
             >
@@ -26,11 +26,11 @@
             </select>
           </base-input>
         </div>
-         <div class="col-md-2">
-              <base-button class="addBtnClass" style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">Voir tous</base-button>
+         <div class="col-xl-2">
+              <base-button  style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">Voir tous</base-button>
         </div>
-         <div class="col-md-6">
-              <base-button v-show="parseInt(user.role) == 3" style="float: right;    margin-top: 23px;" type="success" fill v-on:click="actionNewUser()">Ajouter un nouvel Acteur</base-button>
+         <div class="col-xl-3">
+              <base-button v-show="parseInt(user.role) == 3" class="addBtnClass" style=" margin-top: 23px;" type="success" fill v-on:click="actionNewUser()">Ajouter un nouvel Acteur</base-button>
         </div>
       </div>
     </template>

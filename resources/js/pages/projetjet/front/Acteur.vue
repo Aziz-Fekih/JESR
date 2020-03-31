@@ -4,7 +4,7 @@
     <template slot="header">
       <h5 class="title">{{!ar ?'Acteurs&nbsp;etat' : 'قائمة&nbsp;الجهات&nbsp;الحكومية'}}</h5>
       <div class="row filtre">
-        <div class="col-md-2">
+        <div class="col-sm-4">
           <base-input  :label="!ar ? 'Filtrer par gouvernorat' : ' تصفية حسب الولاية'">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
@@ -15,19 +15,8 @@
             </select>
           </base-input>
         </div>
-        <div class="col-md-2">
-          <base-input  :label="!ar ? 'Filtrer par rôle' : 'التصفية بحسب المهنة'">
-            <select class="form-control " @change="onEtatChange($event)"
-            >
-
-                <option value="1">UTSS</option>
-                <option value="2">CRCC</option>
-
-            </select>
-          </base-input>
-        </div>
-         <div class="col-md-2">
-              <base-button class="addBtnClass" style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">{{!ar ? 'Afficher tous' : 'إظهار الكل'}}</base-button>
+         <div class="col-sm-8">
+              <base-button style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">{{!ar ? 'Afficher tous' : 'إظهار الكل'}}</base-button>
         </div>
       </div>
     </template>
@@ -37,7 +26,7 @@
             <tr>
                 <slot name="columns">
                 <th>{{!ar ? 'Nom' : 'الاسم'}}</th>
-                <th>{{!ar ? 'Prénom' : 'اللقب'}}</th>
+                <!-- <th>{{!ar ? 'Prénom' : 'اللقب'}}</th> -->
                 
                 <!-- <th>Adresse</th> -->
                 <th>{{!ar ? 'Gouvernorat' : 'الولاية'}}</th>
@@ -45,7 +34,7 @@
                 <th>{{!ar ? 'Email' : 'البريد الإلكتروني'}}</th>
                 <!-- <th>Affecté à</th>
                 <th>Plus d'informations</th> -->
-                <th>{{!ar ? 'Type' : 'المهنة'}}</th>
+                <!-- <th>{{!ar ? 'Type' : 'المهنة'}}</th> -->
                 
                 </slot>
             </tr>
@@ -59,8 +48,8 @@
             <tr v-for="(userp, index) in filtredUsers"
                         :key="index"
                         >
-                <td>{{userp.name}}</td>
-                <td>{{userp.lastname}}</td>
+                <td>{{userp.name}} {{userp.lastname}}</td>
+                <!-- <td></td> -->
                 
                 <!-- <td>{{user.adresse.adresse}}</td> -->
                 <td>{{userp.gouvernorat}}</td>
@@ -68,9 +57,9 @@
                 <td>{{userp.email}}</td>
                 <!-- <td><base-button simple type="primary" v-on:click="selectActeur(user.user)">Affecté à</base-button></td>
                 <td><base-button simple type="primary" v-on:click="selectDon(user)">Plus d'informations</base-button></td> -->
-                 <td>  
+                 <!-- <td>  
                    {{userp.role == 0 ? 'Téléoperateur' : userp.role == 1 ? 'UTSS' : userp.role == 2 ? 'CRCC' : 'Admin ministère'}}    
-                </td>
+                </td> -->
 
             </tr>
             </tbody>
@@ -130,7 +119,6 @@ export default{
         
      },
     mounted(){
-        let role = 
         this.$store.dispatch('getActeurs')
         .then((response)=>{
           this.loading = false;

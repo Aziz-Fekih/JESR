@@ -164,8 +164,10 @@ import {
 .error{
     color: #ff7675
 }
-.content{
-    padding : 185px;
+@media screen and (min-width: 768px){
+  .content{
+      padding : 120px;
+  }
 }
 .tim-icons .icon-single-02 {
     color:black !important;

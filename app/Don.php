@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Don extends Model
 {  
     protected $fillable = [
-        'etat'
+        'etat', 'user_id'
     ];
     public function Adresse()
     {

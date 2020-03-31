@@ -4,7 +4,7 @@
     <template slot="header">
       <h5 class="title">{{!ar ?'Associations' : 'قائمة&nbsp;الجمعيات'}}</h5>
       <div class="row filtre">
-        <div class="col-md-7 col-lg-8">
+        <div class="col-sm-4">
           <base-input  :label="!ar ? 'Filtrer par gouvernorat' : ' تصفية حسب الولاية'">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
@@ -15,7 +15,7 @@
             </select>
           </base-input>
         </div>
-         <div class="col-md-4">
+         <div class="col-sm-8">
               <base-button style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">{{!ar ? 'Afficher tous' : 'إظهار الكل'}}</base-button>
         </div>
 

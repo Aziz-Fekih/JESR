@@ -4,7 +4,7 @@
     <template slot="header">
       <h5 class="title">{{!ar ?'Ces agents peuvent vous assister si vous avez besoin d\'aide' : 'يمكن لهؤلاء الاشخاص مساعدتك إذا كنت بحاجة إلى المساعدة'}}</h5>
       <div class="row filtre">
-        <div class="col-md-2">
+        <div class="col-sm-4">
           <base-input  :label="!ar ? 'Filtrer par gouvernorat' : ' تصفية حسب الولاية'">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
@@ -16,8 +16,8 @@
           </base-input>
         </div>
 
-         <div class="col-md-2">
-              <base-button class="addBtnClass" style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">{{!ar ? 'Afficher tous' : 'إظهار الكل'}}</base-button>
+         <div class="col-sm-8">
+              <base-button  style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">{{!ar ? 'Afficher tous' : 'إظهار الكل'}}</base-button>
         </div>
       </div>
     </template>

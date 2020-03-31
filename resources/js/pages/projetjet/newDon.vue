@@ -115,11 +115,11 @@
                     numéro de téléphone :
                     <strong> {{acteur.telephone}}</strong> prendra en charge votre Don!
                 </p>
-                <p class="text-right" v-else>شكرا على تبرعكم.
+                <p class="text-right" v-else>للتكفل بتبرعكم الرجاء الاتصال ب
                     <br>
                     <strong> {{acteur.lastname}} {{acteur.name}}</strong>
 
-                    <span>سيتكفل بتبرعك</span>
+                    <span></span>
                     <br>
                     ممثل عن الاتحاد التونسي للتضامن الاجتماعي و رقمه <strong>
                         {{acteur.telephone}} </strong>
@@ -143,6 +143,40 @@
                 <p>Union Nationale de la Femme Tunisienne: +216 71 378 447 الاتحاد الوطني للمرأة التونسية</p>
                 <p>Croissant Rouge: +216 71 378 447 الهلال الاحمر التونسي</p>
                 <p>Le Scoutisme: +216 71 378 447 الكشافة التونسية</p>
+            </template>
+            <template slot="footer">
+                <base-button type="secondary" @click="modals.infos = false;"
+                >{{!ar ? 'Fermer' : 'اغلاق'}}
+                </base-button>
+
+            </template>
+        </modal>
+        <modal :show.sync="modals.choseActeur">
+            <template slot="header">
+                {{!ar ? 'Choisissez parmis de ces acteurs pour prendre en charge votre don' : 'اختر من بين هؤلاء الممثلين لتكفل بتبرعك'}}
+            </template>
+            <template>
+        <div class="table-responsive">
+            <table class="table tablesorter text-left">
+                <thead class="text-primary">
+                        <tr>
+                            <slot nom="columns">
+                            <th>{{!ar ? 'Nom Complet' : 'الاسم'}}</th>
+                            <th>&nbsp;</th>
+                            </slot>
+                        </tr>
+                </thead>
+                 <tbody >
+                        <tr v-for="(act, index) in acteurs" :key="index">
+                            <td> {{act.name}} {{act.lastname}}  </td>
+                            <td><base-button class="float-right" type="primary" fill v-on:click="choseUnActeur(act)">{{!ar
+                                ?'Choisir' : 'اختيار'}}
+                            </base-button></td>
+                        </tr>
+                  </tbody>
+                </table>
+            </div>
+
             </template>
             <template slot="footer">
                 <base-button type="secondary" @click="modals.infos = false;"
@@ -176,7 +210,8 @@
             return {
                 modals: {
                     userModal: false,
-                    infos: false
+                    infos: false,
+                    choseActeur: false
                 },
                 acteur: {
                     name: 'Etat',
@@ -205,6 +240,8 @@
                     motorise: false,
                     accord_utss: true,
                 },
+                acteurs: [],
+                donId: null
 
             }
         },
@@ -229,13 +266,20 @@
                     this.$store.dispatch('newDon', this.model)
                         .then(response => {
                             console.log(response);
-                            this.acteur = response;
-                            if (this.model.accord_utss) {
-                                this.modals.userModal = true;
-                            } else {
-                                this.modals.infos = true;
-                            }
+                            this.acteurs = response.acteurs;
+                            this.donId = response.don;
+                            this.modals.choseActeur = true;
+                            // this.modals.userModal = true;
                         })
+            },
+            choseUnActeur(acteur){
+                     this.$store.dispatch('setActeur', {acteurId: acteur.id, donId: this.donId})
+                        .then(response => {
+                            console.log(response);
+                            this.acteur = acteur;
+                            this.modals.choseActeur = false;
+                            this.modals.userModal = true;
+                        })    
             },
             verifierFormulaire() {
                 let message = "Veuillez remplir tous les champs!"
