@@ -8024,7 +8024,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "/* --------------------------------\r\n\r\nNucleo Outline Web Font - nucleoapp.com/\r\nLicense - nucleoapp.com/license/\r\nCreated using IcoMoon - icomoon.io\r\n\r\n-------------------------------- */\r\n\r\n@font-face {\r\n  font-family: 'Nucleo';\r\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ");\r\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ") format('embedded-opentype'),\r\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff2 */ "./resources/js/assets/fonts/nucleo.woff2")) + ") format('woff2'),\r\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff */ "./resources/js/assets/fonts/nucleo.woff")) + ") format('woff'),\r\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.ttf */ "./resources/js/assets/fonts/nucleo.ttf")) + ") format('truetype');\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n\r\n/*------------------------\r\n\tbase class definition\r\n-------------------------*/\r\n\r\n.tim-icons {\r\n  display: inline-block;\r\n  font: normal normal normal 1em/1 'Nucleo';\r\n  vertical-align: middle;\r\n  speak: none;\r\n  text-transform: none;\r\n  /* Better Font Rendering */\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n.font-icon-detail{\r\n  text-align: center;\r\n  padding: 45px 0 30px;\r\n  border: 1px solid #e44cc4;\r\n  border-radius: .1875rem;\r\n  margin: 15px 0;\r\n  min-height: 168px;\r\n}\r\n.font-icon-detail i{\r\n    color: $black;\r\n    font-size: 1.5em;\r\n  }\r\n\r\n.font-icon-detail p{\r\n    color: #e44cc4 !important;\r\n    margin-top: 30px;\r\n    padding: 0 10px;\r\n    font-size: .7142em;\r\n}\r\n\r\n/*------------------------\r\n  change icon size\r\n-------------------------*/\r\n\r\n.tim-icons-sm {\r\n  font-size: 0.8em;\r\n}\r\n.tim-icons-lg {\r\n  font-size: 1.2em;\r\n}\r\n/* absolute units */\r\n.tim-icons-16 {\r\n  font-size: 16px;\r\n}\r\n.tim-icons-32 {\r\n  font-size: 32px;\r\n}\r\n\r\n/*----------------------------------\r\n  add a square/circle background\r\n-----------------------------------*/\r\n\r\n.tim-icons-bg-square,\r\n.tim-icons-bg-circle {\r\n  padding: 0.35em;\r\n}\r\n\r\n.tim-icons-bg-circle {\r\n  border-radius: 50%;\r\n}\r\n/*------------------------\r\n  list icons\r\n-------------------------*/\r\n\r\n\r\n\r\n/*------------------------\r\n  spinning icons\r\n-------------------------*/\r\n\r\n.tim-icons-is-spinning {\r\n  -webkit-animation: tim-icons-spin 2s infinite linear;\r\n  animation: tim-icons-spin 2s infinite linear;\r\n}\r\n\r\n@-webkit-keyframes tim-icons-spin {\r\n  0% {\r\n    -webkit-transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    -webkit-transform: rotate(360deg);\r\n  }\r\n}\r\n@keyframes tim-icons-spin {\r\n  0% {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n/*------------------------\r\n  rotated/flipped icons\r\n-------------------------*/\r\n/*------------------------\r\n\ticons\r\n-------------------------*/\r\n\r\n.icon-alert-circle-exc::before {\r\n  content: \"\\EA02\";\r\n}\r\n\r\n.icon-align-center::before {\r\n  content: \"\\EA03\";\r\n}\r\n\r\n.icon-align-left-2::before {\r\n  content: \"\\EA04\";\r\n}\r\n\r\n.icon-app::before {\r\n  content: \"\\EA05\";\r\n}\r\n\r\n.icon-atom::before {\r\n  content: \"\\EA06\";\r\n}\r\n\r\n.icon-attach-87::before {\r\n  content: \"\\EA07\";\r\n}\r\n\r\n.icon-badge::before {\r\n  content: \"\\EA08\";\r\n}\r\n\r\n.icon-bag-16::before {\r\n  content: \"\\EA09\";\r\n}\r\n\r\n.icon-bank::before {\r\n  content: \"\\EA0A\";\r\n}\r\n\r\n.icon-basket-simple::before {\r\n  content: \"\\EA0B\";\r\n}\r\n\r\n.icon-bell-55::before {\r\n  content: \"\\EA0C\";\r\n}\r\n\r\n.icon-bold::before {\r\n  content: \"\\EA0D\";\r\n}\r\n\r\n.icon-book-bookmark::before {\r\n  content: \"\\EA0E\";\r\n}\r\n\r\n.icon-bulb-63::before {\r\n  content: \"\\EA0F\";\r\n}\r\n\r\n.icon-bullet-list-67::before {\r\n  content: \"\\EA10\";\r\n}\r\n\r\n.icon-bus-front-12::before {\r\n  content: \"\\EA11\";\r\n}\r\n\r\n.icon-button-pause::before {\r\n  content: \"\\EA12\";\r\n}\r\n\r\n.icon-button-power::before {\r\n  content: \"\\EA13\";\r\n}\r\n\r\n.icon-calendar-60::before {\r\n  content: \"\\EA14\";\r\n}\r\n\r\n.icon-camera-18::before {\r\n  content: \"\\EA15\";\r\n}\r\n\r\n.icon-caps-small::before {\r\n  content: \"\\EA16\";\r\n}\r\n\r\n.icon-cart::before {\r\n  content: \"\\EA17\";\r\n}\r\n\r\n.icon-chart-bar-32::before {\r\n  content: \"\\EA18\";\r\n}\r\n\r\n.icon-chart-pie-36::before {\r\n  content: \"\\EA19\";\r\n}\r\n\r\n.icon-chat-33::before {\r\n  content: \"\\EA1A\";\r\n}\r\n\r\n.icon-check-2::before {\r\n  content: \"\\EA1B\";\r\n}\r\n\r\n.icon-cloud-download-93::before {\r\n  content: \"\\EA1C\";\r\n}\r\n\r\n.icon-cloud-upload-94::before {\r\n  content: \"\\EA1D\";\r\n}\r\n\r\n.icon-coins::before {\r\n  content: \"\\EA1E\";\r\n}\r\n\r\n.icon-compass-05::before {\r\n  content: \"\\EA1F\";\r\n}\r\n\r\n.icon-controller::before {\r\n  content: \"\\EA20\";\r\n}\r\n\r\n.icon-credit-card::before {\r\n  content: \"\\EA21\";\r\n}\r\n\r\n.icon-delivery-fast::before {\r\n  content: \"\\EA22\";\r\n}\r\n\r\n.icon-double-left::before {\r\n  content: \"\\EA23\";\r\n}\r\n\r\n.icon-double-right::before {\r\n  content: \"\\EA24\";\r\n}\r\n\r\n.icon-email-85::before {\r\n  content: \"\\EA25\";\r\n}\r\n\r\n.icon-gift-2::before {\r\n  content: \"\\EA26\";\r\n}\r\n\r\n.icon-globe-2::before {\r\n  content: \"\\EA27\";\r\n}\r\n\r\n.icon-headphones::before {\r\n  content: \"\\EA28\";\r\n}\r\n\r\n.icon-heart-2::before {\r\n  content: \"\\EA29\";\r\n}\r\n\r\n.icon-html5::before {\r\n  content: \"\\EA2A\";\r\n}\r\n\r\n.icon-image-02::before {\r\n  content: \"\\EA2B\";\r\n}\r\n\r\n.icon-istanbul::before {\r\n  content: \"\\EA2C\";\r\n}\r\n\r\n.icon-key-25::before {\r\n  content: \"\\EA2D\";\r\n}\r\n\r\n.icon-laptop::before {\r\n  content: \"\\EA2E\";\r\n}\r\n\r\n.icon-light-3::before {\r\n  content: \"\\EA2F\";\r\n}\r\n\r\n.icon-link-72::before {\r\n  content: \"\\EA30\";\r\n}\r\n\r\n.icon-lock-circle::before {\r\n  content: \"\\EA31\";\r\n}\r\n\r\n.icon-map-big::before {\r\n  content: \"\\EA32\";\r\n}\r\n\r\n.icon-minimal-down::before {\r\n  content: \"\\EA33\";\r\n}\r\n\r\n.icon-minimal-left::before {\r\n  content: \"\\EA34\";\r\n}\r\n\r\n.icon-minimal-right::before {\r\n  content: \"\\EA35\";\r\n}\r\n\r\n.icon-minimal-up::before {\r\n  content: \"\\EA36\";\r\n}\r\n\r\n.icon-mobile::before {\r\n  content: \"\\EA37\";\r\n}\r\n\r\n.icon-molecule-40::before {\r\n  content: \"\\EA38\";\r\n}\r\n\r\n.icon-money-coins::before {\r\n  content: \"\\EA39\";\r\n}\r\n\r\n.icon-notes::before {\r\n  content: \"\\EA3A\";\r\n}\r\n\r\n.icon-palette::before {\r\n  content: \"\\EA3B\";\r\n}\r\n\r\n.icon-paper::before {\r\n  content: \"\\EA3C\";\r\n}\r\n\r\n.icon-pencil::before {\r\n  content: \"\\EA3D\";\r\n}\r\n\r\n.icon-pin::before {\r\n  content: \"\\EA3E\";\r\n}\r\n\r\n.icon-planet::before {\r\n  content: \"\\EA3F\";\r\n}\r\n\r\n.icon-puzzle-10::before {\r\n  content: \"\\EA40\";\r\n}\r\n\r\n.icon-satisfied::before {\r\n  content: \"\\EA41\";\r\n}\r\n\r\n.icon-scissors::before {\r\n  content: \"\\EA42\";\r\n}\r\n\r\n.icon-send::before {\r\n  content: \"\\EA43\";\r\n}\r\n\r\n.icon-settings-gear-63::before {\r\n  content: \"\\EA44\";\r\n}\r\n\r\n.icon-settings::before {\r\n  content: \"\\EA45\";\r\n}\r\n\r\n.icon-simple-add::before {\r\n  content: \"\\EA46\";\r\n}\r\n\r\n.icon-simple-delete::before {\r\n  content: \"\\EA47\";\r\n}\r\n\r\n.icon-simple-remove::before {\r\n  content: \"\\EA48\";\r\n}\r\n\r\n.icon-single-02::before {\r\n  content: \"\\EA49\";\r\n}\r\n\r\n.icon-single-copy-04::before {\r\n  content: \"\\EA4A\";\r\n}\r\n\r\n.icon-sound-wave::before {\r\n  content: \"\\EA4B\";\r\n}\r\n\r\n.icon-spaceship::before {\r\n  content: \"\\EA4C\";\r\n}\r\n\r\n.icon-square-pin::before {\r\n  content: \"\\EA4D\";\r\n}\r\n\r\n.icon-support-17::before {\r\n  content: \"\\EA4E\";\r\n}\r\n\r\n.icon-tablet-2::before {\r\n  content: \"\\EA4F\";\r\n}\r\n\r\n.icon-tag::before {\r\n  content: \"\\EA50\";\r\n}\r\n\r\n.icon-tap-02::before {\r\n  content: \"\\EA51\";\r\n}\r\n\r\n.icon-tie-bow::before {\r\n  content: \"\\EA52\";\r\n}\r\n\r\n.icon-time-alarm::before {\r\n  content: \"\\EA53\";\r\n}\r\n\r\n.icon-trash-simple::before {\r\n  content: \"\\EA54\";\r\n}\r\n\r\n.icon-triangle-right-17::before {\r\n  content: \"\\EA55\";\r\n}\r\n\r\n.icon-trophy::before {\r\n  content: \"\\EA56\";\r\n}\r\n\r\n.icon-tv-2::before {\r\n  content: \"\\EA57\";\r\n}\r\n\r\n.icon-upload::before {\r\n  content: \"\\EA58\";\r\n}\r\n\r\n.icon-user-run::before {\r\n  content: \"\\EA59\";\r\n}\r\n\r\n.icon-vector::before {\r\n  content: \"\\EA5A\";\r\n}\r\n\r\n.icon-video-66::before {\r\n  content: \"\\EA5B\";\r\n}\r\n\r\n.icon-volume-98::before {\r\n  content: \"\\EA5C\";\r\n}\r\n\r\n.icon-wallet-43::before {\r\n  content: \"\\EA5D\";\r\n}\r\n\r\n.icon-watch-time::before {\r\n  content: \"\\EA5E\";\r\n}\r\n\r\n.icon-wifi::before {\r\n  content: \"\\EA5F\";\r\n}\r\n\r\n.icon-world::before {\r\n  content: \"\\EA60\";\r\n}\r\n\r\n.icon-zoom-split::before {\r\n  content: \"\\EA61\";\r\n}\r\n\r\n.icon-refresh-01::before {\r\n  content: \"\\EA62\";\r\n}\r\n\r\n.icon-refresh-02::before {\r\n  content: \"\\EA63\";\r\n}\r\n\r\n.icon-shape-star::before {\r\n  content: \"\\EA64\";\r\n}\r\n\r\n.icon-components::before {\r\n  content: \"\\EA65\";\r\n}\r\n", ""]);
+exports.push([module.i, "/* --------------------------------\n\nNucleo Outline Web Font - nucleoapp.com/\nLicense - nucleoapp.com/license/\nCreated using IcoMoon - icomoon.io\n\n-------------------------------- */\n\n@font-face {\n  font-family: 'Nucleo';\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ");\n  src: url(" + escape(__webpack_require__(/*! ../fonts/nucleo.eot */ "./resources/js/assets/fonts/nucleo.eot")) + ") format('embedded-opentype'),\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff2 */ "./resources/js/assets/fonts/nucleo.woff2")) + ") format('woff2'),\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.woff */ "./resources/js/assets/fonts/nucleo.woff")) + ") format('woff'),\n  url(" + escape(__webpack_require__(/*! ../fonts/nucleo.ttf */ "./resources/js/assets/fonts/nucleo.ttf")) + ") format('truetype');\n  font-weight: normal;\n  font-style: normal;\n}\n\n/*------------------------\n\tbase class definition\n-------------------------*/\n\n.tim-icons {\n  display: inline-block;\n  font: normal normal normal 1em/1 'Nucleo';\n  vertical-align: middle;\n  speak: none;\n  text-transform: none;\n  /* Better Font Rendering */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.font-icon-detail{\n  text-align: center;\n  padding: 45px 0 30px;\n  border: 1px solid #e44cc4;\n  border-radius: .1875rem;\n  margin: 15px 0;\n  min-height: 168px;\n}\n.font-icon-detail i{\n    color: $black;\n    font-size: 1.5em;\n  }\n\n.font-icon-detail p{\n    color: #e44cc4 !important;\n    margin-top: 30px;\n    padding: 0 10px;\n    font-size: .7142em;\n}\n\n/*------------------------\n  change icon size\n-------------------------*/\n\n.tim-icons-sm {\n  font-size: 0.8em;\n}\n.tim-icons-lg {\n  font-size: 1.2em;\n}\n/* absolute units */\n.tim-icons-16 {\n  font-size: 16px;\n}\n.tim-icons-32 {\n  font-size: 32px;\n}\n\n/*----------------------------------\n  add a square/circle background\n-----------------------------------*/\n\n.tim-icons-bg-square,\n.tim-icons-bg-circle {\n  padding: 0.35em;\n}\n\n.tim-icons-bg-circle {\n  border-radius: 50%;\n}\n/*------------------------\n  list icons\n-------------------------*/\n\n\n\n/*------------------------\n  spinning icons\n-------------------------*/\n\n.tim-icons-is-spinning {\n  -webkit-animation: tim-icons-spin 2s infinite linear;\n  animation: tim-icons-spin 2s infinite linear;\n}\n\n@-webkit-keyframes tim-icons-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n  }\n}\n@keyframes tim-icons-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n/*------------------------\n  rotated/flipped icons\n-------------------------*/\n/*------------------------\n\ticons\n-------------------------*/\n\n.icon-alert-circle-exc::before {\n  content: \"\\EA02\";\n}\n\n.icon-align-center::before {\n  content: \"\\EA03\";\n}\n\n.icon-align-left-2::before {\n  content: \"\\EA04\";\n}\n\n.icon-app::before {\n  content: \"\\EA05\";\n}\n\n.icon-atom::before {\n  content: \"\\EA06\";\n}\n\n.icon-attach-87::before {\n  content: \"\\EA07\";\n}\n\n.icon-badge::before {\n  content: \"\\EA08\";\n}\n\n.icon-bag-16::before {\n  content: \"\\EA09\";\n}\n\n.icon-bank::before {\n  content: \"\\EA0A\";\n}\n\n.icon-basket-simple::before {\n  content: \"\\EA0B\";\n}\n\n.icon-bell-55::before {\n  content: \"\\EA0C\";\n}\n\n.icon-bold::before {\n  content: \"\\EA0D\";\n}\n\n.icon-book-bookmark::before {\n  content: \"\\EA0E\";\n}\n\n.icon-bulb-63::before {\n  content: \"\\EA0F\";\n}\n\n.icon-bullet-list-67::before {\n  content: \"\\EA10\";\n}\n\n.icon-bus-front-12::before {\n  content: \"\\EA11\";\n}\n\n.icon-button-pause::before {\n  content: \"\\EA12\";\n}\n\n.icon-button-power::before {\n  content: \"\\EA13\";\n}\n\n.icon-calendar-60::before {\n  content: \"\\EA14\";\n}\n\n.icon-camera-18::before {\n  content: \"\\EA15\";\n}\n\n.icon-caps-small::before {\n  content: \"\\EA16\";\n}\n\n.icon-cart::before {\n  content: \"\\EA17\";\n}\n\n.icon-chart-bar-32::before {\n  content: \"\\EA18\";\n}\n\n.icon-chart-pie-36::before {\n  content: \"\\EA19\";\n}\n\n.icon-chat-33::before {\n  content: \"\\EA1A\";\n}\n\n.icon-check-2::before {\n  content: \"\\EA1B\";\n}\n\n.icon-cloud-download-93::before {\n  content: \"\\EA1C\";\n}\n\n.icon-cloud-upload-94::before {\n  content: \"\\EA1D\";\n}\n\n.icon-coins::before {\n  content: \"\\EA1E\";\n}\n\n.icon-compass-05::before {\n  content: \"\\EA1F\";\n}\n\n.icon-controller::before {\n  content: \"\\EA20\";\n}\n\n.icon-credit-card::before {\n  content: \"\\EA21\";\n}\n\n.icon-delivery-fast::before {\n  content: \"\\EA22\";\n}\n\n.icon-double-left::before {\n  content: \"\\EA23\";\n}\n\n.icon-double-right::before {\n  content: \"\\EA24\";\n}\n\n.icon-email-85::before {\n  content: \"\\EA25\";\n}\n\n.icon-gift-2::before {\n  content: \"\\EA26\";\n}\n\n.icon-globe-2::before {\n  content: \"\\EA27\";\n}\n\n.icon-headphones::before {\n  content: \"\\EA28\";\n}\n\n.icon-heart-2::before {\n  content: \"\\EA29\";\n}\n\n.icon-html5::before {\n  content: \"\\EA2A\";\n}\n\n.icon-image-02::before {\n  content: \"\\EA2B\";\n}\n\n.icon-istanbul::before {\n  content: \"\\EA2C\";\n}\n\n.icon-key-25::before {\n  content: \"\\EA2D\";\n}\n\n.icon-laptop::before {\n  content: \"\\EA2E\";\n}\n\n.icon-light-3::before {\n  content: \"\\EA2F\";\n}\n\n.icon-link-72::before {\n  content: \"\\EA30\";\n}\n\n.icon-lock-circle::before {\n  content: \"\\EA31\";\n}\n\n.icon-map-big::before {\n  content: \"\\EA32\";\n}\n\n.icon-minimal-down::before {\n  content: \"\\EA33\";\n}\n\n.icon-minimal-left::before {\n  content: \"\\EA34\";\n}\n\n.icon-minimal-right::before {\n  content: \"\\EA35\";\n}\n\n.icon-minimal-up::before {\n  content: \"\\EA36\";\n}\n\n.icon-mobile::before {\n  content: \"\\EA37\";\n}\n\n.icon-molecule-40::before {\n  content: \"\\EA38\";\n}\n\n.icon-money-coins::before {\n  content: \"\\EA39\";\n}\n\n.icon-notes::before {\n  content: \"\\EA3A\";\n}\n\n.icon-palette::before {\n  content: \"\\EA3B\";\n}\n\n.icon-paper::before {\n  content: \"\\EA3C\";\n}\n\n.icon-pencil::before {\n  content: \"\\EA3D\";\n}\n\n.icon-pin::before {\n  content: \"\\EA3E\";\n}\n\n.icon-planet::before {\n  content: \"\\EA3F\";\n}\n\n.icon-puzzle-10::before {\n  content: \"\\EA40\";\n}\n\n.icon-satisfied::before {\n  content: \"\\EA41\";\n}\n\n.icon-scissors::before {\n  content: \"\\EA42\";\n}\n\n.icon-send::before {\n  content: \"\\EA43\";\n}\n\n.icon-settings-gear-63::before {\n  content: \"\\EA44\";\n}\n\n.icon-settings::before {\n  content: \"\\EA45\";\n}\n\n.icon-simple-add::before {\n  content: \"\\EA46\";\n}\n\n.icon-simple-delete::before {\n  content: \"\\EA47\";\n}\n\n.icon-simple-remove::before {\n  content: \"\\EA48\";\n}\n\n.icon-single-02::before {\n  content: \"\\EA49\";\n}\n\n.icon-single-copy-04::before {\n  content: \"\\EA4A\";\n}\n\n.icon-sound-wave::before {\n  content: \"\\EA4B\";\n}\n\n.icon-spaceship::before {\n  content: \"\\EA4C\";\n}\n\n.icon-square-pin::before {\n  content: \"\\EA4D\";\n}\n\n.icon-support-17::before {\n  content: \"\\EA4E\";\n}\n\n.icon-tablet-2::before {\n  content: \"\\EA4F\";\n}\n\n.icon-tag::before {\n  content: \"\\EA50\";\n}\n\n.icon-tap-02::before {\n  content: \"\\EA51\";\n}\n\n.icon-tie-bow::before {\n  content: \"\\EA52\";\n}\n\n.icon-time-alarm::before {\n  content: \"\\EA53\";\n}\n\n.icon-trash-simple::before {\n  content: \"\\EA54\";\n}\n\n.icon-triangle-right-17::before {\n  content: \"\\EA55\";\n}\n\n.icon-trophy::before {\n  content: \"\\EA56\";\n}\n\n.icon-tv-2::before {\n  content: \"\\EA57\";\n}\n\n.icon-upload::before {\n  content: \"\\EA58\";\n}\n\n.icon-user-run::before {\n  content: \"\\EA59\";\n}\n\n.icon-vector::before {\n  content: \"\\EA5A\";\n}\n\n.icon-video-66::before {\n  content: \"\\EA5B\";\n}\n\n.icon-volume-98::before {\n  content: \"\\EA5C\";\n}\n\n.icon-wallet-43::before {\n  content: \"\\EA5D\";\n}\n\n.icon-watch-time::before {\n  content: \"\\EA5E\";\n}\n\n.icon-wifi::before {\n  content: \"\\EA5F\";\n}\n\n.icon-world::before {\n  content: \"\\EA60\";\n}\n\n.icon-zoom-split::before {\n  content: \"\\EA61\";\n}\n\n.icon-refresh-01::before {\n  content: \"\\EA62\";\n}\n\n.icon-refresh-02::before {\n  content: \"\\EA63\";\n}\n\n.icon-shape-star::before {\n  content: \"\\EA64\";\n}\n\n.icon-components::before {\n  content: \"\\EA65\";\n}\n", ""]);
 
 // exports
 
@@ -8043,7 +8043,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".tim-row {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.tim-white-buttons {\r\n  background-color: #777777;\r\n}\r\n\r\n.typography-line {\r\n  padding-left: 25%;\r\n  margin-bottom: 35px;\r\n  position: relative;\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.typography-line span {\r\n  bottom: 10px;\r\n  color: #c0c1c2;\r\n  display: block;\r\n  font-weight: 400;\r\n  font-size: 13px;\r\n  line-height: 13px;\r\n  left: 0;\r\n  position: absolute;\r\n  width: 260px;\r\n  text-transform: none;\r\n}\r\n\r\n.tim-row {\r\n  padding-top: 60px;\r\n}\r\n\r\n.tim-row h3 {\r\n  margin-top: 0;\r\n}\r\n\r\n.offline-doc .page-header {\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.offline-doc .footer {\r\n  position: absolute;\r\n  width: 100%;\r\n  background: transparent;\r\n  bottom: 0;\r\n  color: #fff;\r\n  z-index: 1;\r\n}\r\n\r\n@media all and (min-width: 992px) {\r\n  .sidebar .nav>li.active-pro {\r\n    position: absolute;\r\n    width: 100%;\r\n    bottom: 10px;\r\n  }\r\n}\r\n\r\n.card.card-upgrade .card-category {\r\n  max-width: 530px;\r\n  margin: 0 auto;\r\n}", ""]);
+exports.push([module.i, ".tim-row {\n  margin-bottom: 20px;\n}\n\n.tim-white-buttons {\n  background-color: #777777;\n}\n\n.typography-line {\n  padding-left: 25%;\n  margin-bottom: 35px;\n  position: relative;\n  display: block;\n  width: 100%;\n}\n\n.typography-line span {\n  bottom: 10px;\n  color: #c0c1c2;\n  display: block;\n  font-weight: 400;\n  font-size: 13px;\n  line-height: 13px;\n  left: 0;\n  position: absolute;\n  width: 260px;\n  text-transform: none;\n}\n\n.tim-row {\n  padding-top: 60px;\n}\n\n.tim-row h3 {\n  margin-top: 0;\n}\n\n.offline-doc .page-header {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.offline-doc .footer {\n  position: absolute;\n  width: 100%;\n  background: transparent;\n  bottom: 0;\n  color: #fff;\n  z-index: 1;\n}\n\n@media all and (min-width: 992px) {\n  .sidebar .nav>li.active-pro {\n    position: absolute;\n    width: 100%;\n    bottom: 10px;\n  }\n}\n\n.card.card-upgrade .card-category {\n  max-width: 530px;\n  margin: 0 auto;\n}", ""]);
 
 // exports
 
@@ -8062,7 +8062,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nul[data-v-a31ac064]{\r\n    list-style: none;\r\n    padding-left: 0px;\n}\n.tweet[data-v-a31ac064] {\r\n  background-color: #fff;\r\n  color: #373737;\r\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\r\n  padding: 10px;\r\n  position: relative;\r\n  -webkit-transition: all 1s;\r\n  transition: all 1s;\r\n  cursor: pointer;\n}\n.tweet[data-v-a31ac064]:hover{\r\n    background-color: #dfe6e9;\n}\n.selected[data-v-a31ac064]{\r\n    background-color: #78e08f;\n}\n.tweet + .tweet[data-v-a31ac064] {\r\n  margin-top: 20px;\n}\n.tweet .media[data-v-a31ac064] {\r\n  display: -webkit-box;\r\n  display: flex;\n}\n.tweet img[data-v-a31ac064] {\r\n  width: 32px;\r\n  margin-right: 15px;\n}\n.tweet small[data-v-a31ac064] {\r\n  font-size: 14px;\r\n  color: #657786;\n}\n.delete[data-v-a31ac064]{\r\n    position: absolute;\r\n    right:4px;\r\n    top:-2px;\n}\n.delete > a > i[data-v-a31ac064] {\r\n    color :#9aa2a8;\r\n    font-size: 12px;\n}\n.delete > a > i[data-v-a31ac064]:hover{\r\n    color :#080808;\n}\r\n", ""]);
+exports.push([module.i, "\nul[data-v-a31ac064]{\n    list-style: none;\n    padding-left: 0px;\n}\n.tweet[data-v-a31ac064] {\n  background-color: #fff;\n  color: #373737;\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n  padding: 10px;\n  position: relative;\n  -webkit-transition: all 1s;\n  transition: all 1s;\n  cursor: pointer;\n}\n.tweet[data-v-a31ac064]:hover{\n    background-color: #dfe6e9;\n}\n.selected[data-v-a31ac064]{\n    background-color: #78e08f;\n}\n.tweet + .tweet[data-v-a31ac064] {\n  margin-top: 20px;\n}\n.tweet .media[data-v-a31ac064] {\n  display: -webkit-box;\n  display: flex;\n}\n.tweet img[data-v-a31ac064] {\n  width: 32px;\n  margin-right: 15px;\n}\n.tweet small[data-v-a31ac064] {\n  font-size: 14px;\n  color: #657786;\n}\n.delete[data-v-a31ac064]{\n    position: absolute;\n    right:4px;\n    top:-2px;\n}\n.delete > a > i[data-v-a31ac064] {\n    color :#9aa2a8;\n    font-size: 12px;\n}\n.delete > a > i[data-v-a31ac064]:hover{\n    color :#080808;\n}\n", ""]);
 
 // exports
 
@@ -8081,7 +8081,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nul[data-v-666d0b76]{\r\n    list-style: none;\r\n    padding-left: 0px;\n}\n.tweet[data-v-666d0b76] {\r\n  background-color: #fff;\r\n  color: #373737;\r\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\r\n  padding: 10px;\r\n  position: relative;\r\n  -webkit-transition: all 1s;\r\n  transition: all 1s;\n}\n.tweet + .tweet[data-v-666d0b76] {\r\n  margin-top: 20px;\n}\n.tweet .media[data-v-666d0b76] {\r\n  display: -webkit-box;\r\n  display: flex;\n}\n.tweet img[data-v-666d0b76] {\r\n  width: 32px;\r\n  margin-right: 15px;\n}\n.tweet small[data-v-666d0b76] {\r\n  font-size: 14px;\r\n  color: #657786;\n}\n.delete[data-v-666d0b76]{\r\n    position: absolute;\r\n    right:4px;\r\n    top:-2px;\n}\n.delete > a > i[data-v-666d0b76] {\r\n    color :#9aa2a8;\r\n    font-size: 12px;\n}\n.delete > a > i[data-v-666d0b76]:hover{\r\n    color :#080808;\n}\n.inRight-enter-active[data-v-666d0b76], .inRight-leave-active[data-v-666d0b76] {\r\n  -webkit-transition: opacity .5s;\r\n  transition: opacity .5s;\r\n   -webkit-transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\r\n   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n}\n.inRight-enter[data-v-666d0b76], .inRight-leave-to[data-v-666d0b76] /* .fade-leave-active below version 2.1.8 */ {\r\n  opacity: 0;\r\n  -webkit-transform: translateX(30px);\r\n          transform: translateX(30px);\n}\n.inLeft-enter-active[data-v-666d0b76], .inLeft-leave-active[data-v-666d0b76] {\r\n  -webkit-transition: opacity .5s;\r\n  transition: opacity .5s;\r\n   -webkit-transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\r\n   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n}\n.inLeft-enter[data-v-666d0b76], .inLeft-leave-to[data-v-666d0b76] /* .fade-leave-active below version 2.1.8 */ {\r\n  opacity: 0;\r\n  -webkit-transform: translateX(-30px);\r\n          transform: translateX(-30px);\n}\r\n", ""]);
+exports.push([module.i, "\nul[data-v-666d0b76]{\n    list-style: none;\n    padding-left: 0px;\n}\n.tweet[data-v-666d0b76] {\n  background-color: #fff;\n  color: #373737;\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n  padding: 10px;\n  position: relative;\n  -webkit-transition: all 1s;\n  transition: all 1s;\n}\n.tweet + .tweet[data-v-666d0b76] {\n  margin-top: 20px;\n}\n.tweet .media[data-v-666d0b76] {\n  display: -webkit-box;\n  display: flex;\n}\n.tweet img[data-v-666d0b76] {\n  width: 32px;\n  margin-right: 15px;\n}\n.tweet small[data-v-666d0b76] {\n  font-size: 14px;\n  color: #657786;\n}\n.delete[data-v-666d0b76]{\n    position: absolute;\n    right:4px;\n    top:-2px;\n}\n.delete > a > i[data-v-666d0b76] {\n    color :#9aa2a8;\n    font-size: 12px;\n}\n.delete > a > i[data-v-666d0b76]:hover{\n    color :#080808;\n}\n.inRight-enter-active[data-v-666d0b76], .inRight-leave-active[data-v-666d0b76] {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n   -webkit-transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n}\n.inRight-enter[data-v-666d0b76], .inRight-leave-to[data-v-666d0b76] /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n  -webkit-transform: translateX(30px);\n          transform: translateX(30px);\n}\n.inLeft-enter-active[data-v-666d0b76], .inLeft-leave-active[data-v-666d0b76] {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n   -webkit-transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n}\n.inLeft-enter[data-v-666d0b76], .inLeft-leave-to[data-v-666d0b76] /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n  -webkit-transform: translateX(-30px);\n          transform: translateX(-30px);\n}\n", ""]);
 
 // exports
 
@@ -8100,7 +8100,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ninput[data-v-7f3b7020]{\r\n    min-width :400px;\n}\n.textcomplete-item > a[data-v-7f3b7020]{\r\n\tpadding: 6px !important;\r\n\tcursor: pointer!important;\n}\n.fade-enter-active[data-v-7f3b7020], .fade-leave-active[data-v-7f3b7020] {\r\n  -webkit-transition: opacity .5s;\r\n  transition: opacity .5s;\n}\n.fade-enter[data-v-7f3b7020], .fade-leave-to[data-v-7f3b7020] /* .fade-leave-active below version 2.1.8 */ {\r\n  opacity: 0;\n}\n#preview[data-v-7f3b7020] {\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: center;\r\n          align-items: center;\n}\n#preview img[data-v-7f3b7020] {\r\n  max-width: 80px;\r\n  max-height: 200px;\n}\r\n", ""]);
+exports.push([module.i, "\ninput[data-v-7f3b7020]{\n    min-width :400px;\n}\n.textcomplete-item > a[data-v-7f3b7020]{\n\tpadding: 6px !important;\n\tcursor: pointer!important;\n}\n.fade-enter-active[data-v-7f3b7020], .fade-leave-active[data-v-7f3b7020] {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter[data-v-7f3b7020], .fade-leave-to[data-v-7f3b7020] /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n}\n#preview[data-v-7f3b7020] {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n          align-items: center;\n}\n#preview img[data-v-7f3b7020] {\n  max-width: 80px;\n  max-height: 200px;\n}\n", ""]);
 
 // exports
 
@@ -8119,7 +8119,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ninput[data-v-f1cee112]{\r\n    min-width :400px;\n}\n.textcomplete-item > a[data-v-f1cee112]{\r\n\tpadding: 6px !important;\r\n\tcursor: pointer!important;\n}\n.fade-enter-active[data-v-f1cee112], .fade-leave-active[data-v-f1cee112] {\r\n  -webkit-transition: opacity .5s;\r\n  transition: opacity .5s;\n}\n.fade-enter[data-v-f1cee112], .fade-leave-to[data-v-f1cee112] /* .fade-leave-active below version 2.1.8 */ {\r\n  opacity: 0;\n}\r\n", ""]);
+exports.push([module.i, "\ninput[data-v-f1cee112]{\n    min-width :400px;\n}\n.textcomplete-item > a[data-v-f1cee112]{\n\tpadding: 6px !important;\n\tcursor: pointer!important;\n}\n.fade-enter-active[data-v-f1cee112], .fade-leave-active[data-v-f1cee112] {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter[data-v-f1cee112], .fade-leave-to[data-v-f1cee112] /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n}\n", ""]);
 
 // exports
 
@@ -8195,7 +8195,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n@-webkit-keyframes rotating-data-v-3b6adb30 /* Safari and Chrome */ {\nfrom {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\n}\nto {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\n}\n}\n@keyframes rotating-data-v-3b6adb30 {\nfrom {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\n}\nto {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\n}\n}\n.rotating[data-v-3b6adb30] {\r\n  -webkit-animation: rotating-data-v-3b6adb30 2s linear infinite;\r\n  animation: rotating-data-v-3b6adb30 2s linear infinite;\n}\n.login[data-v-3b6adb30]{\r\n    font-size: 22px;  \r\n    color: #2ed573;\n}\n.error[data-v-3b6adb30]{\r\n    color: #ff7675\n}\n@media screen and (min-width: 768px){\n.content[data-v-3b6adb30]{\r\n      padding : 120px;\n}\n}\n.tim-icons .icon-single-02[data-v-3b6adb30] {\r\n    color:black !important;\n}\n.input-group-append[data-v-3b6adb30], .input-group-prepend .input-group-text[data-v-3b6adb30], .input-group-prepend .input-group-text[data-v-3b6adb30] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n@-webkit-keyframes rotating-data-v-3b6adb30 /* Safari and Chrome */ {\nfrom {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n}\n}\n@keyframes rotating-data-v-3b6adb30 {\nfrom {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n}\n}\n.rotating[data-v-3b6adb30] {\n  -webkit-animation: rotating-data-v-3b6adb30 2s linear infinite;\n  animation: rotating-data-v-3b6adb30 2s linear infinite;\n}\n.login[data-v-3b6adb30]{\n    font-size: 22px;  \n    color: #2ed573;\n}\n.error[data-v-3b6adb30]{\n    color: #ff7675\n}\n@media screen and (min-width: 768px){\n.content[data-v-3b6adb30]{\n      padding : 120px;\n}\n}\n.tim-icons .icon-single-02[data-v-3b6adb30] {\n    color:black !important;\n}\n.input-group-append[data-v-3b6adb30], .input-group-prepend .input-group-text[data-v-3b6adb30], .input-group-prepend .input-group-text[data-v-3b6adb30] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -8214,7 +8214,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n@media screen and (max-width: 576px){\n.footer .nav {\r\n    float: left;\r\n    padding-left: 15px;\r\n\tmargin-top: -100px;\r\n\tz-index: 155;\r\n\ttext-align: left;\n}\n.footer .copyright{\r\n\tpadding-left: 15px !important;\r\n\ttext-align: left;\n}\n.lastCard{\r\n\tmargin-bottom: 80px;\n}\n}\n@media screen and (max-width: 768px){\n.addBtnClass{\r\n   float: left !important\n}\n}\n.addBtnClass{\r\n   float: right\n}\n.floating{\r\n\t-webkit-transition: all 0.5s;\r\n\ttransition: all 0.5s;\n}\n.floating:hover{\r\n    box-shadow: 0px 24px 45px -12px rgba(0,0,0,0.2);\r\n    -webkit-transform: translateY(-8px);\r\n            transform: translateY(-8px);\n}\n::-webkit-scrollbar {\r\n  width: 6px;\n}\n::-webkit-scrollbar-track {\r\n  border-radius: 0;\n}\n::-webkit-scrollbar-thumb {\r\n  margin: 2px;\r\n  border-radius: 10px;\r\n  background: rgba(0, 0, 0, 0.2);\n}\n.modal.show .modal-dialog {\r\n\t-webkit-transform: translate(0, 0%);\r\n\ttransform: translate(0, 0%);\n}\n.font-icon-detail {\r\n\tcursor: pointer;\n}\r\n/* .modal-content {\r\n\t\r\n} */\n.modalTitle {\r\n\tborder: none;\n}\n.addBtn {\r\n\twidth: 100% !important;\n}\n.modal {\r\n\toverflow-y: auto;\n}\n.textcomplete-item:hover{\r\n\tbackground: #c7ecee;\n}\n.textcomplete-dropdown{\r\n\toverflow-y: scroll;\r\n\tmax-height: 300px;\n}\n.textcomplete-dropdown li{\r\n    padding: 10px;\n}\n.font-icon-list{\r\n\tmin-width: 220px;\n}\n.font-icon-detail{\r\n\tmin-height: 200px;\n}\n.input-group-append, .input-group-prepend .input-group-text, .input-group-prepend .input-group-text {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n.inputIcons{\r\n    color:black !important;\n}\n.selected{\r\n\t    border: grey 1.5px solid !important;\n}\n.bm-menu{\r\n\tposition: absolute;\r\n\tbackground-color: white;\r\n\tborder-right: 1px solid #9a909054;\r\n\toverflow-y: scroll;\n}\n.bm-burger-button{\r\n\tdisplay: none;\n}\n.bm-item-list  span{\r\n\tpadding: .2em;\r\n\tfont-weight: 300;\r\n\t    font-size: 15px;\r\n\tcolor: black\n}\n.bm-item-list >h4{\r\n\tmargin-left: 10px;\n}\n.bm-item-list>* {\r\n\tpadding: .2em;\n}\n.bm-item-list> a>i {\r\n\tmargin-top: 3px;\n}\nhr{\r\n\twidth: 200px;\r\n\tmargin-right:50px;\n}\n.form-control {\r\n\t    border-radius: 0.1285rem;\n}\n@-webkit-keyframes rotating /* Safari and Chrome */ {\nfrom {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\n}\nto {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\n}\n}\n@keyframes rotating {\nfrom {\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\n}\nto {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\n}\n}\n.rotating {\r\n  -webkit-animation: rotating 2s linear infinite;\r\n  animation: rotating 2s linear infinite;\n}\n.login{\r\n    font-size: 22px;  \r\n    color: #2ed573;\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (max-width: 576px){\n.footer .nav {\n    float: left;\n    padding-left: 15px;\n\tmargin-top: -100px;\n\tz-index: 155;\n\ttext-align: left;\n}\n.footer .copyright{\n\tpadding-left: 15px !important;\n\ttext-align: left;\n}\n.lastCard{\n\tmargin-bottom: 80px;\n}\n}\n@media screen and (max-width: 768px){\n.addBtnClass{\n   float: left !important\n}\n}\n.addBtnClass{\n   float: right\n}\n.floating{\n\t-webkit-transition: all 0.5s;\n\ttransition: all 0.5s;\n}\n.floating:hover{\n    box-shadow: 0px 24px 45px -12px rgba(0,0,0,0.2);\n    -webkit-transform: translateY(-8px);\n            transform: translateY(-8px);\n}\n::-webkit-scrollbar {\n  width: 6px;\n}\n::-webkit-scrollbar-track {\n  border-radius: 0;\n}\n::-webkit-scrollbar-thumb {\n  margin: 2px;\n  border-radius: 10px;\n  background: rgba(0, 0, 0, 0.2);\n}\n.modal.show .modal-dialog {\n\t-webkit-transform: translate(0, 0%);\n\ttransform: translate(0, 0%);\n}\n.font-icon-detail {\n\tcursor: pointer;\n}\n/* .modal-content {\n\t\n} */\n.modalTitle {\n\tborder: none;\n}\n.addBtn {\n\twidth: 100% !important;\n}\n.modal {\n\toverflow-y: auto;\n}\n.textcomplete-item:hover{\n\tbackground: #c7ecee;\n}\n.textcomplete-dropdown{\n\toverflow-y: scroll;\n\tmax-height: 300px;\n}\n.textcomplete-dropdown li{\n    padding: 10px;\n}\n.font-icon-list{\n\tmin-width: 220px;\n}\n.font-icon-detail{\n\tmin-height: 200px;\n}\n.input-group-append, .input-group-prepend .input-group-text, .input-group-prepend .input-group-text {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n.inputIcons{\n    color:black !important;\n}\n.selected{\n\t    border: grey 1.5px solid !important;\n}\n.bm-menu{\n\tposition: absolute;\n\tbackground-color: white;\n\tborder-right: 1px solid #9a909054;\n\toverflow-y: scroll;\n}\n.bm-burger-button{\n\tdisplay: none;\n}\n.bm-item-list  span{\n\tpadding: .2em;\n\tfont-weight: 300;\n\t    font-size: 15px;\n\tcolor: black\n}\n.bm-item-list >h4{\n\tmargin-left: 10px;\n}\n.bm-item-list>* {\n\tpadding: .2em;\n}\n.bm-item-list> a>i {\n\tmargin-top: 3px;\n}\nhr{\n\twidth: 200px;\n\tmargin-right:50px;\n}\n.form-control {\n\t    border-radius: 0.1285rem;\n}\n@-webkit-keyframes rotating /* Safari and Chrome */ {\nfrom {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n}\n}\n@keyframes rotating {\nfrom {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n}\n}\n.rotating {\n  -webkit-animation: rotating 2s linear infinite;\n  animation: rotating 2s linear infinite;\n}\n.login{\n    font-size: 22px;  \n    color: #2ed573;\n}\n", ""]);
 
 // exports
 
@@ -8233,7 +8233,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.noneBg[data-v-65054efb]{\r\n  background: transparent !important;\n}\n.traite[data-v-65054efb]{\r\n    background: #32ff7e;\n}\n.encours[data-v-65054efb]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-65054efb]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-65054efb] {\r\n    color:black !important;\n}\n.input-group-append[data-v-65054efb], .input-group-prepend .input-group-text[data-v-65054efb], .input-group-prepend .input-group-text[data-v-65054efb] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n.noneBg[data-v-65054efb]{\n  background: transparent !important;\n}\n.traite[data-v-65054efb]{\n    background: #32ff7e;\n}\n.encours[data-v-65054efb]{\n    background: #18dcff;\n}\n.nontraite[data-v-65054efb]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-65054efb] {\n    color:black !important;\n}\n.input-group-append[data-v-65054efb], .input-group-prepend .input-group-text[data-v-65054efb], .input-group-prepend .input-group-text[data-v-65054efb] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -8252,7 +8252,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.noneBg[data-v-554fa286] {\r\n\tbackground: transparent !important;\n}\n.traite[data-v-554fa286] {\r\n\tbackground: #32ff7e;\n}\n.encours[data-v-554fa286] {\r\n\tbackground: #18dcff;\n}\n.nontraite[data-v-554fa286] {\r\n\tbackground: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-554fa286] {\r\n\tcolor: black !important;\n}\n.input-group-append[data-v-554fa286],\r\n.input-group-prepend .input-group-text[data-v-554fa286],\r\n.input-group-prepend .input-group-text[data-v-554fa286] {\r\n\tborder-color: rgba(29, 37, 59, 0.5) !important;\n}\r\n", ""]);
+exports.push([module.i, "\n.noneBg[data-v-554fa286] {\n\tbackground: transparent !important;\n}\n.traite[data-v-554fa286] {\n\tbackground: #32ff7e;\n}\n.encours[data-v-554fa286] {\n\tbackground: #18dcff;\n}\n.nontraite[data-v-554fa286] {\n\tbackground: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-554fa286] {\n\tcolor: black !important;\n}\n.input-group-append[data-v-554fa286],\n.input-group-prepend .input-group-text[data-v-554fa286],\n.input-group-prepend .input-group-text[data-v-554fa286] {\n\tborder-color: rgba(29, 37, 59, 0.5) !important;\n}\n", ""]);
 
 // exports
 
@@ -8290,7 +8290,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.noneBg[data-v-81042366]{\r\n  background: transparent !important;\n}\n.traite[data-v-81042366]{\r\n    background: #32ff7e;\n}\n.encours[data-v-81042366]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-81042366]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-81042366] {\r\n    color:black !important;\n}\n.input-group-append[data-v-81042366], .input-group-prepend .input-group-text[data-v-81042366], .input-group-prepend .input-group-text[data-v-81042366] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n.noneBg[data-v-81042366]{\n  background: transparent !important;\n}\n.traite[data-v-81042366]{\n    background: #32ff7e;\n}\n.encours[data-v-81042366]{\n    background: #18dcff;\n}\n.nontraite[data-v-81042366]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-81042366] {\n    color:black !important;\n}\n.input-group-append[data-v-81042366], .input-group-prepend .input-group-text[data-v-81042366], .input-group-prepend .input-group-text[data-v-81042366] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -8309,7 +8309,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.noneBg[data-v-917a2fd6]{\r\n  background: transparent !important;\n}\n.traite[data-v-917a2fd6]{\r\n    background: #32ff7e;\n}\n.encours[data-v-917a2fd6]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-917a2fd6]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-917a2fd6] {\r\n    color:black !important;\n}\n.input-group-append[data-v-917a2fd6], .input-group-prepend .input-group-text[data-v-917a2fd6], .input-group-prepend .input-group-text[data-v-917a2fd6] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n.noneBg[data-v-917a2fd6]{\n  background: transparent !important;\n}\n.traite[data-v-917a2fd6]{\n    background: #32ff7e;\n}\n.encours[data-v-917a2fd6]{\n    background: #18dcff;\n}\n.nontraite[data-v-917a2fd6]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-917a2fd6] {\n    color:black !important;\n}\n.input-group-append[data-v-917a2fd6], .input-group-prepend .input-group-text[data-v-917a2fd6], .input-group-prepend .input-group-text[data-v-917a2fd6] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -8328,7 +8328,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-0d37983e]{\r\n    padding : 120px;\n}\n}\n.noneBg[data-v-0d37983e]{\r\n  background: transparent !important;\n}\n.traite[data-v-0d37983e]{\r\n    background: #32ff7e;\n}\n.encours[data-v-0d37983e]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-0d37983e]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-0d37983e] {\r\n    color:black !important;\n}\n.input-group-append[data-v-0d37983e], .input-group-prepend .input-group-text[data-v-0d37983e], .input-group-prepend .input-group-text[data-v-0d37983e] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-0d37983e]{\n    padding : 120px;\n}\n}\n.noneBg[data-v-0d37983e]{\n  background: transparent !important;\n}\n.traite[data-v-0d37983e]{\n    background: #32ff7e;\n}\n.encours[data-v-0d37983e]{\n    background: #18dcff;\n}\n.nontraite[data-v-0d37983e]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-0d37983e] {\n    color:black !important;\n}\n.input-group-append[data-v-0d37983e], .input-group-prepend .input-group-text[data-v-0d37983e], .input-group-prepend .input-group-text[data-v-0d37983e] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -8366,7 +8366,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-dfbe6640]{\r\n    padding : 120px;\n}\n}\n.noneBg[data-v-dfbe6640]{\r\n  background: transparent !important;\n}\n.traite[data-v-dfbe6640]{\r\n    background: #32ff7e;\n}\n.encours[data-v-dfbe6640]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-dfbe6640]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-dfbe6640] {\r\n    color:black !important;\n}\n.input-group-append[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-dfbe6640]{\n    padding : 120px;\n}\n}\n.noneBg[data-v-dfbe6640]{\n  background: transparent !important;\n}\n.traite[data-v-dfbe6640]{\n    background: #32ff7e;\n}\n.encours[data-v-dfbe6640]{\n    background: #18dcff;\n}\n.nontraite[data-v-dfbe6640]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-dfbe6640] {\n    color:black !important;\n}\n.input-group-append[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -8385,7 +8385,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-3b127256]{\r\n    padding : 120px;\n}\n}\n.noneBg[data-v-3b127256]{\r\n  background: transparent !important;\n}\n.traite[data-v-3b127256]{\r\n    background: #32ff7e;\n}\n.encours[data-v-3b127256]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-3b127256]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-3b127256] {\r\n    color:black !important;\n}\n.input-group-append[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-3b127256]{\n    padding : 120px;\n}\n}\n.noneBg[data-v-3b127256]{\n  background: transparent !important;\n}\n.traite[data-v-3b127256]{\n    background: #32ff7e;\n}\n.encours[data-v-3b127256]{\n    background: #18dcff;\n}\n.nontraite[data-v-3b127256]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-3b127256] {\n    color:black !important;\n}\n.input-group-append[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -24895,7 +24895,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("base-checkbox", [
                   _vm._v(
-                    "\r\n                            Se rappeler de moi\r\n                        "
+                    "\n                            Se rappeler de moi\n                        "
                   )
                 ]),
                 _vm._v(" "),
@@ -25251,7 +25251,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tDemandé par\r\n\t\t")
+            _vm._v("\n\t\t\tDemandé par\n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -25263,9 +25263,9 @@ var render = function() {
                   [_vm._v("Type d'acteur:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.role == 1 ? "UTSS" : "CRCC") +
-                    "\r\n               "
+                    "\n               "
                 )
               ])
             ]),
@@ -25278,11 +25278,11 @@ var render = function() {
                   [_vm._v("Nom et prénom:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.lastname) +
                     " " +
                     _vm._s(this.selectedActeur.name) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -25295,9 +25295,9 @@ var render = function() {
                   [_vm._v("Gouvernorat:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.gouvernorat) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -25310,9 +25310,9 @@ var render = function() {
                   [_vm._v("Téléphone:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.telephone) +
-                    "\r\n               "
+                    "\n               "
                 )
               ])
             ])
@@ -25353,10 +25353,10 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tSupprimer \r\n\t\t")
+            _vm._v("\n\t\t\tSupprimer \n\t\t")
           ]),
           _vm._v(
-            "\r\n\r\n        Etes-vous sûr de supprimer cette demande\r\n\r\n  \r\n\t\t"
+            "\n\n        Etes-vous sûr de supprimer cette demande\n\n  \n\t\t"
           ),
           _c(
             "template",
@@ -25407,7 +25407,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tAjouter une nouvelle demande\r\n\t\t")
+            _vm._v("\n\t\t\tAjouter une nouvelle demande\n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -25717,10 +25717,10 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tSupprimer \r\n\t\t")
+            _vm._v("\n\t\t\tSupprimer \n\t\t")
           ]),
           _vm._v(
-            "\r\n\r\n        Etes-vous sûr de supprimer cette association ?\r\n\r\n  \r\n\t\t"
+            "\n\n        Etes-vous sûr de supprimer cette association ?\n\n  \n\t\t"
           ),
           _c(
             "template",
@@ -25771,7 +25771,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tAjouter une nouvelle association\r\n\t\t")
+            _vm._v("\n\t\t\tAjouter une nouvelle association\n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -26326,7 +26326,7 @@ var render = function() {
           _vm._v(" "),
           _c("p", { staticClass: "description" }, [
             _vm._v(
-              "\r\n        " +
+              "\n        " +
                 _vm._s(
                   this.user.role == 0
                     ? "Téléoperateur"
@@ -26339,9 +26339,7 @@ var render = function() {
                 " "
             ),
             _c("br"),
-            _vm._v(
-              "\r\n        " + _vm._s(this.user.gouvernorat) + " \r\n      "
-            )
+            _vm._v("\n        " + _vm._s(this.user.gouvernorat) + " \n      ")
           ])
         ]),
         _vm._v(" "),
@@ -26382,7 +26380,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\tChanger mon mot de passe\r\n\t\t")
+            _vm._v("\n\t\tChanger mon mot de passe\n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -26655,7 +26653,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [
                         _vm._v(
-                          "  \r\n                   " +
+                          "  \n                   " +
                             _vm._s(
                               userp.role == 0
                                 ? "Téléoperateur"
@@ -26665,7 +26663,7 @@ var render = function() {
                                 ? "CRCC"
                                 : "Admin ministère"
                             ) +
-                            "    \r\n\r\n                "
+                            "    \n\n                "
                         )
                       ]),
                       _vm._v(" "),
@@ -26745,7 +26743,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tPlus d'informations\r\n\t\t")
+            _vm._v("\n\t\t\tPlus d'informations\n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -26757,9 +26755,9 @@ var render = function() {
                   [_vm._v("Type du user:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedDon.type_don) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -26772,9 +26770,9 @@ var render = function() {
                   [_vm._v("Description:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedDon.description) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -26787,9 +26785,9 @@ var render = function() {
                   [_vm._v("Adresse:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedDon.adresse.adresse) +
-                    "\r\n               "
+                    "\n               "
                 )
               ])
             ])
@@ -26830,10 +26828,10 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tSupprimer \r\n\t\t")
+            _vm._v("\n\t\t\tSupprimer \n\t\t")
           ]),
           _vm._v(
-            "\r\n\r\n        Etes-vous sûr de supprimer cet utilisateur ?\r\n\r\n  \r\n\t\t"
+            "\n\n        Etes-vous sûr de supprimer cet utilisateur ?\n\n  \n\t\t"
           ),
           _c(
             "template",
@@ -26884,7 +26882,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tAjouter un nouvel acteur\r\n\t\t")
+            _vm._v("\n\t\t\tAjouter un nouvel acteur\n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -27419,7 +27417,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tPlus d'informations\r\n\t\t")
+            _vm._v("\n\t\t\tPlus d'informations\n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -27431,9 +27429,9 @@ var render = function() {
                   [_vm._v("Type du don:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedDon.type_don) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -27446,9 +27444,9 @@ var render = function() {
                   [_vm._v("Description:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedDon.description) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -27461,9 +27459,9 @@ var render = function() {
                   [_vm._v("Adresse:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedDon.adresse.adresse) +
-                    "\r\n               "
+                    "\n               "
                 )
               ])
             ]),
@@ -27476,9 +27474,9 @@ var render = function() {
                   [_vm._v("Date:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedDon.created_at) +
-                    "\r\n               "
+                    "\n               "
                 )
               ])
             ])
@@ -27519,7 +27517,7 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\r\n\t\t\tAffecté à \r\n\t\t")
+            _vm._v("\n\t\t\tAffecté à \n\t\t")
           ]),
           _vm._v(" "),
           [
@@ -27531,9 +27529,9 @@ var render = function() {
                   [_vm._v("Type d'acteur:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.role == 1 ? "UTSS" : "CRCC") +
-                    "\r\n               "
+                    "\n               "
                 )
               ])
             ]),
@@ -27546,9 +27544,9 @@ var render = function() {
                   [_vm._v("Gouvernorat:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.gouvernorat) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -27561,11 +27559,11 @@ var render = function() {
                   [_vm._v("Nom et prénom:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.lastname) +
                     " " +
                     _vm._s(this.selectedActeur.name) +
-                    "\r\n                 "
+                    "\n                 "
                 )
               ])
             ]),
@@ -27578,9 +27576,9 @@ var render = function() {
                   [_vm._v("Téléphone:")]
                 ),
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                  " +
                     _vm._s(this.selectedActeur.telephone) +
-                    "\r\n               "
+                    "\n               "
                 )
               ])
             ])
@@ -27902,7 +27900,13 @@ var render = function() {
                     _vm._t(
                       "default",
                       [
-                        _c("th", [_vm._v(_vm._s(!_vm.ar ? "Nom" : "الاسم"))]),
+                        _c("th", [
+                          _vm._v(
+                            _vm._s(
+                              !_vm.ar ? "Listes des demandes" : "قائمة الطلبات"
+                            )
+                          )
+                        ]),
                         _vm._v(" "),
                         _c("th", [
                           _vm._v(_vm._s(!_vm.ar ? "Description" : "تفاصيل"))
@@ -28417,7 +28421,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [
                         _vm._v(
-                          "\r\n                   " +
+                          "\n                   " +
                             _vm._s(
                               userp.role == 0
                                 ? "Téléoperateur"
@@ -28427,7 +28431,7 @@ var render = function() {
                                 ? "CRCC"
                                 : "Admin ministère"
                             ) +
-                            "\r\n                "
+                            "\n                "
                         )
                       ])
                     ])
@@ -56061,8 +56065,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\projects\corona\jesr\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\projects\corona\jesr\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/corona/jesr/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/corona/jesr/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
