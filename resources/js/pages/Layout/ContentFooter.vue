@@ -55,7 +55,7 @@
             <div class="copyright" style="margin-right: 120px">
                 &copy;
                 {{ new Date().getFullYear() }} made with <i class="tim-icons icon-heart-2"></i> by
-                <a href="javascript:void(0)" target="_blank">Junior Entreprises Of Tunisia</a>.
+                <a href="https://www.facebook.com/JuniorEnterprisesOfTunisia/" target="_blank">Junior Enterprises Of Tunisia</a>.
             </div>
         </div>
     </footer>

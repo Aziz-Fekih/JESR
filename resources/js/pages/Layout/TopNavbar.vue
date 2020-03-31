@@ -3,7 +3,7 @@
        :class="{'bg-white': showMenu, 'navbar-transparent': !showMenu}">
     <div class="container-fluid">
       <div class="navbar-wrapper">
-        <div class="navbar-toggle d-inline" :class="{toggled: $sidebar.showSidebar}">
+        <div class="navbar-toggle d-none" :class="{toggled: $sidebar.showSidebar}">
           <button type="button"
                   class="navbar-toggler"
                   @click="toggleSidebar">
@@ -12,7 +12,7 @@
             <span class="navbar-toggler-bar bar3"></span>
           </button>
         </div>
-    <a class="navbar-brand" href="javascript:void(0)">   <router-link :to="'/home?ar='+ar">  <img style='width: 80px;' src='/images/logo.png' /></router-link></a> 
+    <a class="navbar-brand" href="javascript:void(0)">   <router-link :to="'/home?ar='+ar">  <img style='width: 80px;' src='/images/logo.png' /></router-link></a>
       </div>
       <button class="navbar-toggler" type="button"
               @click="toggleMenu"
@@ -46,7 +46,7 @@
           </drop-down>
          <drop-down  v-if="!loggedIn">
              <router-link :to="'/home?ar='+ar">
-              <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ?'Home' : 'الاستقبال'}}</a>
+              <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ?'Accueil' : 'الاستقبال'}}</a>
                </router-link>
           </drop-down>
          <drop-down  v-if="!loggedIn">
@@ -54,14 +54,14 @@
               <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ?'Associations' : 'قائمة&nbsp;الجمعيات'}}</a>
                </router-link>
           </drop-down>
-         <drop-down  v-if="!loggedIn">
+         <drop-down  v-if="!loggedIn&&false">
              <router-link :to="'/consulter/acteurs?ar='+ar">
               <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ?'Acteurs&nbsp;etat' : 'قائمة&nbsp;الجهات&nbsp;الحكومية'}}</a>
                </router-link>
           </drop-down>
          <drop-down  v-if="!loggedIn">
              <router-link :to="'/consulter/teleoperateurs?ar='+ar">
-              <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ? "Besoin&nbsp;d'assistance" : 'بحاجة&nbsp;للمساعدة'}}</a>
+              <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ? "Bénévols Assitants" : 'متطوعون&nbsp;لارشادك'}}</a>
                </router-link>
           </drop-down>
           <drop-down  v-if="loggedIn">
@@ -74,7 +74,7 @@
                     Log out
                   </p>
                 </a>
-                
+
                 <ul class="dropdown-menu dropdown-navbar">
                   <li class="nav-link"><router-link to="/consulter/don"><a href="javascript:void(0)" class="nav-item dropdown-item">Dashboard</a></router-link></li>
                   <li class="nav-link"><router-link to="/profil"><a href="javascript:void(0)" class="nav-item dropdown-item">Changer mot de passe</a></router-link></li>
@@ -93,7 +93,7 @@
               <a href="javascript:void(0)" style="color: black;" class="nav-link">العربية</a>
                </router-link>
           </drop-down>
-              
+
         </ul>
       </div>
     </div>

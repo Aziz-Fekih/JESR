@@ -4,19 +4,19 @@
     <template slot="header">
       <h5 class="title">{{!ar ?'Associations' : 'قائمة&nbsp;الجمعيات'}}</h5>
       <div class="row filtre">
-        <div class="col-md-2">
+        <div class="col-md-7 col-lg-8">
           <base-input  :label="!ar ? 'Filtrer par gouvernorat' : ' تصفية حسب الولاية'">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
                 <option v-for="(gouvernorat, index) in gouvernorats"
-                        :value="gouvernorat.fr" 
+                        :value="gouvernorat.fr"
                         :key="index"
                         >{{!ar ? gouvernorat.fr : gouvernorat.ar}}</option>
             </select>
           </base-input>
         </div>
-         <div class="col-md-2">
-              <base-button class="addBtnClass" style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">{{!ar ? 'Afficher tous' : 'إظهار الكل'}}</base-button>
+         <div class="col-md-4">
+              <base-button style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">{{!ar ? 'Afficher tous' : 'إظهار الكل'}}</base-button>
         </div>
 
       </div>
@@ -44,7 +44,7 @@
                         >
                 <td>{{association.nom}}</td>
                 <td>{{association.telephone}}</td>
-                
+
                 <td>{{association.adresse.adresse}}</td>
                 <td>{{association.adresse.gouvernorat}}</td>
 
@@ -59,7 +59,7 @@
 
 
  </div>
- 
+
 </template>
 <script>
 import {
@@ -103,11 +103,11 @@ export default{
         onFiltreAll(){
           this.filtredAssociations = this.associations;
          }
-        
-        
+
+
      },
     mounted(){
-        this.$store.dispatch('getAssociations')            
+        this.$store.dispatch('getAssociations')
             .then((response)=>{
               this.loading = false;
             });

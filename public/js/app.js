@@ -6373,6 +6373,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -7575,6 +7587,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -8098,6 +8117,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -8125,13 +8160,13 @@ __webpack_require__.r(__webpack_exports__);
       },
       type_dons: [{
         fr: 'Argent',
-        ar: 'مال'
+        ar: 'موارد مالية'
       }, {
         fr: 'Nourriture',
-        ar: 'طعام'
+        ar: 'مواد غذائية'
       }, {
         fr: 'Ressources Humaines',
-        ar: 'مموارد بشرية'
+        ar: 'موارد بشرية'
       }, {
         fr: 'Ressources Materiels',
         ar: 'أجهزة'
@@ -24769,7 +24804,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.listDemande[data-v-b33c76ac]{\n    list-style-type: none;\n}\n.big[data-v-b33c76ac]{\n    font-size: 20px;\n    color: #344675 !important;\n}\n@media screen and (min-width: 768px){\n.content[data-v-b33c76ac]{\n    padding : 120px;\n}\n}\n.title[data-v-b33c76ac]{\ncolor: #ff8d72!important;\n}\n.head[data-v-b33c76ac]{\nmargin-top: 220px;\nmargin-bottom: 150px;\n}\n.card[data-v-b33c76ac]{\n    background-color: #f5f6fa;\n}\n.description[data-v-b33c76ac]{\n    color: black !important;\n}\n.tim-icons .icon-single-02[data-v-b33c76ac] {\n    color:black !important;\n}\n.input-group-append[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n#particles-js[data-v-b33c76ac] { position: absolute; background-size: contain; top: 0; bottom: 0; left: 0; right: 0; overflow-y: hidden; z-index: -0;\n}\n\n", ""]);
+exports.push([module.i, "\n.listDemande[data-v-b33c76ac] {\n    list-style-type: none;\n}\n.big[data-v-b33c76ac] {\n    font-size: 20px;\n    color: #344675 !important;\n}\n@media screen and (min-width: 768px) {\n.content[data-v-b33c76ac] {\n        padding: 120px;\n}\n}\n.title[data-v-b33c76ac] {\n    color: #ff8d72 !important;\n}\n.head[data-v-b33c76ac] {\n    margin-top: 220px;\n    margin-bottom: 150px;\n}\n.card[data-v-b33c76ac] {\n    background-color: #f5f6fa;\n}\n.description[data-v-b33c76ac] {\n    color: black !important;\n}\n.tim-icons .icon-single-02[data-v-b33c76ac] {\n    color: black !important;\n}\n.input-group-append[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac], .input-group-prepend .input-group-text[data-v-b33c76ac] {\n    border-color: rgba(29, 37, 59, 0.5) !important;\n}\n#particles-js[data-v-b33c76ac] {\n    position: absolute;\n    background-size: contain;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    overflow-y: hidden;\n    z-index: -0;\n}\n\n", ""]);
 
 // exports
 
@@ -24845,7 +24880,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-636db655]{\r\n    padding : 120px;\n}\n}\n.noneBg[data-v-636db655]{\r\n  background: transparent !important;\n}\n.traite[data-v-636db655]{\r\n    background: #32ff7e;\n}\n.encours[data-v-636db655]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-636db655]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-636db655] {\r\n    color:black !important;\n}\n.input-group-append[data-v-636db655], .input-group-prepend .input-group-text[data-v-636db655], .input-group-prepend .input-group-text[data-v-636db655] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (min-width: 768px) {\n.content[data-v-636db655] {\n        padding: 120px;\n}\n}\n.noneBg[data-v-636db655] {\n    background: transparent !important;\n}\n.traite[data-v-636db655] {\n    background: #32ff7e;\n}\n.encours[data-v-636db655] {\n    background: #18dcff;\n}\n.nontraite[data-v-636db655] {\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-636db655] {\n    color: black !important;\n}\n.input-group-append[data-v-636db655], .input-group-prepend .input-group-text[data-v-636db655], .input-group-prepend .input-group-text[data-v-636db655] {\n    border-color: rgba(29, 37, 59, 0.5) !important;\n}\n", ""]);
 
 // exports
 
@@ -24864,7 +24899,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-dfbe6640]{\r\n    padding : 120px;\n}\n}\n.noneBg[data-v-dfbe6640]{\r\n  background: transparent !important;\n}\n.traite[data-v-dfbe6640]{\r\n    background: #32ff7e;\n}\n.encours[data-v-dfbe6640]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-dfbe6640]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-dfbe6640] {\r\n    color:black !important;\n}\n.input-group-append[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-dfbe6640]{\n    padding : 120px;\n}\n}\n.noneBg[data-v-dfbe6640]{\n  background: transparent !important;\n}\n.traite[data-v-dfbe6640]{\n    background: #32ff7e;\n}\n.encours[data-v-dfbe6640]{\n    background: #18dcff;\n}\n.nontraite[data-v-dfbe6640]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-dfbe6640] {\n    color:black !important;\n}\n.input-group-append[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640], .input-group-prepend .input-group-text[data-v-dfbe6640] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -24902,7 +24937,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.content[data-v-8e93bf24]{\n    padding : 82px;\n}\n.tim-icons .icon-single-02[data-v-8e93bf24] {\n    color:black !important;\n}\n.input-group-append[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-8e93bf24] {\n    padding: 82px;\n}\n.tim-icons .icon-single-02[data-v-8e93bf24] {\n    color: black !important;\n}\n.input-group-append[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24], .input-group-prepend .input-group-text[data-v-8e93bf24] {\n    border-color: rgba(29, 37, 59, 0.5) !important;\n}\n", ""]);
 
 // exports
 
@@ -58826,8 +58861,13 @@ var render = function() {
             _vm._v(" by\n            "),
             _c(
               "a",
-              { attrs: { href: "javascript:void(0)", target: "_blank" } },
-              [_vm._v("Junior Entreprises Of Tunisia")]
+              {
+                attrs: {
+                  href: "https://www.facebook.com/JuniorEnterprisesOfTunisia/",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("Junior Enterprises Of Tunisia")]
             ),
             _vm._v(".\n        ")
           ]
@@ -59196,7 +59236,7 @@ var render = function() {
           _c(
             "div",
             {
-              staticClass: "navbar-toggle d-inline",
+              staticClass: "navbar-toggle d-none",
               class: { toggled: _vm.$sidebar.showSidebar }
             },
             [
@@ -59319,7 +59359,11 @@ var render = function() {
                                 staticStyle: { color: "black" },
                                 attrs: { href: "javascript:void(0)" }
                               },
-                              [_vm._v(_vm._s(!_vm.ar ? "Home" : "الاستقبال"))]
+                              [
+                                _vm._v(
+                                  _vm._s(!_vm.ar ? "Accueil" : "الاستقبال")
+                                )
+                              ]
                             )
                           ]
                         )
@@ -59362,7 +59406,7 @@ var render = function() {
                     )
                   : _vm._e(),
                 _vm._v(" "),
-                !_vm.loggedIn
+                !_vm.loggedIn && false
                   ? _c(
                       "drop-down",
                       [
@@ -59417,8 +59461,8 @@ var render = function() {
                                 _vm._v(
                                   _vm._s(
                                     !_vm.ar
-                                      ? "Besoin d'assistance"
-                                      : "بحاجة للمساعدة"
+                                      ? "Bénévols Assitants"
+                                      : "متطوعون لارشادك"
                                   )
                                 )
                               ]
@@ -60731,12 +60775,12 @@ var render = function() {
               !_vm.ar
                 ? _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\n                    Est une plateforme pour la coordination des collectes de don, elle permet d’associer chaque association voulant participer dans la lutte contre le virus, à un intervenant de l’état le plus proche, que ce soit les UTSS (union tunisienne de la solidarité sociale) ou bien le CRCC .\n                    Elle permet entre autre de diriger les particuliers aux associations qui lui sont le plus proche."
+                      "\n                    Cette application est dédiée aux organisations, associations et de divers militants de la\n                    société civile qui souhaitent s'engager dans l'effort national de don pour contribuer à contrer\n                    les effets du virus Corona sur la société.\n                    Une liste de bénévoles est mise à votre disposition pour vous conseiller. Merci pour votre\n                    coopération.\n                "
                     )
                   ])
                 : _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\n                    هو تطبيق لتنسيق جمع التبرعات ، تسمح بربط كل جمعية ترغب في المشاركة في مكافحة الفيروس ، بأصحاب المصلحة من أقرب دولة ؛ سواء كان الاتحاد التونسي للتضامن الاجتماعي أو اللجنة الجهوية لمجابهة الكوارث.\n. يسمح التطبيق كذلك بتوجيه الأفراد إلى الجمعيات الأقرب إليهم\n                "
+                      "\n                    هذة التطبيقة موضوعة على ذمة المنظمات والجمعيات ومختلف الناشطين بالمجتمع المدني الراغبين في\n                    الانخراط في المجهود الوطني للتبرعات للمساهمة في مجابهة آثار فيروس كورونا على المجتمع.\n                    ويوضع على ذمتكم قائمة في المتطوعين لإرشادكم وتوجيهكم. مع الشكر على حسن التعاون.\n                "
                     )
                   ]),
               _vm._v(" "),
@@ -60827,7 +60871,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", { staticClass: "card-text" }, [
                     _vm._v(
-                      "Consultez le numéro que vous affiche l'application pour nous faire béneficier de votre don."
+                      "Consultez le numéro que vous affiche l'application pour nous faire béneficier\n                    de votre don."
                     )
                   ])
                 ])
@@ -60856,7 +60900,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", { staticClass: "card-text" }, [
                     _vm._v(
-                      "اتصل الرقم الذي يعرضه التطبيق للسماح لنا بالاستفادة من تبرعك\n"
+                      "اتصل الرقم الذي يعرضه التطبيق للسماح لنا بالاستفادة من تبرعك\n                "
                     )
                   ])
                 ])
@@ -60929,25 +60973,25 @@ var render = function() {
             [
               !_vm.ar
                 ? _c("h1", { staticClass: "title" }, [
-                    _vm._v("On a besoin de vous")
+                    _vm._v("Nous avons besoin de vous")
                   ])
                 : _vm._e(),
               _vm._v(" "),
               _vm.ar
                 ? _c("h1", { staticClass: "title" }, [
-                    _vm._v("بلادك حاشتها بيك'")
+                    _vm._v("بلادك حاشتها بيك")
                   ])
                 : _vm._e(),
               _vm._v(" "),
               !_vm.ar
                 ? _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\n  Nous avons besoin de vous , et sommes certains que vous seriez toujours là pour votre patrie ,  si vous pourriez nous aider prière  de consulter cette liste pour mieux orienter votre don.\n                "
+                      "\n                    Nous avons besoin de vous , et sommes certains que vous seriez toujours là pour votre patrie ,\n                    si vous pourriez nous aider prière de consulter cette liste pour mieux orienter votre don.\n                "
                     )
                   ])
                 : _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\n                 بلادك في حاجة ليك و نحنا متأكدين الي بش تاقف معاها ، كان تحب تعاون هاو اكثر حاجات مستحقينهم ا دخل و عمر الإستمارة و كون متاكد الي حاجتك بش تمشي في بلاصتها\n                "
+                      "\n                    بلادك في حاجة ليك و نحنا متأكدين الي بش تاقف معاها ، كان تحب تعاون هاو اكثر حاجات مستحقينهم ا\n                    دخل و عمر الإستمارة و كون متاكد الي حاجتك بش تمشي في بلاصتها\n                "
                     )
                   ]),
               _vm._v(" "),
@@ -60964,7 +61008,7 @@ var render = function() {
                           !_vm.ar
                             ? "Voir la liste des demandes"
                             : "قائمة الطلبات"
-                        )
+                        ) + "\n                    "
                       )
                     ]
                   )
@@ -60991,25 +61035,29 @@ var render = function() {
         },
         [
           _c("template", { slot: "header" }, [
-            _vm._v("\n\t\t\tMerci pour votre Don\n\t\t")
+            _vm._v("\n            Merci pour votre Don\n        ")
           ]),
           _vm._v(" "),
           [
             _c("p", [
-              _vm._v("On vous remercie pour votre généreux Don! L'acteur "),
+              _vm._v("Nous vous remercions pour votre généreux Don! L'acteur "),
               _c("strong", [
                 _vm._v(
                   " " +
                     _vm._s(_vm.acteur.name) +
-                    " " +
+                    "\n                " +
                     _vm._s(_vm.acteur.lastname)
                 )
               ]),
-              _vm._v("\n            affilié à la Gouvernorat "),
+              _vm._v(" affilié à la Gouvernorat "),
               _c("strong", [
-                _vm._v(" " + _vm._s(_vm.acteur.adresse.gouvernorat))
+                _vm._v(
+                  "\n                " + _vm._s(_vm.acteur.adresse.gouvernorat)
+                )
               ]),
-              _vm._v(" va prendre en charge votre Don\n            ")
+              _vm._v(
+                " va prendre en charge votre\n                Don\n            "
+              )
             ])
           ],
           _vm._v(" "),
@@ -61027,7 +61075,7 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("Fermer")]
+                [_vm._v("Fermer\n            ")]
               )
             ],
             1
@@ -62670,7 +62718,7 @@ var render = function() {
                               _vm._v(
                                 _vm._s(
                                   !_vm.ar ? gouvernorat.fr : gouvernorat.ar
-                                )
+                                ) + "\n                            "
                               )
                             ]
                           )
@@ -62699,7 +62747,12 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v(_vm._s(!_vm.ar ? "Afficher tous" : "إظهار الكل"))]
+                    [
+                      _vm._v(
+                        _vm._s(!_vm.ar ? "Afficher tous" : "إظهار الكل") +
+                          "\n                    "
+                      )
+                    ]
                   )
                 ],
                 1
@@ -62778,11 +62831,11 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\r\n           " +
+                              "\n                        " +
                                 _vm._s(
                                   !_vm.ar ? " lire la suite" : "اقرأ المزيد"
                                 ) +
-                                "\r\n          "
+                                "\n                    "
                             )
                           ]
                         )
@@ -62840,9 +62893,9 @@ var render = function() {
         [
           _c("template", { slot: "header" }, [
             _vm._v(
-              "\r\n\t\t" +
+              "\n            " +
                 _vm._s(!_vm.ar ? "Description" : "تفاصيل") +
-                "\r\n\t\t"
+                "\n        "
             )
           ]),
           _vm._v(" "),
@@ -62850,9 +62903,9 @@ var render = function() {
             _c("div", { class: !_vm.ar ? "text-left" : "text-right" }, [
               _c("p", [
                 _vm._v(
-                  "\r\n                  " +
+                  "\n                    " +
                     _vm._s(this.selectedArticle.description) +
-                    "\r\n                 "
+                    "\n                "
                 )
               ])
             ])
@@ -62872,7 +62925,11 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v(_vm._s(!_vm.ar ? "Fermer" : "اغلاق"))]
+                [
+                  _vm._v(
+                    _vm._s(!_vm.ar ? "Fermer" : "اغلاق") + "\n            "
+                  )
+                ]
               )
             ],
             1
@@ -62921,7 +62978,7 @@ var render = function() {
             _c("div", { staticClass: "row filtre" }, [
               _c(
                 "div",
-                { staticClass: "col-md-2" },
+                { staticClass: "col-md-7 col-lg-8" },
                 [
                   _c(
                     "base-input",
@@ -62966,12 +63023,11 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-md-2" },
+                { staticClass: "col-md-4" },
                 [
                   _c(
                     "base-button",
                     {
-                      staticClass: "addBtnClass",
                       staticStyle: { "margin-top": "23px" },
                       attrs: { type: "warning", fill: "" },
                       on: {
@@ -63361,7 +63417,12 @@ var render = function() {
                             return _c(
                               "option",
                               { key: index, domProps: { value: action.fr } },
-                              [_vm._v(_vm._s(!_vm.ar ? action.fr : action.ar))]
+                              [
+                                _vm._v(
+                                  _vm._s(!_vm.ar ? action.fr : action.ar) +
+                                    "\n                            "
+                                )
+                              ]
                             )
                           }),
                           0
@@ -63484,7 +63545,7 @@ var render = function() {
                                 _vm._v(
                                   _vm._s(
                                     !_vm.ar ? gouvernorat.fr : gouvernorat.ar
-                                  )
+                                  ) + "\n                            "
                                 )
                               ]
                             )
@@ -63577,7 +63638,8 @@ var render = function() {
                               { key: index, domProps: { value: type_don.fr } },
                               [
                                 _vm._v(
-                                  _vm._s(!_vm.ar ? type_don.fr : type_don.ar)
+                                  _vm._s(!_vm.ar ? type_don.fr : type_don.ar) +
+                                    "\n                            "
                                 )
                               ]
                             )
@@ -63669,11 +63731,11 @@ var render = function() {
                       },
                       [
                         _vm._v(
-                          "\n               " +
+                          "\n                        " +
                             _vm._s(
                               !_vm.ar ? "Etês-vous motorisé ?" : "مجهز بعربة"
                             ) +
-                            "\n\n            "
+                            "\n\n                    "
                         )
                       ]
                     )
@@ -63688,7 +63750,12 @@ var render = function() {
                   class: !_vm.ar ? "float-left" : "float-right",
                   attrs: { type: "success", fill: "", nativeType: "submit" }
                 },
-                [_vm._v(_vm._s(!_vm.ar ? "Faire un don" : "التبرع"))]
+                [
+                  _vm._v(
+                    _vm._s(!_vm.ar ? "Faire un don" : "التبرع") +
+                      "\n            "
+                  )
+                ]
               )
             ],
             1
@@ -63710,34 +63777,34 @@ var render = function() {
         [
           _c("template", { slot: "header" }, [
             _vm._v(
-              "\n\t\t\t" +
+              "\n            " +
                 _vm._s(!_vm.ar ? "Merci pour votre Don" : "شكرا") +
-                "\n\t\t"
+                "\n        "
             )
           ]),
           _vm._v(" "),
           [
             !_vm.ar
               ? _c("p", { staticClass: "text-left" }, [
-                  _vm._v("On vous remercie pour votre généreux Don!"),
+                  _vm._v("Nous vous remercions pour votre généreux Don!"),
                   _c("strong", [
                     _vm._v(
                       " " +
                         _vm._s(_vm.acteur.name) +
-                        " " +
+                        "\n                " +
                         _vm._s(_vm.acteur.lastname)
                     )
                   ]),
-                  _vm._v(" ayant le numéro de téléphone:\n               "),
+                  _vm._v(
+                    " représentant de l'Union Tunisienne de Solidarité sociale ayant le\n                numéro de téléphone :\n                "
+                  ),
                   _c("strong", [_vm._v(" " + _vm._s(_vm.acteur.telephone))]),
-                  _vm._v(" va prendre en charge votre Don!\n            ")
+                  _vm._v(" prendra en charge votre Don!\n            ")
                 ])
               : _c("p", { staticClass: "text-right" }, [
-                  _vm._v(" سيتكفل بتبرعك "),
-                  _c("strong", [
-                    _vm._v(" " + _vm._s(_vm.acteur.telephone) + " ")
-                  ]),
-                  _vm._v("  رقم الهاتف "),
+                  _vm._v("شكرا على تبرعكم.\n                "),
+                  _c("br"),
+                  _vm._v(" "),
                   _c("strong", [
                     _vm._v(
                       " " +
@@ -63746,7 +63813,20 @@ var render = function() {
                         _vm._s(_vm.acteur.name)
                     )
                   ]),
-                  _vm._v("  شكرا لك على تبرعك السخي\n\n            ")
+                  _vm._v(" "),
+                  _c("span", [_vm._v("سيتكفل بتبرعك")]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(
+                    "\n                ممثل عن الاتحاد التونسي للتضامن الاجتماعي و رقمه "
+                  ),
+                  _c("strong", [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.acteur.telephone) +
+                        " "
+                    )
+                  ])
                 ])
           ],
           _vm._v(" "),
@@ -63764,7 +63844,11 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v(_vm._s(!_vm.ar ? "Fermer" : "اغلاق"))]
+                [
+                  _vm._v(
+                    _vm._s(!_vm.ar ? "Fermer" : "اغلاق") + "\n            "
+                  )
+                ]
               )
             ],
             1
@@ -63786,9 +63870,9 @@ var render = function() {
         [
           _c("template", { slot: "header" }, [
             _vm._v(
-              "\n\t\t\t\t" +
+              "\n            " +
                 _vm._s(!_vm.ar ? "Merci pour votre Don" : "شكرا") +
-                "\n\t\t"
+                "\n        "
             )
           ]),
           _vm._v(" "),
@@ -63820,7 +63904,11 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v(_vm._s(!_vm.ar ? "Fermer" : "اغلاق"))]
+                [
+                  _vm._v(
+                    _vm._s(!_vm.ar ? "Fermer" : "اغلاق") + "\n            "
+                  )
+                ]
               )
             ],
             1
@@ -90646,6 +90734,9 @@ var routes = [{
   component: {
     template: '<div class="auth-component"></div>'
   }
+}, {
+  path: '**',
+  redirect: '/'
 }];
 /* harmony default export */ __webpack_exports__["default"] = (routes);
 
