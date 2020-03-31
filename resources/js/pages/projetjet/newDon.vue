@@ -111,13 +111,13 @@
             </template>
             <template>
                 <p class="text-left" v-if="!ar">Nous vous remercions pour votre généreux Don!<strong> {{acteur.name}}
-                    {{acteur.lastname}}</strong>, représentant(e) de l'Union Tunisienne de Solidarité sociale ayant le
+                    </strong>, représentant(e) de l'Union Tunisienne de Solidarité sociale ayant le
                     numéro de téléphone :
                     <strong> {{acteur.telephone}}</strong>, prendra en charge votre Don!
                 </p>
                 <p class="text-right" v-else>للتكفل بتبرعكم الرجاء الاتصال ب
                     <br>
-                    <strong> {{acteur.lastname}} {{acteur.name}}</strong>
+                    <strong>{{acteur.name}}</strong>
 
                     <span></span>
                     <br>
@@ -161,7 +161,7 @@
                 <thead class="text-primary">
                         <tr>
                             <slot nom="columns">
-                            <th>{{!ar ? 'Nom Complet' : 'الاسم'}}</th>
+                            <th>{{!ar ? 'Listes des organisations et associations partenaires' : 'قائمة المنظمات و الجمعيات الشريكة '}}</th>
                             <th>&nbsp;</th>
                             </slot>
                         </tr>

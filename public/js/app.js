@@ -28920,12 +28920,7 @@ var render = function() {
               ? _c("p", { staticClass: "text-left" }, [
                   _vm._v("Nous vous remercions pour votre généreux Don!"),
                   _c("strong", [
-                    _vm._v(
-                      " " +
-                        _vm._s(_vm.acteur.name) +
-                        "\n                " +
-                        _vm._s(_vm.acteur.lastname)
-                    )
+                    _vm._v(" " + _vm._s(_vm.acteur.name) + "\n                ")
                   ]),
                   _vm._v(
                     ", représentant(e) de l'Union Tunisienne de Solidarité sociale ayant le\n                numéro de téléphone :\n                "
@@ -28937,14 +28932,7 @@ var render = function() {
                   _vm._v("للتكفل بتبرعكم الرجاء الاتصال ب\n                "),
                   _c("br"),
                   _vm._v(" "),
-                  _c("strong", [
-                    _vm._v(
-                      " " +
-                        _vm._s(_vm.acteur.lastname) +
-                        " " +
-                        _vm._s(_vm.acteur.name)
-                    )
-                  ]),
+                  _c("strong", [_vm._v(_vm._s(_vm.acteur.name))]),
                   _vm._v(" "),
                   _c("span"),
                   _vm._v(" "),
@@ -29083,7 +29071,13 @@ var render = function() {
                         "default",
                         [
                           _c("th", [
-                            _vm._v(_vm._s(!_vm.ar ? "Nom Complet" : "الاسم"))
+                            _vm._v(
+                              _vm._s(
+                                !_vm.ar
+                                  ? "Listes des organisations et associations partenaires"
+                                  : "قائمة المنظمات و الجمعيات الشريكة "
+                              )
+                            )
                           ]),
                           _vm._v(" "),
                           _c("th", [_vm._v(" ")])
