@@ -24918,7 +24918,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-3b127256]{\r\n    padding : 120px;\n}\n}\n.noneBg[data-v-3b127256]{\r\n  background: transparent !important;\n}\n.traite[data-v-3b127256]{\r\n    background: #32ff7e;\n}\n.encours[data-v-3b127256]{\r\n    background: #18dcff;\n}\n.nontraite[data-v-3b127256]{\r\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-3b127256] {\r\n    color:black !important;\n}\n.input-group-append[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256] {\r\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (min-width: 768px){\n.content[data-v-3b127256]{\n    padding : 120px;\n}\n}\n.noneBg[data-v-3b127256]{\n  background: transparent !important;\n}\n.traite[data-v-3b127256]{\n    background: #32ff7e;\n}\n.encours[data-v-3b127256]{\n    background: #18dcff;\n}\n.nontraite[data-v-3b127256]{\n    background: #ff8d72;\n}\n.tim-icons .icon-single-02[data-v-3b127256] {\n    color:black !important;\n}\n.input-group-append[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256], .input-group-prepend .input-group-text[data-v-3b127256] {\n    border-color: rgba(29, 37, 59, 0.5)!important;\n}\n", ""]);
 
 // exports
 
@@ -60775,7 +60775,7 @@ var render = function() {
               !_vm.ar
                 ? _c("p", { staticClass: "description" }, [
                     _vm._v(
-                      "\n                    Cette application est dédiée aux organisations, associations et de divers militants de la\n                    société civile qui souhaitent s'engager dans l'effort national de don pour contribuer à contrer\n                    les effets du virus Corona sur la société.\n                    Une liste de bénévoles est mise à votre disposition pour vous conseiller. Merci pour votre\n                    coopération.\n                "
+                      "\n                    Cette application est dédiée aux organisations, associations et divers militants de la\n                    société civile qui souhaitent s'engager dans l'effort national de dons pour contribuer à contrer\n                    les effets du virus Corona sur la société.\n                    Une liste de bénévoles est mise à votre disposition pour vous conseiller. Merci pour votre\n                    coopération.\n                "
                     )
                   ])
                 : _c("p", { staticClass: "description" }, [
@@ -63151,7 +63151,7 @@ var render = function() {
                 _vm._s(
                   !_vm.ar
                     ? "Ces agents peuvent vous assister si vous avez besoin d'aide"
-                    : "يمكن لهذه الاشخاص مساعدتك إذا كنت بحاجة إلى المساعدة"
+                    : "يمكن لهؤلاء الاشخاص مساعدتك إذا كنت بحاجة إلى المساعدة"
                 )
               )
             ]),
@@ -63285,7 +63285,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [
                         _vm._v(
-                          "  \r\n                   " +
+                          "\n                   " +
                             _vm._s(
                               userp.role == 0
                                 ? "Téléoperateur"
@@ -63295,7 +63295,7 @@ var render = function() {
                                 ? "CRCC"
                                 : "Admin ministère"
                             ) +
-                            "    \r\n                "
+                            "\n                "
                         )
                       ])
                     ])

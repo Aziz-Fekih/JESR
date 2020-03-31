@@ -2,14 +2,14 @@
 <div class="content">
   <card>
     <template slot="header">
-      <h5 class="title">{{!ar ?'Ces agents peuvent vous assister si vous avez besoin d\'aide' : 'يمكن لهذه الاشخاص مساعدتك إذا كنت بحاجة إلى المساعدة'}}</h5>
+      <h5 class="title">{{!ar ?'Ces agents peuvent vous assister si vous avez besoin d\'aide' : 'يمكن لهؤلاء الاشخاص مساعدتك إذا كنت بحاجة إلى المساعدة'}}</h5>
       <div class="row filtre">
         <div class="col-md-2">
           <base-input  :label="!ar ? 'Filtrer par gouvernorat' : ' تصفية حسب الولاية'">
             <select class="form-control " @change="onFiltreGouvernoratChange($event)"
             >
                 <option v-for="(gouvernorat, index) in gouvernorats"
-                        :value="gouvernorat.fr" 
+                        :value="gouvernorat.fr"
                         :key="index"
                         >{{!ar ? gouvernorat.fr : gouvernorat.ar}}</option>
             </select>
@@ -28,7 +28,7 @@
                 <slot name="columns">
                 <th>{{!ar ? 'Nom' : 'الاسم'}}</th>
                 <th>{{!ar ? 'Prénom' : 'اللقب'}}</th>
-                
+
                 <!-- <th>Adresse</th> -->
                 <th>{{!ar ? 'Gouvernorat' : 'الولاية'}}</th>
                 <th>{{!ar ? 'Téléphone' : 'الهاتف'}}</th>
@@ -36,7 +36,7 @@
                 <!-- <th>Affecté à</th>
                 <th>Plus d'informations</th> -->
                 <th>{{!ar ? 'Type' : 'المهنة'}}</th>
-                
+
                 </slot>
             </tr>
             </thead>
@@ -51,15 +51,15 @@
                         >
                 <td>{{userp.name}}</td>
                 <td>{{userp.lastname}}</td>
-                
+
                 <!-- <td>{{user.adresse.adresse}}</td> -->
                 <td>{{userp.gouvernorat}}</td>
                 <td>{{userp.telephone}}</td>
                 <td>{{userp.email}}</td>
                 <!-- <td><base-button simple type="primary" v-on:click="selectActeur(user.user)">Affecté à</base-button></td>
                 <td><base-button simple type="primary" v-on:click="selectDon(user)">Plus d'informations</base-button></td> -->
-                 <td>  
-                   {{userp.role == 0 ? 'Téléoperateur' : userp.role == 1 ? 'UTSS' : userp.role == 2 ? 'CRCC' : 'Admin ministère'}}    
+                 <td>
+                   {{userp.role == 0 ? 'Téléoperateur' : userp.role == 1 ? 'UTSS' : userp.role == 2 ? 'CRCC' : 'Admin ministère'}}
                 </td>
 
             </tr>
@@ -71,7 +71,7 @@
     </template>
   </card>
  </div>
- 
+
 </template>
 <script>
 import {
@@ -116,11 +116,11 @@ export default{
         onFiltreAll(){
           this.filtredTele = this.teles;
          }
-        
-        
+
+
      },
     mounted(){
-        let role = 
+        let role =
         this.$store.dispatch('getTeleoperateurs')
         .then((response)=>{
           this.loading = false;

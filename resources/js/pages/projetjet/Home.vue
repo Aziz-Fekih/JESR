@@ -11,8 +11,8 @@
                     <h1 class="title" v-if="!ar">Jesr</h1>
                     <h1 class="title" v-if="ar">جسر</h1>
                     <p class="description" v-if="!ar">
-                        Cette application est dédiée aux organisations, associations et de divers militants de la
-                        société civile qui souhaitent s'engager dans l'effort national de don pour contribuer à contrer
+                        Cette application est dédiée aux organisations, associations et divers militants de la
+                        société civile qui souhaitent s'engager dans l'effort national de dons pour contribuer à contrer
                         les effets du virus Corona sur la société.
                         Une liste de bénévoles est mise à votre disposition pour vous conseiller. Merci pour votre
                         coopération.
