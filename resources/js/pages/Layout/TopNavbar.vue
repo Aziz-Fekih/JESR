@@ -61,7 +61,7 @@
           </drop-down>
          <drop-down  v-if="!loggedIn">
              <router-link :to="'/consulter/teleoperateurs?ar='+ar">
-              <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ? "Bénévols Assitants" : 'متطوعون&nbsp;لارشادك'}}</a>
+              <a href="javascript:void(0)" style="color: black;" class="nav-link">{{!ar ? "Bénévoles Assitants" : 'متطوعون&nbsp;لارشادك'}}</a>
                </router-link>
           </drop-down>
           <drop-down  v-if="loggedIn">

@@ -111,9 +111,9 @@
             </template>
             <template>
                 <p class="text-left" v-if="!ar">Nous vous remercions pour votre généreux Don!<strong> {{acteur.name}}
-                    {{acteur.lastname}}</strong> représentant de l'Union Tunisienne de Solidarité sociale ayant le
+                    {{acteur.lastname}}</strong>, représentant(e) de l'Union Tunisienne de Solidarité sociale ayant le
                     numéro de téléphone :
-                    <strong> {{acteur.telephone}}</strong> prendra en charge votre Don!
+                    <strong> {{acteur.telephone}}</strong>, prendra en charge votre Don!
                 </p>
                 <p class="text-right" v-else>للتكفل بتبرعكم الرجاء الاتصال ب
                     <br>
@@ -121,7 +121,7 @@
 
                     <span></span>
                     <br>
-                    ممثل عن الاتحاد التونسي للتضامن الاجتماعي و رقمه <strong>
+                    ممثل(ة) عن الاتحاد التونسي للتضامن الاجتماعي و رقمه <strong>
                         {{acteur.telephone}} </strong>
 
                 </p>
@@ -153,7 +153,7 @@
         </modal>
         <modal :show.sync="modals.choseActeur">
             <template slot="header">
-                {{!ar ? 'Choisissez parmis de ces acteurs pour prendre en charge votre don' : 'اختر من بين هؤلاء الممثلين لتكفل بتبرعك'}}
+                {{!ar ? 'Choisissez parmi ces acteurs lequel prendra en charge votre don' : 'اختر من بين هؤلاء الممثلين لتكفل بتبرعك'}}
             </template>
             <template>
         <div class="table-responsive">
@@ -168,7 +168,7 @@
                 </thead>
                  <tbody >
                         <tr v-for="(act, index) in acteurs" :key="index">
-                            <td> {{act.name}} {{act.lastname}}  </td>
+                            <td> {{act.lastname}}  </td>
                             <td><base-button class="float-right" type="primary" fill v-on:click="choseUnActeur(act)">{{!ar
                                 ?'Choisir' : 'اختيار'}}
                             </base-button></td>
@@ -279,7 +279,7 @@
                             this.acteur = acteur;
                             this.modals.choseActeur = false;
                             this.modals.userModal = true;
-                        })    
+                        })
             },
             verifierFormulaire() {
                 let message = "Veuillez remplir tous les champs!"

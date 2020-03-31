@@ -6002,7 +6002,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       },
       gouvernorats: ["Ariana", "Beja", "Ben Arous", "Bizerte", "Gabes", "Gafsa", "Jendouba", "Kairouan", "Kasserine", "Kebili", "Le Kef", "Mahdia", "La Manouba", "Medenine", "Monastir", "Nabeul", "Sfax", "Sidi Bouzid", "Siliana", "Sousse", "Tataouine", "Tozeur", "Tunis", "Zaghouan"],
-      type_dons: ['Argent', 'Nourriture', 'Ressources Humaines', 'Ressources Materiels', 'Autres'],
+      type_dons: ['Argent', 'Nourriture', 'Ressources Humaines', 'Ressources Matérielles', 'Autres'],
       actions: ['Particulier', 'Association'],
       rtl: false,
       model: {
@@ -24639,7 +24639,7 @@ var render = function() {
                                 _vm._v(
                                   _vm._s(
                                     !_vm.ar
-                                      ? "Bénévols Assitants"
+                                      ? "Bénévoles Assitants"
                                       : "متطوعون لارشادك"
                                   )
                                 )
@@ -28928,10 +28928,10 @@ var render = function() {
                     )
                   ]),
                   _vm._v(
-                    " représentant de l'Union Tunisienne de Solidarité sociale ayant le\n                numéro de téléphone :\n                "
+                    ", représentant(e) de l'Union Tunisienne de Solidarité sociale ayant le\n                numéro de téléphone :\n                "
                   ),
                   _c("strong", [_vm._v(" " + _vm._s(_vm.acteur.telephone))]),
-                  _vm._v(" prendra en charge votre Don!\n            ")
+                  _vm._v(", prendra en charge votre Don!\n            ")
                 ])
               : _c("p", { staticClass: "text-right" }, [
                   _vm._v("للتكفل بتبرعكم الرجاء الاتصال ب\n                "),
@@ -28950,7 +28950,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("br"),
                   _vm._v(
-                    "\n                ممثل عن الاتحاد التونسي للتضامن الاجتماعي و رقمه "
+                    "\n                ممثل(ة) عن الاتحاد التونسي للتضامن الاجتماعي و رقمه "
                   ),
                   _c("strong", [
                     _vm._v(
@@ -29065,7 +29065,7 @@ var render = function() {
               "\n            " +
                 _vm._s(
                   !_vm.ar
-                    ? "Choisissez parmis de ces acteurs pour prendre en charge votre don"
+                    ? "Choisissez parmi ces acteurs lequel prendra en charge votre don"
                     : "اختر من بين هؤلاء الممثلين لتكفل بتبرعك"
                 ) +
                 "\n        "
@@ -29099,15 +29099,7 @@ var render = function() {
                   "tbody",
                   _vm._l(_vm.acteurs, function(act, index) {
                     return _c("tr", { key: index }, [
-                      _c("td", [
-                        _vm._v(
-                          " " +
-                            _vm._s(act.name) +
-                            " " +
-                            _vm._s(act.lastname) +
-                            "  "
-                        )
-                      ]),
+                      _c("td", [_vm._v(" " + _vm._s(act.lastname) + "  ")]),
                       _vm._v(" "),
                       _c(
                         "td",

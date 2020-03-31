@@ -187,7 +187,7 @@
                 type_dons: ['Argent',
                     'Nourriture',
                     'Ressources Humaines',
-                    'Ressources Materiels',
+                    'Ressources Matérielles',
                     'Autres'],
                 actions: ['Particulier', 'Association'],
                 rtl: false,
