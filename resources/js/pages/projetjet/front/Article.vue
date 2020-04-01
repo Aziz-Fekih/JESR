@@ -6,7 +6,7 @@
                 <div class="row filtre">
                     <div class="col-sm-4">
                         <base-input :label="!ar ? 'Filtrer par gouvernorat' : ' تصفية حسب الولاية'">
-                            <select class="form-control " @change="onFiltreGouvernoratChange($event)"
+                            <select class="form-control " @change="onFiltreGouvernoratChange($event)" v-model="filtre"
                             >
                                 <option v-for="(gouvernorat, index) in gouvernorats"
                                         :value="gouvernorat.fr"
@@ -112,7 +112,8 @@
                     demandeModal: false,
                 },
                 loading: true,
-                selectedArticle: {}
+                selectedArticle: {},
+                filtre: ''
             }
         },
         methods: {
@@ -125,6 +126,7 @@
                 });
             },
             onFiltreAll() {
+                this.filtre = '';
                 this.filtredArticles = this.articles;
             }
 
