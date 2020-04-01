@@ -24671,7 +24671,7 @@ var render = function() {
                               staticStyle: { color: "black" },
                               attrs: { href: "javascript:void(0)" }
                             },
-                            [_vm._v("Français")]
+                            [_vm._v("Fr")]
                           )
                         ])
                       ],
@@ -24694,7 +24694,7 @@ var render = function() {
                                 staticStyle: { color: "black" },
                                 attrs: { href: "javascript:void(0)" }
                               },
-                              [_vm._v("العربية")]
+                              [_vm._v("ع")]
                             )
                           ]
                         )
@@ -28958,7 +28958,7 @@ var render = function() {
                   _c("strong", [_vm._v(_vm._s(_vm.acteur.lastname))]),
                   _vm._v(" "),
                   _c("br"),
-                  _vm._v("\n                و رقمه\n                "),
+                  _vm._v("\n                و رقمه(ها)\n                "),
                   _c("br"),
                   _vm._v(" "),
                   _c("strong", [_vm._v(_vm._s(_vm.acteur.telephone) + " ")])
@@ -29069,7 +29069,7 @@ var render = function() {
                 _vm._s(
                   !_vm.ar
                     ? "Choisissez parmi ces acteurs lequel prendra en charge votre don"
-                    : "اختر من بين هؤلاء الممثلين لتكفل بتبرعك"
+                    : "اختر من بين هؤلاء الممثلين من يتكفل بتبرعك"
                 ) +
                 "\n        "
             )

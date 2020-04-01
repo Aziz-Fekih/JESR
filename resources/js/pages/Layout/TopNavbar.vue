@@ -67,12 +67,12 @@
 
          <drop-down  v-if="!loggedIn||true">
              <router-link :to="this.$route.path">
-              <a href="javascript:void(0)" style="color: black;" class="nav-link">Français</a>
+              <a href="javascript:void(0)" style="color: black;" class="nav-link">Fr</a>
                </router-link>
           </drop-down>
          <drop-down  v-if="!loggedIn||true">
              <router-link :to="this.$route.path+'?ar=true'">
-              <a href="javascript:void(0)" style="color: black;" class="nav-link">العربية</a>
+              <a href="javascript:void(0)" style="color: black;" class="nav-link">ع</a>
                </router-link>
           </drop-down>
 

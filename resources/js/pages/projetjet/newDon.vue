@@ -123,7 +123,7 @@
                     <br>
                     <strong>{{acteur.lastname}}</strong>
                     <br>
-                    و رقمه
+                    و رقمه(ها)
                     <br>
                     <strong>{{acteur.telephone}} </strong>
 
@@ -156,7 +156,7 @@
         </modal>
         <modal :show.sync="modals.choseActeur">
             <template slot="header">
-                {{!ar ? 'Choisissez parmi ces acteurs lequel prendra en charge votre don' : 'اختر من بين هؤلاء الممثلين لتكفل بتبرعك'}}
+                {{!ar ? 'Choisissez parmi ces acteurs lequel prendra en charge votre don' : 'اختر من بين هؤلاء الممثلين من يتكفل بتبرعك'}}
             </template>
             <template>
                 <div class="table-responsive">
