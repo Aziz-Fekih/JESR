@@ -7,7 +7,7 @@
       <div class="block block-three"></div>
       <div class="block block-four"></div>
       <a href="#">
-        <img class="avatar" src="../../assets/img/anime6.png" alt="...">
+        <img class="avatar" src="../../assets/img/anime3.png" alt="...">
         <h5 class="title">{{ this.user.lastname }} {{ this.user.name }}</h5>
       </a>
       <p class="description">
