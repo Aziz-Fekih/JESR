@@ -16,7 +16,7 @@ class ArticleController extends Controller
         return response()->json('Article ajoute!', 200);  
     }
     public function getArticles(Request $request){
-        $articles = Article::all()->load('user');
+        $articles = Article::orderBy('id', 'DESC')->get()->load('user');
         return response()->json($articles, 200);
     }
 

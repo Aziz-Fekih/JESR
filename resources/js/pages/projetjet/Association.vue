@@ -175,7 +175,7 @@ export default {
 					etat: event.target.value
 				})
 				.then(response => {
-					console.log(response);
+					//console.log(response);
 					//Notifier
 				});
 		},
@@ -189,7 +189,7 @@ export default {
 					this.$store
 						.dispatch("newAssociation", this.newAssociation)
 						.then(response => {
-							console.log(response);
+							//console.log(response);
 							this.$notify({
 								icon: "tim-icons icon-bell-55",
 								horizontalAlign: "right",
@@ -207,7 +207,7 @@ export default {
 							association: this.newAssociation
 						})
 						.then(response => {
-							console.log(response);
+							//console.log(response);
 							this.$notify({
 								icon: "tim-icons icon-bell-55",
 								horizontalAlign: "right",
@@ -246,8 +246,8 @@ export default {
 		},
 		checkPhone(phone) {
 			var strPhone = phone + "";
-			console.log(strPhone.length);
-			console.log(parseInt(strPhone[0]));
+			//console.log(strPhone.length);
+			//console.log(parseInt(strPhone[0]));
 			if (
 				strPhone.length == 8 &&
 				(parseInt(strPhone[0]) == 2 ||
@@ -273,7 +273,7 @@ export default {
 			this.$store
 				.dispatch("deleteAssociation", this.selectedAssociation)
 				.then(response => {
-					console.log(response);
+					//console.log(response);
 					this.$notify({
 						icon: "tim-icons icon-bell-55",
 						horizontalAlign: "right",
@@ -293,7 +293,7 @@ export default {
 		selectAssociation(acteur) {
 			this.action = "update";
 			this.newAssociation = acteur;
-			console.log(this.newAssociation);
+			//console.log(this.newAssociation);
 			this.modals.newAssociation = true;
 		},
 		actionNewAssociation() {

@@ -50,6 +50,13 @@ class UserController extends Controller
                                     'gouvernorat' => $request->gouvernorat,
                                     'gouvernorat_id' => 1,
                         ]);
+                if($request->password){
+                    if($request->password != ""){
+                        $user->update([ 
+                            'password' => Hash::make($request->password)
+                                    ]);
+                    }
+                }
                 return response()->json('User modifié!', 200);     
             }else{
                 return response()->json('User non trouve!', 400); 
@@ -72,7 +79,7 @@ class UserController extends Controller
 
     public function getDons(Request $request, User $user){
         if($user->id){
-            $dons = Don::where('user_id', $user->id)->get()->load('adresse', 'user');;
+            $dons = Don::where('user_id', $user->id)->orderBy('id', 'DESC')->get()->load('adresse', 'user');;
             return response()->json($dons, 200);  
         }
         return response()->json('User non trouve!', 400);  

@@ -28,17 +28,15 @@
   </body>
   <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
   <script>
-    var chatbotUrl = '';
     var botmanWidget = {
-        chatServer: chatbotUrl+'/bot/public/optibot',
-        frameEndpoint: chatbotUrl+ '/bot/public/chat',
+        chatServer: 'https://nameless-atoll-27397.herokuapp.com/optibot',
+        frameEndpoint: 'https://nameless-atoll-27397.herokuapp.com/chat',
         mainColor: '#48dbfb',
         sendWidgetOpenedEvent: true,
-        bubbleAvatarUrl: chatbotUrl+ "/bot/public/chatbot.PNG",
         headerTextColor: 'white',
         placeholderText: '...اكتب الرد',
         title: 'جسر بوت'
     };
 </script>
-<script id="botmanWidget" src="/bot/public/js/widget.js"></script>
+<script id="botmanWidget" src="https://nameless-atoll-27397.herokuapp.com/js/widget.js"></script>
 </html>

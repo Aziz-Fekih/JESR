@@ -370,7 +370,7 @@ export default {
                     provider: data.provider
                 })
                 .then(response => {
-                    console.log(response);
+                    // console.log(response);
                     const token = response.data.access_token;
                     localStorage.setItem('access_token', token);
                     context.commit('retrieveToken', token);
@@ -548,6 +548,20 @@ export default {
                     etat: data.etat
                 })
                 .then(response => {
+                    resolve(response.data);
+                })
+                .catch(error => {
+                    reject(error);
+                })
+            })
+        },
+        deleteDon(context, donId){
+            return new Promise((resolve, reject) => {
+                Axios.defaults.headers.common['Authorization'] = 'Bearer '+ context.state.token;
+                Axios.delete(context.state.apiurl+'/api/don/'+donId)
+                .then(response => {
+                    context.commit('toggleRefresh', false);
+                    context.dispatch('getDons');
                     resolve(response.data);
                 })
                 .catch(error => {

@@ -26,6 +26,10 @@
                     <router-link :to="'/don?ar='+ar">
                         <base-button type="warning" fill>{{!ar ?'Faire un don' : 'التبرع'}}</base-button>
                     </router-link>
+                    <router-link :to="'/consulter/demandes?ar='+ar">
+                        <base-button type="secondary" fill>{{!ar ?'Liste des demandes de dons' : ' قائمة طلبات التبرع'}}
+                        </base-button>
+                    </router-link>
 
                 </div>
 
@@ -84,7 +88,7 @@
             <div class="col-md-6">
                 <div class="justify-content-center " :class="ar ? 'text-right' : 'text-left'">
                     <h1 class="title" v-if="!ar">Nous avons besoin de vous</h1>
-                    <h1 class="title" v-if="ar">بلادك حاشتها بيك</h1>
+                    <h1 class="title" v-if="ar">بلادك حاجتها بيك</h1>
                     <p class="description" v-if="!ar">
                         Nous avons besoin de vous , et sommes certains que vous seriez toujours là pour votre patrie ,
                         si vous pourriez nous aider prière de consulter cette liste pour mieux orienter votre don.
