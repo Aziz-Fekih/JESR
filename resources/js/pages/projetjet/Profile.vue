@@ -68,7 +68,7 @@ export default {
   			this.$store
 				.dispatch("updatePassword", {password: this.password, userId: this.user.id})
 				.then(response => {
-					console.log(response);
+					//console.log(response);
 					this.$notify({
 						icon: "tim-icons icon-bell-55",
 						horizontalAlign: "right",

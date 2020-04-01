@@ -26,7 +26,7 @@ class AssociationController extends Controller
         
     }
     public function getAssociations(request $request){
-        $associations = Association::all()->load('adresse');
+        $associations = Association::orderBy('id', 'DESC')->get()->load('adresse');
         return response()->json($associations, 200);
     }
 

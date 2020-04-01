@@ -15,14 +15,14 @@
             </select>
           </base-input>
         </div>
-         <div class="col-xl-3">
+         <div class="col-xl-3" v-if="parseInt(user.role) == 1 || parseInt(user.role) == 2">
               <base-button style="    margin-top: 23px;" type="secondary" fill v-on:click="onFiltreSelf()">Mes demandes</base-button>
         </div>
          <div class="col-xl-2">
               <base-button style="    margin-top: 23px;" type="warning" fill v-on:click="onFiltreAll()">Voir tous</base-button>
         </div>
-         <div class="col-xl-3">
-              <base-button  v-if="parseInt(user.role) == 1 || parseInt(user.role) == 2"  style="   margin-top: 23px;" type="success" fill v-on:click="actionNewArticle()">Ajouter un nouveau article</base-button>
+         <div class="col-xl-3" v-if="parseInt(user.role) == 1 || parseInt(user.role) == 2">
+              <base-button    style="   margin-top: 23px;" type="success" fill v-on:click="actionNewArticle()">Ajouter une nouvelle demande</base-button>
         </div>
       </div>
     </template>
@@ -205,7 +205,7 @@ export default{
          if(this.modal.nom != '' || this.modal.adresse != '' || this.modal.description != '')
          this.$store.dispatch('newDon', this.model)
            .then(response => {
-               console.log(response);
+               //console.log(response);
             //    this.acteur = response;
                this.modals.donModal = true;
            })
@@ -217,7 +217,7 @@ export default{
            etat: event.target.value
          })
            .then(response => {
-               console.log(response);
+               //console.log(response);
                //Notifier
            })
         },
@@ -226,7 +226,7 @@ export default{
             this.newArticle['userId'] = this.user.id;
             this.$store.dispatch('newArticle', this.newArticle)
            .then(response => {
-               console.log(response);
+               //console.log(response);
 		  	this.$notify({
 				icon: "tim-icons icon-bell-55",
 				horizontalAlign: 'right',
@@ -244,7 +244,7 @@ export default{
                 article: this.newArticle
             })
            .then(response => {
-               console.log(response);
+               //console.log(response);
 			this.$notify({
 				icon: "tim-icons icon-bell-55",
 				horizontalAlign: 'right',
@@ -261,7 +261,7 @@ export default{
         deleteArticle(){
             this.$store.dispatch('deleteArticle', this.selectedArticle)
            .then(response => {
-            console.log(response);
+            //console.log(response);
           this.$notify({
             icon: "tim-icons icon-bell-55",
             horizontalAlign: 'right',
@@ -281,7 +281,7 @@ export default{
         selectArticle(article){
           this.action = 'update';
           this.newArticle = article;
-          console.log(this.newArticle );
+          //console.log(this.newArticle );
           this.modals.newArticle = true;
         },
         actionNewArticle(){

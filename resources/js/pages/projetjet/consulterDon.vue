@@ -44,6 +44,7 @@
                 <th>Affecté à</th>
                 <th>Plus d'informations</th>
                 <th>Etat</th>
+                <th v-show="parseInt(user.role) == 3">&nbsp;</th>
                 </slot>
             </tr>
             </thead>
@@ -76,7 +77,12 @@
                     </select>
                   </base-input>
                 </td>
-            </tr>
+                <td class="td-actions text-right" v-show="parseInt(user.role) == 3"> 
+                    <base-button type="danger" size="sm" icon v-on:click="selectedDonId = don.id; modals.deleteDon = true;">
+                      <i class="tim-icons icon-simple-remove"></i>
+                </base-button>
+                </td>           
+               </tr>
             </tbody>
         </table>
         </div>
@@ -158,7 +164,23 @@
 			>
 		</template>
 	</modal>
+  	<modal :show.sync="modals.deleteDon">
+		<template slot="header">
+			Supprimer 
+		</template>
 
+        Etes-vous sûr de supprimer ce don ?
+
+  
+		<template slot="footer">
+			<base-button type="secondary" @click="modals.deleteDon = false;"
+				>Annuler</base-button
+			>
+			<base-button type="danger" @click="deleteDon()"
+				>Supprimer</base-button
+			>
+		</template>
+	</modal>
  </div>
  
 </template>
@@ -183,7 +205,8 @@ export default{
     return {
         modals:{
             donModal: false,
-            acteurModal: false
+            acteurModal: false,
+            deleteDon: false
         },
       loading: true,
       selectedDon: {
@@ -196,6 +219,7 @@ export default{
 
         }
       },
+      selectedDonId: -1
     }
  },
  methods:{
@@ -203,7 +227,7 @@ export default{
          if(this.modal.nom != '' || this.modal.adresse != '' || this.modal.description != '')
          this.$store.dispatch('newDon', this.model)
            .then(response => {
-               console.log(response);
+              //  console.log(response);
             //    this.acteur = response;
                this.modals.donModal = true;
            })
@@ -216,7 +240,7 @@ export default{
            etat: event.target.value
          })
            .then(response => {
-            console.log(response);
+            // console.log(response);
             this.$notify({
               icon: "tim-icons icon-bell-55",
               horizontalAlign: 'right',
@@ -227,13 +251,28 @@ export default{
               });
             })
         },
+        deleteDon(){
+            this.$store.dispatch('deleteDon', this.selectedDonId)
+           .then(response => {
+            //console.log(response);
+            this.$notify({
+            icon: "tim-icons icon-bell-55",
+            horizontalAlign: 'right',
+            verticalAlign: 'top',
+            type: 'success',
+            timeout: 4000,
+            message: 'Don supprimé!'
+            });    
+            this.modals.deleteDon = false;
+           })
+        },
         selectDon(don){
           this.selectedDon = don;
           this.modals.donModal = true;
         },
         selectActeur(acteur){
           this.selectedActeur = acteur;
-          console.log(this.selectedActeur );
+          // console.log(this.selectedActeur );
           this.modals.acteurModal = true;
         },
         onFiltreGouvernoratChange(event){

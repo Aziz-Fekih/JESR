@@ -41,7 +41,7 @@ class DonController extends Controller
             }
         }else
         {
-            $dons = Don::all()->load('adresse', 'user');
+            $dons = Don::orderBy('id', 'DESC')->get()->load('adresse', 'user');
         }
         return response()->json($dons, 200);
     }
@@ -124,7 +124,7 @@ class DonController extends Controller
     }
     public function deleteDon(Request $request, Don $don)
     {
-        if ($don)
+        if ($don->id)
         {
             $don->delete();
             return response()

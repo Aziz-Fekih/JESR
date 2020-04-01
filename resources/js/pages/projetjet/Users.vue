@@ -187,8 +187,7 @@
                 <option value="3">Admin ministere</option>
             </select>
           </base-input>
-           <base-input label="Mot de passe : "
-                  v-if="action == 'create'"
+           <base-input :label="action == 'create' ? 'Mot de passe :' : 'Nouveau Mot de passe' "
                   v-model="newUser.password"
                   type="password"
                   placeholder="Mot de passe">
@@ -258,7 +257,7 @@ export default{
            etat: event.target.value
          })
            .then(response => {
-               console.log(response);
+               //console.log(response);
                //Notifier
            })
         },
@@ -268,7 +267,7 @@ export default{
             if(this.action == 'create'){
                   this.$store.dispatch('newUser', this.newUser)
                 .then(response => {
-                    console.log(response);
+                    //console.log(response);
                 this.$notify({
                   icon: "tim-icons icon-bell-55",
                   horizontalAlign: 'right',
@@ -285,7 +284,7 @@ export default{
                       user: this.newUser
                   })
                 .then(response => {
-                    console.log(response);
+                    //console.log(response);
                 this.$notify({
                   icon: "tim-icons icon-bell-55",
                   horizontalAlign: 'right',
@@ -300,7 +299,7 @@ export default{
         }
         },
         verifierFormulaire(){
-          console.log(this.newUser);
+          //console.log(this.newUser);
           if(this.newUser.name == '' || this.newUser.lastname == '' || this.newUser.telephone  == '' || this.newUser.email == '' || this.newUser.adresse.adresse == '')
             {
                 this.$notify({type: 'danger', timeout: 4000, message: 'Veuillez remplir tous les champs!', icon: "tim-icons icon-bell-55", horizontalAlign: 'right', verticalAlign: 'top'});
@@ -325,8 +324,8 @@ export default{
         },
         checkPhone(phone){
           var strPhone = phone + '';
-            console.log(strPhone.length);
-            console.log(parseInt(strPhone[0]));
+            //console.log(strPhone.length);
+            //console.log(parseInt(strPhone[0]));
             if(strPhone.length == 8 && (parseInt(strPhone[0]) == 2 || parseInt(strPhone[0]) == 4 || parseInt(strPhone[0]) == 5 || parseInt(strPhone[0]) == 9 || parseInt(strPhone[0]) == 7)){
               return true;
             }else{
@@ -337,7 +336,7 @@ export default{
         deleteUser(){
             this.$store.dispatch('deleteUser', this.selectedUser)
            .then(response => {
-            console.log(response);
+            //console.log(response);
             this.$notify({
             icon: "tim-icons icon-bell-55",
             horizontalAlign: 'right',
@@ -357,7 +356,7 @@ export default{
         selectActeur(acteur){
           this.action = 'update';
           this.newUser = acteur;
-          console.log(this.newUser );
+          //console.log(this.newUser );
           this.modals.newUser = true;
         },
         actionNewUser(){
