@@ -3,6 +3,8 @@
 /public/storage
 /public/js/app.js
 /public/css/app.css
+/public/fonts
+/public/images/anime*
 /storage/*.key
 /vendor
 /.idea
