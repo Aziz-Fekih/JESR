@@ -111,18 +111,21 @@
             </template>
             <template>
                 <p class="text-left" v-if="!ar">Nous vous remercions pour votre généreux Don!<strong> {{acteur.name}}
-                    </strong>, représentant(e) de l'Union Tunisienne de Solidarité sociale ayant le
+                </strong>, représentant(e) de <strong>{{acteur.lastname}}</strong> ayant le
                     numéro de téléphone :
                     <strong> {{acteur.telephone}}</strong>, prendra en charge votre Don!
                 </p>
-                <p class="text-right" v-else>للتكفل بتبرعكم الرجاء الاتصال ب
+                <p class="text-right" v-else>للتكفل بتبرعكم الرجاء الاتصال بالسيد(ة)
                     <br>
                     <strong>{{acteur.name}}</strong>
-
-                    <span></span>
                     <br>
-                    ممثل(ة) عن الاتحاد التونسي للتضامن الاجتماعي و رقمه <strong>
-                        {{acteur.telephone}} </strong>
+                    ممثل(ة) عن
+                    <br>
+                    <strong>{{acteur.lastname}}</strong>
+                    <br>
+                    و رقمه
+                    <br>
+                    <strong>{{acteur.telephone}} </strong>
 
                 </p>
 
@@ -156,26 +159,30 @@
                 {{!ar ? 'Choisissez parmi ces acteurs lequel prendra en charge votre don' : 'اختر من بين هؤلاء الممثلين لتكفل بتبرعك'}}
             </template>
             <template>
-        <div class="table-responsive">
-            <table class="table tablesorter text-left">
-                <thead class="text-primary">
+                <div class="table-responsive">
+                    <table class="table tablesorter text-left">
+                        <thead class="text-primary">
                         <tr>
                             <slot nom="columns">
-                            <th>{{!ar ? 'Listes des organisations et associations partenaires' : 'قائمة المنظمات و الجمعيات الشريكة '}}</th>
-                            <th>&nbsp;</th>
+                                <th>{{!ar ? 'Listes des organisations et associations partenaires' : 'قائمة المنظمات و الجمعيات الشريكة '}}
+                                </th>
+                                <th>&nbsp;</th>
                             </slot>
                         </tr>
-                </thead>
-                 <tbody >
+                        </thead>
+                        <tbody>
                         <tr v-for="(act, index) in acteurs" :key="index">
-                            <td> {{act.lastname}}  </td>
-                            <td><base-button class="float-right" type="primary" fill v-on:click="choseUnActeur(act)">{{!ar
-                                ?'Choisir' : 'اختيار'}}
-                            </base-button></td>
+                            <td> {{act.lastname}}</td>
+                            <td>
+                                <base-button class="float-right" type="primary" fill v-on:click="choseUnActeur(act)">
+                                    {{!ar
+                                    ?'Choisir' : 'اختيار'}}
+                                </base-button>
+                            </td>
                         </tr>
-                  </tbody>
-                </table>
-            </div>
+                        </tbody>
+                    </table>
+                </div>
 
             </template>
             <template slot="footer">
@@ -272,14 +279,14 @@
                             // this.modals.userModal = true;
                         })
             },
-            choseUnActeur(acteur){
-                     this.$store.dispatch('setActeur', {acteurId: acteur.id, donId: this.donId})
-                        .then(response => {
-                            console.log(response);
-                            this.acteur = acteur;
-                            this.modals.choseActeur = false;
-                            this.modals.userModal = true;
-                        })
+            choseUnActeur(acteur) {
+                this.$store.dispatch('setActeur', {acteurId: acteur.id, donId: this.donId})
+                    .then(response => {
+                        console.log(response);
+                        this.acteur = acteur;
+                        this.modals.choseActeur = false;
+                        this.modals.userModal = true;
+                    })
             },
             verifierFormulaire() {
                 let message = "Veuillez remplir tous les champs!"

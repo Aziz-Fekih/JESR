@@ -7749,6 +7749,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -24495,7 +24502,7 @@ var render = function() {
                 class: _vm.$rtl.isRTL ? "mr-auto" : "ml-auto"
               },
               [
-                !_vm.loggedIn
+                !_vm.loggedIn || true
                   ? _c(
                       "drop-down",
                       [
@@ -24520,7 +24527,7 @@ var render = function() {
                     )
                   : _vm._e(),
                 _vm._v(" "),
-                !_vm.loggedIn
+                !_vm.loggedIn || true
                   ? _c(
                       "drop-down",
                       [
@@ -24548,7 +24555,7 @@ var render = function() {
                     )
                   : _vm._e(),
                 _vm._v(" "),
-                !_vm.loggedIn
+                !_vm.loggedIn || true
                   ? _c(
                       "drop-down",
                       [
@@ -24571,7 +24578,7 @@ var render = function() {
                                 _vm._v(
                                   _vm._s(
                                     !_vm.ar
-                                      ? "Associations partenaires"
+                                      ? "Organisations et Associations partenaires"
                                       : " المنظمات و الجمعيات الشريكة"
                                   )
                                 )
@@ -24616,7 +24623,7 @@ var render = function() {
                     )
                   : _vm._e(),
                 _vm._v(" "),
-                !_vm.loggedIn
+                !_vm.loggedIn || true
                   ? _c(
                       "drop-down",
                       [
@@ -24652,6 +24659,50 @@ var render = function() {
                     )
                   : _vm._e(),
                 _vm._v(" "),
+                !_vm.loggedIn || true
+                  ? _c(
+                      "drop-down",
+                      [
+                        _c("router-link", { attrs: { to: this.$route.path } }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              staticStyle: { color: "black" },
+                              attrs: { href: "javascript:void(0)" }
+                            },
+                            [_vm._v("Français")]
+                          )
+                        ])
+                      ],
+                      1
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                !_vm.loggedIn || true
+                  ? _c(
+                      "drop-down",
+                      [
+                        _c(
+                          "router-link",
+                          { attrs: { to: this.$route.path + "?ar=true" } },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                staticStyle: { color: "black" },
+                                attrs: { href: "javascript:void(0)" }
+                              },
+                              [_vm._v("العربية")]
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
                 _vm.loggedIn
                   ? _c("drop-down", [
                       _c(
@@ -24676,7 +24727,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("p", { staticClass: "d-lg-none" }, [
                             _vm._v(
-                              "\n                  Log out\n                "
+                              "\n                      Log out\n                  "
                             )
                           ])
                         ]
@@ -24752,50 +24803,6 @@ var render = function() {
                         ]
                       )
                     ])
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.loggedIn
-                  ? _c(
-                      "drop-down",
-                      [
-                        _c("router-link", { attrs: { to: this.$route.path } }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "nav-link",
-                              staticStyle: { color: "black" },
-                              attrs: { href: "javascript:void(0)" }
-                            },
-                            [_vm._v("Français")]
-                          )
-                        ])
-                      ],
-                      1
-                    )
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.loggedIn
-                  ? _c(
-                      "drop-down",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: this.$route.path + "?ar=true" } },
-                          [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "nav-link",
-                                staticStyle: { color: "black" },
-                                attrs: { href: "javascript:void(0)" }
-                              },
-                              [_vm._v("العربية")]
-                            )
-                          ]
-                        )
-                      ],
-                      1
-                    )
                   : _vm._e()
               ],
               1
@@ -27902,7 +27909,13 @@ var render = function() {
                     _vm._t(
                       "default",
                       [
-                        _c("th", [_vm._v(_vm._s(!_vm.ar ? "Nom" : "الاسم"))]),
+                        _c("th", [
+                          _vm._v(
+                            _vm._s(
+                              !_vm.ar ? "Listes des demandes" : "قائمة الطلبات"
+                            )
+                          )
+                        ]),
                         _vm._v(" "),
                         _c("th", [
                           _vm._v(_vm._s(!_vm.ar ? "Description" : "تفاصيل"))
@@ -28920,33 +28933,35 @@ var render = function() {
               ? _c("p", { staticClass: "text-left" }, [
                   _vm._v("Nous vous remercions pour votre généreux Don!"),
                   _c("strong", [
-                    _vm._v(" " + _vm._s(_vm.acteur.name) + "\n                ")
+                    _vm._v(" " + _vm._s(_vm.acteur.name) + "\n            ")
                   ]),
+                  _vm._v(", représentant(e) de "),
+                  _c("strong", [_vm._v(_vm._s(_vm.acteur.lastname))]),
                   _vm._v(
-                    ", représentant(e) de l'Union Tunisienne de Solidarité sociale ayant le\n                numéro de téléphone :\n                "
+                    " ayant le\n                numéro de téléphone :\n                "
                   ),
                   _c("strong", [_vm._v(" " + _vm._s(_vm.acteur.telephone))]),
                   _vm._v(", prendra en charge votre Don!\n            ")
                 ])
               : _c("p", { staticClass: "text-right" }, [
-                  _vm._v("للتكفل بتبرعكم الرجاء الاتصال ب\n                "),
+                  _vm._v(
+                    "للتكفل بتبرعكم الرجاء الاتصال بالسيد(ة)\n                "
+                  ),
                   _c("br"),
                   _vm._v(" "),
                   _c("strong", [_vm._v(_vm._s(_vm.acteur.name))]),
                   _vm._v(" "),
-                  _c("span"),
+                  _c("br"),
+                  _vm._v("\n                ممثل(ة) عن\n                "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.acteur.lastname))]),
                   _vm._v(" "),
                   _c("br"),
-                  _vm._v(
-                    "\n                ممثل(ة) عن الاتحاد التونسي للتضامن الاجتماعي و رقمه "
-                  ),
-                  _c("strong", [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(_vm.acteur.telephone) +
-                        " "
-                    )
-                  ])
+                  _vm._v("\n                و رقمه\n                "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.acteur.telephone) + " ")])
                 ])
           ],
           _vm._v(" "),
@@ -29076,7 +29091,7 @@ var render = function() {
                                 !_vm.ar
                                   ? "Listes des organisations et associations partenaires"
                                   : "قائمة المنظمات و الجمعيات الشريكة "
-                              )
+                              ) + "\n                            "
                             )
                           ]),
                           _vm._v(" "),
@@ -29093,7 +29108,7 @@ var render = function() {
                   "tbody",
                   _vm._l(_vm.acteurs, function(act, index) {
                     return _c("tr", { key: index }, [
-                      _c("td", [_vm._v(" " + _vm._s(act.lastname) + "  ")]),
+                      _c("td", [_vm._v(" " + _vm._s(act.lastname))]),
                       _vm._v(" "),
                       _c(
                         "td",
@@ -29111,8 +29126,9 @@ var render = function() {
                             },
                             [
                               _vm._v(
-                                _vm._s(!_vm.ar ? "Choisir" : "اختيار") +
-                                  "\n                        "
+                                "\n                                " +
+                                  _vm._s(!_vm.ar ? "Choisir" : "اختيار") +
+                                  "\n                            "
                               )
                             ]
                           )
